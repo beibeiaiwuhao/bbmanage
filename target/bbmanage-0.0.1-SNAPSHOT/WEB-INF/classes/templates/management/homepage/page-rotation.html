@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" lang="en">
+<head th:replace="/fragments/head :: head">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+</head>
+<body class="pos-r">
+<div style="margin-left:0px;">
+    <nav class="breadcrumb" style="padding-top: 0px;">
+        <i class="Hui-iconfont">&#xe67f;</i>
+        <span th:text="${parentName}"></span>
+         <span class="c-gray en">&gt;</span>
+        <span th:text="${childName}"></span>
+        <a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新" >
+        <i class="Hui-iconfont">&#xe68f;</i></a></nav>
+    <div class="page-container" style="padding-top: 0px;">
+        <div class="cl pd-5 bg-1 bk-gray mt-20">
+			<span class="l">
+				<a href="javascript:;" onclick="batchDelete()" class="btn btn-danger radius">
+					<i class="Hui-iconfont">&#xe6e2;</i>
+					批量删除
+				</a>
+				<a class="btn btn-primary radius" onclick="rotation_add('添加轮播图','rotation/add.html')" href="javascript:;">
+					<i class="Hui-iconfont">&#xe600;</i>
+					添加轮播图
+				</a></span>
+        </div>
+
+        <div class="mt-20">
+            <table class="table table-border table-bordered table-bg table-hover table-sort" id="rotationList">
+            </table>
+        </div>
+
+    </div>
+</div>
+
+<basescript th:replace="/fragments/basescript :: basescript"></basescript>
+<script type="text/javascript" th:src="@{/static/js/page/homepage/page-rotation.js}"></script>
+
+<script type="text/javascript">
+
+</script>
+</body>
+</html>

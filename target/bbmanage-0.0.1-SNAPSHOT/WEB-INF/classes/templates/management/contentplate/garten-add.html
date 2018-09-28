@@ -1,0 +1,116 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" lang="en">
+<head th:replace="/fragments/head :: head">
+</head>
+<body>
+<div class="page-container">
+    <style type="text/css">
+        select {
+            width: 80px;
+            padding: 5px;
+        }
+
+
+    </style>
+
+    <form action="" method="post" class="form form-horizontal" id="form-gardenInfo-add">
+        <input type="text" hidden="hidden" name="id" id="id" th:if="${#httpServletRequest.getParameter('id') != null}" th:value="${#httpServletRequest.getParameter('id')}" />
+        <input type="text" hidden="hidden" class="input-text" value="0" id="status" name="status" />
+
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-3">
+                <span class="c-red">*</span>
+                园所名称：</label>
+            <div class="formControls col-xs-6 col-sm-6">
+                <input type="text" class="input-text" value="" placeholder="" id="gardenName" name="gardenName" />
+            </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-3">
+                <span class="c-red">*</span>
+                园所所在区域：</label>
+            <div class="formControls col-xs-6 col-sm-6">
+                <select id="province" name="province" >
+                    <option value="">省</option>
+                     </select>
+                <select id="city" name="city" >
+                    <option value="">市</option>
+                </select>
+                <select id="area" name="area" >
+                    <option value="">区</option>
+                </select>
+            </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-3">
+                <span class="c-red">*</span>
+                详细地址：</label>
+            <div class="formControls col-xs-6 col-sm-6">
+                <input type="text" class="input-text" value="" placeholder="" id="gardenAddress" name="gardenAddress" />
+            </div>
+        </div>
+
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-3">
+                <span class="c-red">*</span>
+                固定电话：</label>
+            <div class="formControls col-xs-6 col-sm-6">
+                <input type="text" class="input-text" value="" placeholder="" id="gardenPhone" name="gardenPhone" />
+            </div>
+        </div>
+
+        <div class="row cl">
+            <label class="form-label col-xs-5 col-sm-3">
+                <span class="c-red">*</span>
+                联系人名字：</label>
+            <div class="formControls col-xs-6 col-sm-6">
+                <input type="text" class="input-text" value="" placeholder="" id="gardenHead" name="gardenHead" />
+            </div>
+        </div>
+
+
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>是否启用：</label>
+            <div class="formControls col-xs-6 col-sm-6">
+                <div id="mySwitch" class="switch has-switch" data-on-label="启用" data-on="info" data-off-label="禁用">
+                    <input type="checkbox" checked="checked" />
+                </div>
+            </div>
+        </div>
+
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-3">园所风景：</label>
+            <div class="formControls col-xs-8 col-sm-9">
+                <div class="widget-body" id="target">
+                </div>
+                <button id="chooseFile" class="btn " type="button" style="height:80px;width:90px;" value="上传图片">
+                    <img src="/static/images/add_picture.png" style="height:100%;width:100%;"/>
+                </button>
+            </div>
+        </div>
+
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-3">园所理念：</label>
+            <div class="formControls col-xs-6 col-sm-6">
+                <textarea name="gardenConcept" id="gardenConcept" cols="" rows="" class="textarea" placeholder="说点什么...最多输入100个字符"></textarea>
+                <p class="textarea-numberbar"><em class="textarea-length">0</em>/100</p></div>
+        </div>
+        <div class="row cl">
+            <div class="col-9 col-offset-2">
+                <button id="submit" class="btn btn-secondary radius" type="button"><i class="Hui-iconfont"></i> 保存提交</button>
+            </div>
+        </div>
+
+    </form>
+</div>
+
+
+<basescript th:replace="/fragments/basescript :: basescript"></basescript>
+<script type="text/javascript" th:src="@{/static/js/page/contentplate/garten-add.js}"></script>
+
+
+</body>
+</html>
