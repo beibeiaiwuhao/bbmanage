@@ -61,10 +61,47 @@
         </div>
         <div class="tabCon">
 
-            <form class="form-horizontal" id="form_table" action="#" th:action="@{/import/student/info}" enctype="multipart/form-data" method="post">
-                <input class="form-input" type="file" name="filename"></input>	<br/>
-                <button type="submit" class="btn">开始导入</button>
-            </form>
+            <div class="text-c" style="padding-top: 20px">
+                所属幼儿园：
+                <span class="select-box" style="width: 160px">
+         <select  name="gartenId" id="garden-student-info" class="select">
+         </select>
+     </span>
+                所属班级：
+                <span class="select-box" style="width: 160px">
+         <select  name="classId" id="class-student-info" class="select">
+         </select>
+     </span>
+                所上课程：
+                <span class="select-box" style="width: 160px">
+         <select  name="courseId" id="course-student-info" class="select">
+         </select>
+     </span>
+
+                <button name="" id="serchInput-student" class="btn btn-success" type="submit"><i class="Hui-iconfont">&#xe665;</i> 查询</button>
+            </div>
+            <div class="cl pd-5 bg-1 bk-gray mt-20">
+        <span class="l">
+	            <a href="javascript:;" onclick="batchDelete()" class="btn btn-danger radius">
+		        <i class="Hui-iconfont">&#xe6e2;</i>
+		        批量删除
+	            </a>
+
+            <a class="btn btn-primary radius" onclick="teacher_add('添加老师','/management/contentplate/announcement/student/add.html')" href="javascript:;">
+             <i class="Hui-iconfont">&#xe600;</i>
+             新增学生
+             </a>
+
+    <a class="btn btn-primary radius" onclick="teacher_add('添加老师','/management/contentplate/announcement/teacher/add.html')" href="javascript:;">
+             <i class="Hui-iconfont">&#xe600;</i>
+             导入学生(excel表格导入)
+             </a>
+         </span>
+            </div>
+            <div class="mt-20">
+                <table class="table table-border table-bordered table-bg table-hover table-sort" id="studentList">
+                </table>
+            </div>
 
         </div>
     </div>

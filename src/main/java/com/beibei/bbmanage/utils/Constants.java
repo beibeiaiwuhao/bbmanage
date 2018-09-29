@@ -26,6 +26,8 @@ public class Constants {
         public static final String MANAGER_ANNOUNCEMENT_ADD = "management/contentplate/announcement-add";//通知公告添加
         public static final String MANAGER_TEACHERS = "management/contentplate/teachers";//师生列表展示
         public static final String MANAGER_TEACHERS_ADD = "management/contentplate/teacher-add";//师生列表添加
+        public static final String MANAGER_STUDENT_ADD = "management/contentplate/student-add";//师生列表添加
+
 
     }
 

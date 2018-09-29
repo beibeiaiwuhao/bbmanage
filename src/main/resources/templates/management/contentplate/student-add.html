@@ -1,0 +1,167 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" lang="en">
+<head th:replace="/fragments/head :: head">
+</head>
+<body>
+<div class="page-container">
+    <style type="text/css">
+        select {
+            width: 80px;
+            padding: 5px;
+        }
+    </style>
+
+    <form action="" method="post" class="form form-horizontal" id="form-teacher-add">
+        <input type="text" hidden="hidden" name="id" id="id" th:if="${#httpServletRequest.getParameter('id') != null}" th:value="${#httpServletRequest.getParameter('id')}" />
+        <input type="text" hidden="hidden" class="input-text" value="0" id="status" name="status" />
+
+        <div class="row cl">
+            <h3 style="padding-left: 220px">学生信息</h3>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-3">
+                <span class="c-red">*</span>
+                所属幼儿园：</label>
+            <div class="formControls col-xs-6 col-sm-6">
+                 <span class="select-box" >
+                    <select  name="gartenId" id="garden-info" class="select">
+                    </select>
+                </span>
+            </div>
+        </div>
+
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-3">
+                <span class="c-red">*</span>
+                学生名字：</label>
+            <div class="formControls col-xs-6 col-sm-6">
+                <input type="text" class="input-text" value="" placeholder="" id="teacherName" name="teacherName" />
+            </div>
+        </div>
+
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>性别：</label>
+            <div class="formControls col-xs-8 col-sm-9 skin-minimal">
+                <div class="radio-box" >
+                    <input style="vertical-align: middle;margin: 0;" name="gender" type="radio" id="sex-1" value="1" />
+                    <label  style="vertical-align: middle;margin: 0;padding-left: 10px" for="sex-1">男</label>
+                </div>
+                <div class="radio-box">
+                    <input style="vertical-align: middle;margin: 0;"  type="radio" id="sex-2" name="gender" value="0" />
+                    <label style="vertical-align: middle;margin: 0;padding-left: 10px" for="sex-2">女</label>
+                </div>
+            </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-5 col-sm-3">
+                <span class="c-red">*</span>
+                所报课程：</label>
+            <div class="formControls col-xs-6 col-sm-6">
+                <span class="select-box" >
+                    <select  name="courseId" id="course-info" class="select">
+                    </select>
+                </span>
+            </div>
+        </div>
+
+        <div class="row cl">
+            <label class="form-label col-xs-5 col-sm-3">
+                <span class="c-red">*</span>
+                分配班级：</label>
+            <div class="formControls col-xs-6 col-sm-6">
+                <span class="select-box" style="width: 120px">
+                    <select  name="classId" id="class-info" class="select">
+                    </select>
+                </span>
+            </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-3">学生兴趣爱好：</label>
+            <div class="formControls col-xs-6 col-sm-6">
+                <textarea name="teacherDesc" id="teacherDesc" cols="" rows="" class="textarea" placeholder="说点什么...最多输入100个字符"></textarea>
+                <p class="textarea-numberbar"><em class="textarea-length">0</em>/100</p></div>
+        </div>
+
+
+
+        <div class="row cl">
+            <h3 style="padding-left: 220px">家长信息</h3>
+        </div>
+
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-3"></label>
+            <div class="formControls col-xs-8 col-sm-9 skin-minimal">
+                <div class="radio-box" >
+                    <input style="vertical-align: middle;margin: 0;" name="gender" type="radio" id="sex-1" value="1" />
+                    <label  style="vertical-align: middle;margin: 0;padding-left: 10px" for="sex-1">已存在信息</label>
+                </div>
+                <div class="radio-box">
+                    <input style="vertical-align: middle;margin: 0;"  type="radio" id="sex-2" name="gender" value="0" />
+                    <label style="vertical-align: middle;margin: 0;padding-left: 10px" for="sex-2">未存在信息</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-3">
+                <span class="c-red">*</span>
+                家长名字：</label>
+            <div class="formControls col-xs-6 col-sm-6">
+                <input type="text" class="input-text" value="" placeholder="" id="teacherName" name="teacherName" />
+            </div>
+        </div>
+
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>家长关系：</label>
+            <div class="formControls col-xs-8 col-sm-9 skin-minimal">
+                <div class="radio-box" >
+                    <input style="vertical-align: middle;margin: 0;" name="gender" type="radio" id="sex-1" value="1" />
+                    <label  style="vertical-align: middle;margin: 0;padding-left: 10px" for="sex-1">爸爸</label>
+                </div>
+                <div class="radio-box">
+                    <input style="vertical-align: middle;margin: 0;"  type="radio" id="sex-2" name="gender" value="0" />
+                    <label style="vertical-align: middle;margin: 0;padding-left: 10px" for="sex-2">妈妈</label>
+                </div>
+            </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-3">
+                <span class="c-red">*</span>
+                家长联系方式：</label>
+            <div class="formControls col-xs-6 col-sm-6">
+                <input type="text" class="input-text" value="" placeholder="" id="teacherMobile" name="teacherMobile" />
+            </div>
+        </div>
+
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-3">
+                <span class="c-red">*</span>
+                家长微信：</label>
+            <div class="formControls col-xs-6 col-sm-6">
+                <input type="text" class="input-text" value="" placeholder="" id="wechat" name="wechat" />
+            </div>
+        </div>
+
+
+
+
+
+        <div class="row cl">
+            <div class="col-9 col-offset-3">
+                <button id="submit" class="btn btn-secondary radius" type="button"><i class="Hui-iconfont"></i> 保存提交</button>
+            </div>
+        </div>
+
+    </form>
+</div>
+
+
+<basescript th:replace="/fragments/basescript :: basescript"></basescript>
+<script type="text/javascript" th:src="@{/static/js/page/contentplate/teacher-add.js}"></script>
+
+
+</body>
+</html>

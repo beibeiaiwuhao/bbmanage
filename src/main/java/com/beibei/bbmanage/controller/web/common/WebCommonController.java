@@ -160,11 +160,25 @@ public class WebCommonController {
         return Constants.webPageName.MANAGER_TEACHERS;
     }
 
-
+    /**
+     * 添加老师信息
+     * @return
+     */
     @RequestMapping("/management/contentplate/announcement/teacher/add")
     public String saveTeacher() {
         return Constants.webPageName.MANAGER_TEACHERS_ADD;
     }
+
+    /**
+     * 添加学生信息
+     * @return
+     */
+    @RequestMapping("/management/contentplate/announcement/student/add")
+    public String saveStuddent() {
+        return Constants.webPageName.MANAGER_STUDENT_ADD;
+    }
+
+
 
 
 
