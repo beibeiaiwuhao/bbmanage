@@ -19,29 +19,34 @@
 
     <div id="tab-system" class="HuiTab">
         <div class="tabBar cl">
-            <span>老师列表</span>
-            <span>学生列表</span>
+            <span onclick="getIndex(this);" id="teacher" value="0">老师列表</span>
+            <span onclick="getIndex(this)" id="student" value="1">学生列表</span>
         </div>
-        <div class="tabCon">
-            <div class="text-c" style="padding-top: 20px">
-                所属幼儿园：
-                <span class="select-box" style="width: 160px">
+
+        <div class="text-c" style="padding-top: 20px">
+            <label>所属幼儿园：</label>
+            <span class="select-box" style="width: 160px">
             <select  name="gartenId" id="garden-info" class="select">
             </select>
         </span>
-                所属班级：
-                <span class="select-box" style="width: 160px">
+            <label>所属班级：</label>
+            <span class="select-box" style="width: 160px">
             <select  name="classId" id="class-info" class="select">
             </select>
         </span>
-                所教课程：
-                <span class="select-box" style="width: 160px">
+            <label id="screenLabel">所教课程：</label>
+            <span class="select-box" style="width: 160px">
             <select  name="courseId" id="course-info" class="select">
             </select>
         </span>
 
-                <button name="" id="serchInput" class="btn btn-success" type="submit"><i class="Hui-iconfont">&#xe665;</i> 查询</button>
-            </div>
+            <button name="" id="serchInput" class="btn btn-success" type="submit"><i class="Hui-iconfont">&#xe665;</i> 查询</button>
+        </div>
+
+        <div class="tabCon" >
+
+
+
             <div class="cl pd-5 bg-1 bk-gray mt-20">
 			<span class="l">
 				<a href="javascript:;" onclick="batchDelete()" class="btn btn-danger radius">
@@ -59,27 +64,10 @@
                 </table>
             </div>
         </div>
-        <div class="tabCon">
+        <div class="tabCon" >
 
-            <div class="text-c" style="padding-top: 20px">
-                所属幼儿园：
-                <span class="select-box" style="width: 160px">
-         <select  name="gartenId" id="garden-student-info" class="select">
-         </select>
-     </span>
-                所属班级：
-                <span class="select-box" style="width: 160px">
-         <select  name="classId" id="class-student-info" class="select">
-         </select>
-     </span>
-                所上课程：
-                <span class="select-box" style="width: 160px">
-         <select  name="courseId" id="course-student-info" class="select">
-         </select>
-     </span>
 
-                <button name="" id="serchInput-student" class="btn btn-success" type="submit"><i class="Hui-iconfont">&#xe665;</i> 查询</button>
-            </div>
+
             <div class="cl pd-5 bg-1 bk-gray mt-20">
         <span class="l">
 	            <a href="javascript:;" onclick="batchDelete()" class="btn btn-danger radius">
@@ -87,12 +75,12 @@
 		        批量删除
 	            </a>
 
-            <a class="btn btn-primary radius" onclick="teacher_add('添加老师','/management/contentplate/announcement/student/add.html')" href="javascript:;">
+            <a class="btn btn-primary radius" onclick="teacher_add('添加学生','/management/contentplate/announcement/student/add.html')" href="javascript:;">
              <i class="Hui-iconfont">&#xe600;</i>
              新增学生
              </a>
 
-    <a class="btn btn-primary radius" onclick="teacher_add('添加老师','/management/contentplate/announcement/teacher/add.html')" href="javascript:;">
+            <a class="btn btn-primary radius" onclick="teacher_add('导入学生','/management/contentplate/announcement/teacher/add.html')" href="javascript:;">
              <i class="Hui-iconfont">&#xe600;</i>
              导入学生(excel表格导入)
              </a>
@@ -106,20 +94,11 @@
         </div>
     </div>
 
-
-
-
 </div>
 
 <basescript th:replace="/fragments/basescript :: basescript"></basescript>
 <script type="text/javascript" th:src="@{/static/js/page/contentplate/teachers.js}"></script>
-<script type="text/javascript">
-    $(function(){
-        $("#tab-system").Huitab({
-            index:0
-        });
-    });
-</script>
+
 </body>
 
 

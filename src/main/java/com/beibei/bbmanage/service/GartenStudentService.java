@@ -1,5 +1,6 @@
 package com.beibei.bbmanage.service;
 
+import com.beibei.bbmanage.vo.GartenStudentInfoVo;
 import org.springframework.web.multipart.MultipartFile;
 
 /**
@@ -8,5 +9,7 @@ import org.springframework.web.multipart.MultipartFile;
 public interface GartenStudentService {
 
     public String batchImport(String fileName, MultipartFile mfile);
+
+    public void saveStudent(GartenStudentInfoVo studentVo,MultipartFile[] studentImage,MultipartFile[] parentImage);
 
 }

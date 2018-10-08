@@ -6,11 +6,10 @@ import com.beibei.bbmanage.entity.TClassTeacherEntity;
 import com.beibei.bbmanage.entity.TGartenCourseEntity;
 import com.beibei.bbmanage.entity.TGartenInfoEntity;
 import com.beibei.bbmanage.entity.TGartenTeacherEntity;
-import com.beibei.bbmanage.repository.ClassTeacherrepository;
+import com.beibei.bbmanage.repository.ClassTeacherRepository;
 import com.beibei.bbmanage.repository.GartenCourseRepository;
 import com.beibei.bbmanage.repository.GartenInfoRepository;
 import com.beibei.bbmanage.repository.GartenTeacherRepository;
-import com.beibei.bbmanage.service.GartenInfoService;
 import com.beibei.bbmanage.service.GartenTeacherService;
 import com.beibei.bbmanage.utils.DateUtil;
 import com.beibei.bbmanage.utils.IDUtils;
@@ -39,7 +38,7 @@ public class GartenTeacherServiceImpl implements GartenTeacherService {
     private GartenTeacherRepository gartenTeacherRepository;
 
     @Autowired
-    private ClassTeacherrepository classTeacherrepository;
+    private ClassTeacherRepository classTeacherrepository;
 
     @Autowired
     private DaoUtil daoUtil;
@@ -106,6 +105,7 @@ public class GartenTeacherServiceImpl implements GartenTeacherService {
         teacherEntity.setTeacherDesc(teacherVo.getTeacherDesc());
         teacherEntity.setTeacherClasses(teacherVo.getTeacherClasses());
         teacherEntity.setWechat(teacherVo.getWechat());
+
         //0:在职 1:离职
         teacherEntity.setStatus(0);
         teacherEntity.setCourseId(teacherVo.getCourseId());

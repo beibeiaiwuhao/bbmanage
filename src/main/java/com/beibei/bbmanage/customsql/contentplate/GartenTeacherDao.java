@@ -1,5 +1,8 @@
 package com.beibei.bbmanage.customsql.contentplate;
 
+/**
+ * 园所老师列表
+ */
 public class GartenTeacherDao {
 
 

@@ -8,7 +8,12 @@ function teacher_add(title,url) {
 }
 
 
-var TableInit;
+/**
+ * 选项卡的下标
+ */
+var tabIndex;
+
+var TableInit = 0;
 TableInit = function () {
     var oTableInit = new Object();
     //初始化Table
@@ -249,6 +254,11 @@ $(function () {
     var oTable = new TableInit();
     oTable.Init();
 
+    //初始化tabCon
+    $("#tab-system").Huitab({
+        index:0
+    });
+
     //初始化页面
     $.ajax({
         url: "/teacher/initAddGartenTeacherData",
@@ -291,11 +301,14 @@ $(function () {
     //查询
     $("#serchInput").click(function() {
         // $.DialogHelper.Loading(true);
-        $('#teacherList').bootstrapTable('refresh');
+        if (tabIndex == 0) {
+            $('#teacherList').bootstrapTable('refresh');
+        }else if (tabIndex == 1) {
+            $('#studentList').bootstrapTable('refresh');
+        }
     });
-
-
 });
+
 
 
 /**
@@ -329,6 +342,16 @@ function loadClassesInfo(gardenId) {
     });
 }
 
+
+function getIndex(obj) {
+    var index = $(obj).attr("value");
+    tabIndex = index;
+    if (index == 0) {
+        $("#screenLabel").text("所教课程");
+    }else if (index == 1) {
+        $("#screenLabel").text("所上课程");
+    }
+}
 
 
 
