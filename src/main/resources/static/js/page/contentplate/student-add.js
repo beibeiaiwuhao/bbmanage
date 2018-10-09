@@ -46,7 +46,7 @@ $(function () {
             $("#course-info").append("<option value=''>--请选择课程--</option>");
             console.log(courseData.length);
             for (var i = 0;i < courseData.length;i++) {
-                $("#course-info").append("<option value='"+courseData[i].id+"'>"+courseData[i].courseName+"</option>");
+                $("#course-info").append("<option value='"+courseData[i].courseName+"'>"+courseData[i].courseName+"</option>");
             }
             $("#class-info").empty();
             $("#class-info").append("<option value=''>--请选择班级--</option>");
@@ -76,9 +76,7 @@ $(function () {
         //     return;
         // }
 
-
         var formData = new FormData();
-
         //学生头像
         var imgFileAll = chooseFile.getFiles();
         // 图片
@@ -117,16 +115,13 @@ $(function () {
             formData.append("parentImage",imgUrl);
         }
 
-
-
         $.each($("#form-student-add").serializeArray(),function (index,data) {
+            console.log("key值为"+data.name+"value值为"+data.value);
             formData.append(data.name,data.value)
         });
 
-
-        formData.append("isExist",$("input[name='isExist']:checked").val());
-        formData.append("gender",$("input[name='gender']:checked").val());
-
+        // formData.append("isExist",$("input[name='isExist']:checked").val());
+        // formData.append("studentGender",$("input[name='studentGender']:checked").val());
 
         $.DialogHelper.Loading(true);
 
@@ -151,7 +146,7 @@ $(function () {
             {
                 console.log(data);
                 if (data.code == 200) {
-                    // parent.$('#teacherList').bootstrapTable('refresh');
+                    parent.$('#studentList').bootstrapTable('refresh');
                     layer_close();
                 }
             }
@@ -183,10 +178,8 @@ function loadClassesInfo(gardenId) {
         async: true, // 异步
         error: function ()
         {
-
         },
         complete:function () {
-
         },
         success: function (data)
         {

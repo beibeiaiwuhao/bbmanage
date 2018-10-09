@@ -4,11 +4,12 @@ import com.beibei.bbmanage.controller.BaseController;
 import com.beibei.bbmanage.handler.Response;
 import com.beibei.bbmanage.service.GartenStudentService;
 import com.beibei.bbmanage.utils.ExcelImportUtils;
-import com.beibei.bbmanage.utils.StringUtil;
+import com.beibei.bbmanage.vo.GartenStudentFormVo;
 import com.beibei.bbmanage.vo.GartenStudentInfoVo;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -47,11 +48,30 @@ public class GartenStudentController extends BaseController {
     }
 
 
+    /**
+     * 保存学生信息
+     * @param infoVo
+     * @param studentImage
+     * @param parentImage
+     * @return
+     */
     @RequestMapping("/student/save")
-    public ResponseEntity<Object> saveStudent(GartenStudentInfoVo infoVo, MultipartFile[] studentImage, MultipartFile[] parentImage) {
+    public ResponseEntity<Object> saveStudent(GartenStudentFormVo infoVo, MultipartFile[] studentImage, MultipartFile[] parentImage) {
         gartenStudentService.saveStudent(infoVo,studentImage,parentImage);
         return Response.success(null,"数据保存成功");
     }
+
+    /**
+     * 获取学生列表
+     */
+
+    @RequestMapping("/student/list")
+    public ResponseEntity<Object> getStudentList(Integer gartenId, Integer classId, Integer courseId,Integer page,Integer size) {
+        Page<GartenStudentInfoVo> studentInfoVos = gartenStudentService.findTeacherWithconditions(gartenId, classId, courseId, page, size);
+        return Response.success(studentInfoVos,"学生列表获取成功");
+    }
+
+
 
 
 }

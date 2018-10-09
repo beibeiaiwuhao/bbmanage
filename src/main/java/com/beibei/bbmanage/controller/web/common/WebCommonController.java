@@ -179,6 +179,20 @@ public class WebCommonController {
     }
 
 
+    /**
+     * 园所食谱列表
+     * @param model
+     * @param request
+     * @return
+     */
+    @RequestMapping("/management/contentplate/farm/recipes/list")
+    public String showFarmRecipes(Model model,HttpServletRequest request) {
+        model.addAttribute("parentName",request.getParameter("parentName"));
+        model.addAttribute("childName",request.getParameter("childName"));
+        return  Constants.webPageName.MANAGER_FARM_RECIPES;
+    }
+
+
 
 
 

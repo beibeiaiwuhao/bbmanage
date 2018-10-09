@@ -1,5 +1,7 @@
 package com.beibei.bbmanage.service.impl;
 
+import com.beibei.bbmanage.customsql.DaoUtil;
+import com.beibei.bbmanage.customsql.contentplate.GartenStudentDao;
 import com.beibei.bbmanage.entity.TClassStudentEntity;
 import com.beibei.bbmanage.entity.TGartenStudentEntity;
 import com.beibei.bbmanage.entity.TUserInfoEntity;
@@ -11,12 +13,13 @@ import com.beibei.bbmanage.repository.UserStudentRepository;
 import com.beibei.bbmanage.service.GartenStudentService;
 import com.beibei.bbmanage.utils.IDUtils;
 import com.beibei.bbmanage.utils.QiNiuUtils;
+import com.beibei.bbmanage.vo.GartenStudentFormVo;
 import com.beibei.bbmanage.vo.GartenStudentInfoVo;
+import com.beibei.bbmanage.vo.GartenTeacherInfoVo;
 import com.qiniu.util.StringUtils;
-import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
 import org.springframework.stereotype.Service;
-import org.springframework.util.ResourceUtils;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.File;
@@ -38,6 +41,10 @@ public class GartenStudentServiceImpl implements GartenStudentService {
     @Autowired
     private ClassStudentRepository classStudentRepository;
 
+    @Autowired
+    private DaoUtil daoUtil;
+
+
     @Override
     public String batchImport(String fileName, MultipartFile mfile) {
 //      HSSFWorkbook wb = new HSSFWorkbook(mfile);
@@ -45,7 +52,7 @@ public class GartenStudentServiceImpl implements GartenStudentService {
     }
 
     @Override
-    public void saveStudent(GartenStudentInfoVo studentVo, MultipartFile[] studentImage, MultipartFile[] parentImage) {
+    public void saveStudent(GartenStudentFormVo studentVo, MultipartFile[] studentImage, MultipartFile[] parentImage) {
         QiNiuUtils qiNiuUtils = new QiNiuUtils();
         List<String> imgNames = new ArrayList<>();
         //上传学生头像
@@ -76,13 +83,13 @@ public class GartenStudentServiceImpl implements GartenStudentService {
         studentEntity.setStudentAge(studentVo.getStudentAge());
         studentEntity.setCourseName(studentEntity.getCourseName());
         studentEntity.setStatus(0);
+        studentEntity.setCourseName(studentVo.getCourseName());
         studentEntity.setAvatarImgUrl(StringUtils.join(imgNames,","));
+        studentEntity.setStudentGender(studentVo.getStudentGender());
         //存储学生信息
         gartenStudentRepository.save(studentEntity);
 
-
         TUserStudentEntity userStudentEntity = new TUserStudentEntity();
-
         //当家长信息不存在的时候，存储家长信息
         if (studentVo.getIsExist().equals("1")) {
             List<String> parentImg = new ArrayList<>();
@@ -110,9 +117,10 @@ public class GartenStudentServiceImpl implements GartenStudentService {
             TUserInfoEntity userInfoEntity = new TUserInfoEntity();
             userInfoEntity.setAvatarImgUrl(StringUtils.join(parentImg,","));
             userInfoEntity.setMobile(studentVo.getParentConnect());
-            userInfoEntity.setPassword(studentVo.getParentConnect().substring(studentVo.getParentConnect().length()-6,6));
+            userInfoEntity.setPassword(studentVo.getParentConnect().substring(studentVo.getParentConnect().length()-6,studentVo.getParentConnect().length()));
             userInfoEntity.setWechat(studentVo.getParentWechat());
             userInfoEntity.setAddress(studentVo.getAddress());
+            userInfoEntity.setUserName(studentVo.getParentName());
             userInfoEntity.setStatus(0);
             //存储家长信息
             userInfoRepository.save(userInfoEntity);
@@ -132,10 +140,15 @@ public class GartenStudentServiceImpl implements GartenStudentService {
         //存储班级学生关系
         classStudentRepository.save(classStudentEntity);
 
+    }
 
+    @Override
+    public Page<GartenStudentInfoVo> findTeacherWithconditions(Integer gartenId, Integer classId, Integer courseId, Integer page, Integer size) {
 
+        String sql = GartenStudentDao.getGartenTeacherListWithGartenIdAndClassIdAndCourseId(gartenId, classId, courseId);
+        Page<GartenStudentInfoVo> resultList = daoUtil.getPagerResultList(sql, page, size, GartenStudentInfoVo.class);
 
-
+        return resultList;
     }
 
 
