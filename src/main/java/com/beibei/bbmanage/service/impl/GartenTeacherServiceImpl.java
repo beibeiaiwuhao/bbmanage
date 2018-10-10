@@ -22,6 +22,7 @@ import org.springframework.data.domain.Page;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
+import javax.transaction.Transactional;
 import java.io.File;
 import java.util.*;
 
@@ -63,6 +64,7 @@ public class GartenTeacherServiceImpl implements GartenTeacherService {
     }
 
     @Override
+    @Transactional
     public void saveNewGarden(GartenTeacherInfoVo teacherVo, MultipartFile[] images, String imgUrl) {
         QiNiuUtils qiNiuUtils = new QiNiuUtils();
         List<String> imgNames = new ArrayList<>();

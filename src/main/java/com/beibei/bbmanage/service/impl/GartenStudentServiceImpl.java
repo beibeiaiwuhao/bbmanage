@@ -22,6 +22,7 @@ import org.springframework.data.domain.Page;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
+import javax.transaction.Transactional;
 import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
@@ -52,49 +53,13 @@ public class GartenStudentServiceImpl implements GartenStudentService {
     }
 
     @Override
+    @Transactional
     public void saveStudent(GartenStudentFormVo studentVo, MultipartFile[] studentImage, MultipartFile[] parentImage) {
         QiNiuUtils qiNiuUtils = new QiNiuUtils();
         List<String> imgNames = new ArrayList<>();
         //上传学生头像
-        for (MultipartFile file : studentImage) {
-            // 获取文件名
-            String fileName = file.getOriginalFilename();
-            // 获取文件后缀
-            String prefix=fileName.substring(fileName.lastIndexOf("."));
-            File excelFile = null;
-            try {
-                excelFile = File.createTempFile(IDUtils.genImageName(),prefix);
-                file.transferTo(excelFile);
-            }catch (Exception e) {
-                e.printStackTrace();
-            }
-            if (excelFile != null) {
-                String uploadUrl = qiNiuUtils.upload(excelFile, IDUtils.genImageName());
-                imgNames.add(uploadUrl);
-            }
-            //程序结束时，删除临时文件
-            qiNiuUtils.deleteFile(excelFile);
-        }
-
-        TGartenStudentEntity studentEntity = new TGartenStudentEntity();
-        studentEntity.setStudentName(studentVo.getStudentName());
-        studentEntity.setGartenId(studentVo.getGartenId());
-        studentEntity.setStudentDesc(studentVo.getStudentHobbies());
-        studentEntity.setStudentAge(studentVo.getStudentAge());
-        studentEntity.setCourseName(studentEntity.getCourseName());
-        studentEntity.setStatus(0);
-        studentEntity.setCourseName(studentVo.getCourseName());
-        studentEntity.setAvatarImgUrl(StringUtils.join(imgNames,","));
-        studentEntity.setStudentGender(studentVo.getStudentGender());
-        //存储学生信息
-        gartenStudentRepository.save(studentEntity);
-
-        TUserStudentEntity userStudentEntity = new TUserStudentEntity();
-        //当家长信息不存在的时候，存储家长信息
-        if (studentVo.getIsExist().equals("1")) {
-            List<String> parentImg = new ArrayList<>();
-            //上传家长头像
-            for (MultipartFile file : parentImage) {
+        if (studentImage != null) {
+            for (MultipartFile file : studentImage) {
                 // 获取文件名
                 String fileName = file.getOriginalFilename();
                 // 获取文件后缀
@@ -108,10 +73,52 @@ public class GartenStudentServiceImpl implements GartenStudentService {
                 }
                 if (excelFile != null) {
                     String uploadUrl = qiNiuUtils.upload(excelFile, IDUtils.genImageName());
-                    parentImg.add(uploadUrl);
+                    imgNames.add(uploadUrl);
                 }
                 //程序结束时，删除临时文件
                 qiNiuUtils.deleteFile(excelFile);
+            }
+        }
+
+
+        TGartenStudentEntity studentEntity = new TGartenStudentEntity();
+        studentEntity.setStudentName(studentVo.getStudentName());
+        studentEntity.setGartenId(studentVo.getGartenId());
+        studentEntity.setStudentDesc(studentVo.getStudentHobbies());
+        studentEntity.setStudentAge(studentVo.getStudentAge());
+        studentEntity.setCourseId(studentVo.getCourseId());
+        studentEntity.setStatus(0);
+        studentEntity.setCourseName(studentVo.getCourseName());
+        studentEntity.setAvatarImgUrl(StringUtils.join(imgNames,","));
+        studentEntity.setStudentGender(studentVo.getStudentGender());
+        //存储学生信息
+        gartenStudentRepository.save(studentEntity);
+
+        TUserStudentEntity userStudentEntity = new TUserStudentEntity();
+        //当家长信息不存在的时候，存储家长信息
+        if (studentVo.getIsExist().equals("1")) {
+            List<String> parentImg = new ArrayList<>();
+            if (parentImage != null ){
+                //上传家长头像
+                for (MultipartFile file : parentImage) {
+                    // 获取文件名
+                    String fileName = file.getOriginalFilename();
+                    // 获取文件后缀
+                    String prefix=fileName.substring(fileName.lastIndexOf("."));
+                    File excelFile = null;
+                    try {
+                        excelFile = File.createTempFile(IDUtils.genImageName(),prefix);
+                        file.transferTo(excelFile);
+                    }catch (Exception e) {
+                        e.printStackTrace();
+                    }
+                    if (excelFile != null) {
+                        String uploadUrl = qiNiuUtils.upload(excelFile, IDUtils.genImageName());
+                        parentImg.add(uploadUrl);
+                    }
+                    //程序结束时，删除临时文件
+                    qiNiuUtils.deleteFile(excelFile);
+                }
             }
 
             TUserInfoEntity userInfoEntity = new TUserInfoEntity();
@@ -144,10 +151,8 @@ public class GartenStudentServiceImpl implements GartenStudentService {
 
     @Override
     public Page<GartenStudentInfoVo> findTeacherWithconditions(Integer gartenId, Integer classId, Integer courseId, Integer page, Integer size) {
-
         String sql = GartenStudentDao.getGartenTeacherListWithGartenIdAndClassIdAndCourseId(gartenId, classId, courseId);
         Page<GartenStudentInfoVo> resultList = daoUtil.getPagerResultList(sql, page, size, GartenStudentInfoVo.class);
-
         return resultList;
     }
 

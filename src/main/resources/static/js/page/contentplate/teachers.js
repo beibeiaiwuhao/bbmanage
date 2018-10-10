@@ -7,6 +7,10 @@ function teacher_add(title,url) {
     layer.full(index);
 }
 
+function student_import(title,url) {
+    layer_show(title,url,'','');
+}
+
 
 /**
  * 选项卡的下标
@@ -249,8 +253,6 @@ function showteacherAvatarImg(row) {
 
     return imghtml;
 }
-
-//
 
 /**
  * 学生列表的数据展示

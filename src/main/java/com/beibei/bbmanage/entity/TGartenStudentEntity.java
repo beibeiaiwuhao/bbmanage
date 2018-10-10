@@ -16,6 +16,7 @@ public class TGartenStudentEntity {
     private String avatarImgUrl;
     private Integer status;
     private Integer gartenId;
+    private Integer courseId;
 
     @Id
     @Column(name = "id")
@@ -142,5 +143,15 @@ public class TGartenStudentEntity {
 
     public void setGartenId(Integer gartenId) {
         this.gartenId = gartenId;
+    }
+
+    @Basic
+    @Column(name = "course_id")
+    public Integer getCourseId() {
+        return courseId;
+    }
+
+    public void setCourseId(Integer courseId) {
+        this.courseId = courseId;
     }
 }

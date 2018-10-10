@@ -46,7 +46,7 @@ $(function () {
             $("#course-info").append("<option value=''>--请选择课程--</option>");
             console.log(courseData.length);
             for (var i = 0;i < courseData.length;i++) {
-                $("#course-info").append("<option value='"+courseData[i].courseName+"'>"+courseData[i].courseName+"</option>");
+                $("#course-info").append("<option value='"+courseData[i].id+"'>"+courseData[i].courseName+"</option>");
             }
             $("#class-info").empty();
             $("#class-info").append("<option value=''>--请选择班级--</option>");
@@ -116,7 +116,6 @@ $(function () {
         }
 
         $.each($("#form-student-add").serializeArray(),function (index,data) {
-            console.log("key值为"+data.name+"value值为"+data.value);
             formData.append(data.name,data.value)
         });
 
@@ -164,7 +163,6 @@ function showExistInfo(isShow) {
     }else {
         $("#parents-search").css("display","block");
     }
-    // formData.append("gender",$("input[name='gender']:checked").val());
 }
 
 

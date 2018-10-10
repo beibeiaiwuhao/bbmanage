@@ -1,18 +1,12 @@
+
 $(function () {
     $("#submit").click(function () {
-
-        var formData = new FormData();
-
-
-        $.each($("#form-recipe-add").serializeArray(),function (index,data) {
-            formData.append(data.name,data.value)
-        });
-
-        $.DialogHelper.Loading(true);
-
         console.log("开始提交了");
+
+        var formData = new FormData($("#form-student-import")[0]);
+
         $.ajax({
-            url: "/farm/recipe/save",
+            url: "/import/student/info",
             type: "POST",
             data: formData,
             dataType: "json",
@@ -20,9 +14,9 @@ $(function () {
             processData : false,
             contentType : false,
             async: true, // 异步
-            error: function ()
+            error: function (data)
             {
-
+                console.log(data);
             },
             complete:function () {
 
@@ -36,5 +30,5 @@ $(function () {
                 }
             }
         });
-    });
+    })
 })

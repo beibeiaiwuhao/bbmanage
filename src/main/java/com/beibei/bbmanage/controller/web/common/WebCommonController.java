@@ -178,6 +178,14 @@ public class WebCommonController {
         return Constants.webPageName.MANAGER_STUDENT_ADD;
     }
 
+    /**
+     * 导入学生信息
+     * @return
+     */
+    @RequestMapping("/management/contentplate/announcement/student/import")
+    public String importStuddent() {
+        return Constants.webPageName.MANAGER_STUDENT_IMPORT;
+    }
 
     /**
      * 园所食谱列表
@@ -192,6 +200,14 @@ public class WebCommonController {
         return  Constants.webPageName.MANAGER_FARM_RECIPES;
     }
 
+    /**
+     * 添加园所食谱
+     * @return
+     */
+    @RequestMapping("/management/contentplate/farm/recipes/add")
+    public String saveFarmRecipes() {
+        return Constants.webPageName.MANAGER_FARM_RECIPES_ADD;
+    }
 
 
 

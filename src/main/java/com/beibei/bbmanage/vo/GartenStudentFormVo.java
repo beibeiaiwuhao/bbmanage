@@ -21,6 +21,8 @@ public class GartenStudentFormVo {
     private String studentImgUrl;
     //所报课程
     private String courseName;
+    //所报课程id
+    private Integer courseId;
 
 
     //家长信息是否存在
@@ -164,5 +166,13 @@ public class GartenStudentFormVo {
 
     public void setCourseName(String courseName) {
         this.courseName = courseName;
+    }
+
+    public Integer getCourseId() {
+        return courseId;
+    }
+
+    public void setCourseId(Integer courseId) {
+        this.courseId = courseId;
     }
 }

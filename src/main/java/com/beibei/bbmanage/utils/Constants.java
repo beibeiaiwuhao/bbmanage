@@ -25,10 +25,12 @@ public class Constants {
         public static final String MANAGER_ANNOUNCEMENT = "management/contentplate/announcement";//通知公告
         public static final String MANAGER_ANNOUNCEMENT_ADD = "management/contentplate/announcement-add";//通知公告添加
         public static final String MANAGER_TEACHERS = "management/contentplate/teachers";//师生列表展示
-        public static final String MANAGER_TEACHERS_ADD = "management/contentplate/teacher-add";//师生列表添加
-        public static final String MANAGER_STUDENT_ADD = "management/contentplate/student-add";//师生列表添加
+        public static final String MANAGER_TEACHERS_ADD = "management/contentplate/teacher-add";//老师信息添加
+        public static final String MANAGER_STUDENT_ADD = "management/contentplate/student-add";//学生信息添加
+        public static final String MANAGER_STUDENT_IMPORT = "management/contentplate/student-import";//学生导入
         public static final String MANAGER_FARM_RECIPES = "management/contentplate/farm-recipes";//园所食谱列表
-
+        public static final String MANAGER_FARM_RECIPES_ADD = "management/contentplate/farm-recipes-add";//添加园所食谱
+//
 
     }
 
