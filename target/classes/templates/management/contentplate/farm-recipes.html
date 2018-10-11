@@ -7,6 +7,8 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 </head>
 <body>
+
+
 <nav class="breadcrumb" style="padding-top: 0px;">
     <i class="Hui-iconfont">&#xe67f;</i>
     <span th:text="${parentName}"></span>
@@ -16,6 +18,16 @@
         <i class="Hui-iconfont">&#xe68f;</i></a>
 </nav>
 <div class="page-container" style="padding-top: 0px;">
+    <!--测试悬浮div-->
+    <div id="mydiv1" style="position:absolute;display:none;border:1px solid silver;background:silver;z-index: 1000000">
+
+        <p>2018-10-11</p>
+        <p><span>下午加餐</span></p>
+        <p><span>有很多水果，很好吃，很帮</span></p>
+
+    </div>
+
+
     <div class="cl pd-5 bg-1 bk-gray mt-20">
 			<span class="l">
 				<a href="javascript:;" onclick="batchDelete()" class="btn btn-danger radius">
@@ -28,16 +40,202 @@
 				</a>
             </span>
     </div>
-
     <div class="mt-20">
-        <table class="table table-border table-bordered table-bg table-hover table-sort" id="gardenList">
-        </table>
+
+    <div id='calendar'></div>
     </div>
 
-</div>
+
+
+    </div>
 
 <basescript th:replace="/fragments/basescript :: basescript"></basescript>
 <script type="text/javascript" th:src="@{/static/js/page/contentplate/farm-recipes.js}"></script>
+
+<script th:src='@{/static/calendar/lib/moment.min.js}'></script>
+<script th:src='@{/static/calendar/lib/jquery.min.js}'></script>
+<script th:src='@{/static/calendar/fullcalendar.min.js}'></script>
+<script th:src='@{/static/calendar/locale-all.js}'></script>
+<script type="text/javascript">
+$(function () {
+    var initialLocaleCode = 'zh-cn';
+
+    console.log("开始加载了");
+
+    $('#calendar').fullCalendar({
+        buttonText: {
+            prev: '',
+            next: ''
+        },
+        header: {
+            left: 'prev,next today',
+            center: 'title',
+            right: 'month,agendaWeek,agendaDay'
+        },
+        locale: initialLocaleCode,
+        buttonIcons: true, // show the prev/next text
+        // weekNumbers: true,
+        navLinks: true, // can click day/week names to navigate views
+        editable: false,
+        contentHeight:800,
+        eventLimit: true, // allow "more" link when too many events
+        timezone:'local',
+        // timeFormat: 'H(:mm)',
+        views:{
+            agenda:{
+                eventLimit:1
+            }
+        },
+        events: [
+            {
+                title: '下午加餐 \n  苹果，草莓',
+                start: "2018-10-11T15:37:00",
+                end:"2018-10-11T18:37:00",
+                allDay:false,
+                backgroundColor:"#FFC0CB"
+
+                // className: 'label-important'
+            },
+            {
+                title: '上午加餐',
+                start: "2018-10-11T09:37:00",
+                end:"2018-10-11T10:37:00",
+                allDay:false,
+                // className: 'label-important'
+            },
+            {
+                title: '上午加餐',
+                start: "2018-10-12T09:37:00",
+                end:"2018-10-12T10:37:00",
+                allDay:false,
+                // className: 'label-important'
+            },
+            {
+                title: '大扫除',
+                start: "2018-10-11T09:00:00",
+                // end:"2018-10-11T10:37:00",
+                allDay:true,
+                // className: 'label-important'
+            }
+        ],
+        drop: function(date, allDay) { // this function is called when something is dropped
+
+            // retrieve the dropped element's stored Event Object
+            var originalEventObject = $(this).data('eventObject');
+            var $extraEventClass = $(this).attr('data-class');
+
+
+            // we need to copy it, so that multiple events don't have a reference to the same object
+            var copiedEventObject = $.extend({}, originalEventObject);
+
+            // assign it the date that was reported
+            copiedEventObject.start = date;
+            copiedEventObject.allDay = allDay;
+            if($extraEventClass) copiedEventObject['className'] = [$extraEventClass];
+
+            // render the event on the calendar
+            // the last `true` argument determines if the event "sticks" (http://arshaw.com/fullcalendar/docs/event_rendering/renderEvent/)
+            $('#calendar').fullCalendar('renderEvent', copiedEventObject, true);
+
+            // is the "remove after drop" checkbox checked?
+            if ($('#drop-remove').is(':checked')) {
+                // if so, remove the element from the "Draggable Events" list
+                $(this).remove();
+            }
+
+        },
+        selectable: false,
+        selectHelper: false,
+        eventClick: function(calEvent, jsEvent, view) {
+
+           console.log("点击了eventClick");
+
+        },
+        dayClick: function(date, allDay, jsEvent, view) {
+            recipes_add('添加食谱','/management/contentplate/farm/recipes/add.html')
+            console.log("点击了dayClick");
+            console.log(dateToString(date));
+        },
+        eventMouseover:function (date, allDay, jsEvent, view) {
+            var view1 = $('#calendar').fullCalendar('getView');
+            console.log("The view's title is " + view1.name);
+            if(view1.name == "month") {
+                showEventDetail(view,"mydiv1");
+                console.log("鼠标划过");
+            }
+
+        },
+        eventMouseout:function (date, allDay, jsEvent, view) {
+            var view1 = $('#calendar').fullCalendar('getView');
+            console.log("The view's title is " + view1.name);
+            if(view1.name == "month") {
+                hide(view,"mydiv1");
+                console.log("鼠标离开");
+            }
+        }
+    });
+
+    // build the locale selector's options
+    $.each($.fullCalendar.locales, function(localeCode) {
+        $('#locale-selector').append(
+            $('<option/>')
+                .attr('value', localeCode)
+                .prop('selected', localeCode == initialLocaleCode)
+                .text(localeCode)
+        );
+    });
+
+    // when the selected option changes, dynamically change the calendar option
+    $('#locale-selector').on('change', function() {
+        if (this.value) {
+            $('#calendar').fullCalendar('option', 'locale', this.value);
+        }
+    });
+
+
+
+
+})
+
+ function dateToString(date){
+    console.log(date.unix());
+    var date = new Date(date);
+    var year = date.getFullYear();
+    var month =(date.getMonth() + 1).toString();
+    var day = (date.getDate()).toString();
+    if (month.length == 1) {
+        month = "0" + month;
+    }
+    if (day.length == 1) {
+        day = "0" + day;
+    }
+    var dateTime = year + "-" + month + "-" + day;
+    return dateTime;
+}
+
+function showEventDetail(obj,id) {
+    var objDiv =  $("#mydiv1");
+
+    $(objDiv).css("display","block");
+
+    $(objDiv).css("left", event.pageX+20);
+    // console.log("移动距离"+event.pageX);
+    // console.log("移动距离"+event.clientX);
+    $(objDiv).css("top", event.pageY );
+}
+
+function hide(obj,id) {
+
+    var objDiv = $("#mydiv1");
+    $(objDiv).css("display", "none");
+
+}
+
+
+
+</script>
+
+
 
 </body>
 
