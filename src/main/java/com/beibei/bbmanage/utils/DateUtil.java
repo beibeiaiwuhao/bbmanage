@@ -1758,8 +1758,7 @@ public class DateUtil {
     /** 
      *  
      * 当前季度的j结束日期
-     *  
-     * @param date 
+     *
      * @author Murphy.Chang
      * @return 
      */  
