@@ -16,10 +16,11 @@ public interface GartenRecipeService {
     public void saveRecipe(TGartenRecipeEntity entity);
 
     /**
-     * 查询所有的食谱
+     *  根据gartenId查询所有的食谱
+     * @param gartenId
      * @return
      */
-    public List<TGartenRecipeEntity> findAllRecipes();
+    public List<TGartenRecipeEntity> findAllRecipes(Integer gartenId);
 
     /**
      * 根据id 查询食谱

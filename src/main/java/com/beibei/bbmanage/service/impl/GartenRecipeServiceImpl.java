@@ -25,11 +25,11 @@ public class GartenRecipeServiceImpl implements GartenRecipeService {
     }
 
     @Override
-    public List<TGartenRecipeEntity> findAllRecipes() {
-
-        List<TGartenRecipeEntity> recipeEntities = IteratorUtils.copyIterator(gartenRecipeRepository.findAll().iterator());
+    public List<TGartenRecipeEntity> findAllRecipes(Integer gartenId) {
+        List<TGartenRecipeEntity> recipeEntities = gartenRecipeRepository.findAllByGartenId(gartenId);
         return recipeEntities;
     }
+
 
     @Override
     public TGartenRecipeEntity findOneRecipe(Integer id) {

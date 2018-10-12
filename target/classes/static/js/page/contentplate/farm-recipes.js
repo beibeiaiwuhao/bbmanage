@@ -8,6 +8,43 @@ $(function () {
 
     console.log("开始加载了");
 
+    //初始化幼儿园列表下拉框
+    $.ajax({
+        url: "/teacher/initAddGartenTeacherData",
+        type: "GET",
+        async: true, // 异步
+        error: function ()
+        {
+
+        },
+        complete:function () {
+
+        },
+        success: function (data)
+        {
+            var gardenData = data.data.gartenInfo;
+            for (var i = 0;i < gardenData.length;i++) {
+
+                $("#garden-info").append("<option value='"+gardenData[i].id+"'>"+gardenData[i].gardenName+"</option>");
+            }
+        }
+    });
+
+    //点击切换幼儿园的时候更新下面食谱源
+    //查询
+    $("#serchInput").click(function() {
+
+
+
+        var source = "/farm/recipe/mapList?gartenId=" + $("#garden-info").val();
+
+        $('#calendar').fullCalendar('removeEvents');
+        $('#calendar').fullCalendar('addEventSource', source);
+
+    });
+
+
+    //加载日历食谱
     $('#calendar').fullCalendar({
         buttonText: {
             prev: '',
@@ -34,29 +71,32 @@ $(function () {
         },
         events: function(start,end, timezone,callback) {
           $.ajax({
-              url: '/farm/recipe/list',
+              url: '/farm/recipe/mapList',
               type:'POST',
+              data:{
+                gartenId:$("garden-info").val()
+              },
               error:function () {
                 console.log("加载园所食谱失败");
 
                 },
               success:function (data) {
-                  var events = [];
-                  for (var i = 0; i < data.data.length;i++) {
-                    var recipe = data.data[i];
-                    var title = recipe.mealName + '\n' + recipe.mealDesc;
-                    var start = new Date(Date.parse(recipe.recipeDate));
-                    var end = new Date(new Date().setTime(start.getTime()+1000*60*30));
-                    events.push({
-                        title: title,
-                        start: start,
-                        end:end,
-                        id:recipe.id,
-                        allDay:false,
-                    });
-                  }
-                  callback(events);
-                  }
+                  // var events = [];
+                  // for (var i = 0; i < data.data.length;i++) {
+                  //     var recipe = data.data[i];
+                  //     var title = recipe.mealName + '\n' + recipe.mealDesc;
+                  //     var start = new Date(Date.parse(recipe.recipeDate));
+                  //     var end = new Date(new Date().setTime(start.getTime()+1000*60*30));
+                  //     events.push({
+                  //         title: title,
+                  //         start: start,
+                  //         end:end,
+                  //         id:recipe.id,
+                  //         allDay:false,
+                  //     });
+                  // }
+                  callback(data);
+              }
           });
         },
         drop: function(date, allDay) { // this function is called when something is dropped
