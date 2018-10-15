@@ -209,7 +209,25 @@ public class WebCommonController {
         return Constants.webPageName.MANAGER_FARM_RECIPES_ADD;
     }
 
+    /**
+     * 宝贝视频展示
+     * @return
+     */
+    @RequestMapping("/management/contentplate/baby/show")
+    public String showBabyShowList(Model model,HttpServletRequest request) {
+        model.addAttribute("parentName",request.getParameter("parentName"));
+        model.addAttribute("childName",request.getParameter("childName"));
+        return Constants.webPageName.MANAGER_BABY_SHOW;
+    }
 
+    /**
+     * 添加宝贝视频
+     * @return
+     */
+    @RequestMapping("/management/contentplate/baby/show/add")
+    public String addBabyShowList() {
+        return Constants.webPageName.MANAGER_BABY_SHOW_ADD;
+    }
 
 
     /**

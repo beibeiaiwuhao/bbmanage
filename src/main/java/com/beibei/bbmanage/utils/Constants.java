@@ -30,6 +30,10 @@ public class Constants {
         public static final String MANAGER_STUDENT_IMPORT = "management/contentplate/student-import";//学生导入
         public static final String MANAGER_FARM_RECIPES = "management/contentplate/farm-recipes";//园所食谱列表
         public static final String MANAGER_FARM_RECIPES_ADD = "management/contentplate/farm-recipes-add";//添加园所食谱
+        public static final String MANAGER_BABY_SHOW = "management/contentplate/baby-show";//宝贝视频列表表
+        public static final String MANAGER_BABY_SHOW_ADD = "management/contentplate/baby-show-add";//添加宝贝视频展示
+        public static final String MANAGER_CLASS_PHOTO = "management/contentplate/class-photo";//班级相册展示
+        public static final String MANAGER_CLASS_PHOTO_ADD = "management/contentplate/class-photo-add";//添加班级相册
 //
 
     }

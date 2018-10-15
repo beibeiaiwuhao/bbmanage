@@ -5,6 +5,7 @@ var chooseFile = new ChooseFile({
     height: 100,
     width: 100,
     acceptType: 'image/png,image/jpg,image/jpeg',
+    // acceptType:'vedio/mp4',
     count: 1,
     size: 5000
 });

@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b17110ba-ec5a-498b-a9d1-b4767d248ce4" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/controller/web/contentplate/GartenRecipesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/controller/web/contentplate/GartenRecipesController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/repository/GartenRecipeRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/repository/GartenRecipeRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/service/GartenRecipeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/service/GartenRecipeService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/service/impl/GartenRecipeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/service/impl/GartenRecipeServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/page/contentplate/farm-recipes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/page/contentplate/farm-recipes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/controller/web/common/WebCommonController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/controller/web/common/WebCommonController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/customsql/contentplate/OnLineBookClassesDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/customsql/contentplate/OnLineBookClassesDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/entity/TGartenVideoEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/entity/TGartenVideoEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/utils/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/utils/Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/page/contentplate/student-add.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/page/contentplate/student-add.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/management/contentplate/farm-recipes.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/management/contentplate/farm-recipes.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
@@ -19,103 +20,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="farm-recipes-add.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/management/contentplate/farm-recipes-add.html">
+      <file leaf-file-name="GartenVideoDao.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/customsql/contentplate/GartenVideoDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="585">
-              <caret line="39" column="29" lean-forward="true" selection-start-line="39" selection-start-column="29" selection-end-line="39" selection-end-column="29" />
-              <folding>
-                <element signature="n#style#0;n#input#0;n#div#0;n#div#1;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#button#1;n#div#0;n#div#4;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="285">
+              <caret line="19" column="36" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="farm-recipes-add.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/page/contentplate/farm-recipes-add.js">
+      <file leaf-file-name="baby-show.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/management/contentplate/baby-show.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="2" lean-forward="true" selection-start-line="2" selection-start-column="2" selection-end-line="50" />
-              <folding>
-                <element signature="e#46#1682#0" />
-              </folding>
+            <state relative-caret-position="282">
+              <caret line="37" column="38" selection-start-line="37" selection-start-column="28" selection-end-line="37" selection-end-column="38" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GartenRecipesController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/controller/web/contentplate/GartenRecipesController.java">
+      <file leaf-file-name="baby-show.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/page/contentplate/baby-show.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="246">
-              <caret line="49" column="35" selection-start-line="49" selection-start-column="35" selection-end-line="49" selection-end-column="35" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="farm-recipes.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/page/contentplate/farm-recipes.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="50">
-              <caret line="25" column="55" lean-forward="true" selection-start-line="25" selection-start-column="55" selection-end-line="25" selection-end-column="55" />
-              <folding>
-                <element signature="n#!!block;n#recipes_add#0" />
-                <element signature="e#681#700#0" />
-                <element signature="n#!!block;n#dateToString#0" />
-                <element signature="n#!!block;n#showEventDetail#0" />
-                <element signature="n#!!block;n#hide#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GartenRecipeService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/service/GartenRecipeService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GartenRecipeServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/service/impl/GartenRecipeServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="14" column="36" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#965#966#0" expanded="true" />
-                <element signature="e#1022#1023#0" expanded="true" />
-                <element signature="e#1106#1107#0" expanded="true" />
-                <element signature="e#1155#1156#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GartenRecipeRepository.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/repository/GartenRecipeRepository.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="22" lean-forward="true" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="announcement.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/page/contentplate/announcement.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-408">
+            <state relative-caret-position="332">
+              <caret line="85" column="39" selection-start-line="85" selection-start-column="39" selection-end-line="85" selection-end-column="39" />
               <folding>
                 <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
@@ -124,106 +51,115 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="teachers.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/page/contentplate/teachers.js">
+      <file leaf-file-name="class-photo.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/management/contentplate/class-photo.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="411">
-              <caret line="507" column="7" lean-forward="true" selection-start-line="499" selection-start-column="4" selection-end-line="507" selection-end-column="7" />
+            <state relative-caret-position="60">
+              <caret line="4" column="16" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="class-photo-add.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/management/contentplate/class-photo-add.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Constants.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/utils/Constants.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="183">
+              <caret line="30" column="26" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="online-bookClasses.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/page/contentplate/online-bookClasses.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="193" column="7" lean-forward="true" selection-start-line="189" selection-start-column="4" selection-end-line="193" selection-end-column="7" />
               <folding>
-                <element signature="n#!!block;n#teacher_add#0" />
-                <element signature="e#61#128#0" />
-                <element signature="e#231#248#0" />
-                <element signature="e#264#301#0" />
-                <element signature="e#345#7678#0" />
-                <element signature="e#431#6041#0" />
-                <element signature="e#527#6033#0" />
-                <element signature="e#2201#6022#0" />
-                <element signature="e#2202#2590#0" />
-                <element signature="e#2466#2576#0" />
-                <element signature="e#2592#2767#0" />
-                <element signature="e#2768#2954#0" />
-                <element signature="e#2957#3146#0" />
-                <element signature="e#3147#3732#0" />
-                <element signature="e#3393#3714#0" />
-                <element signature="e#3473#3554#0" />
-                <element signature="e#3574#3655#0" />
-                <element signature="e#3733#4491#0" />
-                <element signature="e#3962#4477#0" />
-                <element signature="e#4038#4064#0" />
-                <element signature="e#4492#4674#0" />
-                <element signature="e#4675#4866#0" />
-                <element signature="e#4867#5054#0" />
-                <element signature="e#5055#5636#0" />
-                <element signature="e#5277#5622#0" />
-                <element signature="e#5349#5450#0" />
-                <element signature="e#5470#5571#0" />
-                <element signature="e#5655#6008#0" />
-                <element signature="e#5895#5990#0" />
-                <element signature="e#6105#6614#0" />
-                <element signature="e#6127#6557#0" />
-                <element signature="e#6810#7068#0" />
-                <element signature="e#6901#7041#0" />
-                <element signature="e#6922#7030#0" />
-                <element signature="e#7128#7651#0" />
-                <element signature="e#7194#7378#0" />
-                <element signature="e#7458#7643#0" />
+                <element signature="e#39#5702#0" />
+                <element signature="e#125#4406#0" />
+                <element signature="e#227#4398#0" />
+                <element signature="e#1905#4387#0" />
+                <element signature="e#1906#2294#0" />
+                <element signature="e#2170#2280#0" />
+                <element signature="e#2296#2664#0" />
+                <element signature="e#2474#2518#0" />
+                <element signature="e#2667#2851#0" />
+                <element signature="e#2852#3043#0" />
+                <element signature="e#3045#3235#0" />
+                <element signature="e#3237#3419#0" />
+                <element signature="e#3420#4001#0" />
+                <element signature="e#3642#3987#0" />
+                <element signature="e#3714#3815#0" />
+                <element signature="e#3835#3936#0" />
+                <element signature="e#4020#4373#0" />
+                <element signature="e#4260#4355#0" />
+                <element signature="e#4470#4730#0" />
+                <element signature="e#4492#4701#0" />
+                <element signature="e#4834#5092#0" />
+                <element signature="e#4925#5065#0" />
+                <element signature="e#4946#5054#0" />
+                <element signature="e#5152#5675#0" />
+                <element signature="e#5218#5402#0" />
+                <element signature="e#5482#5667#0" />
                 <element signature="n#!!doc;n#addProductEditBtHtml#0" />
                 <element signature="n#!!block;n#addProductEditBtHtml#0" />
-                <element signature="e#7922#8017#0" />
-                <element signature="e#8022#8117#0" />
-                <element signature="n#!!doc;n#showteacherAvatarImg#0" />
-                <element signature="e#9100#9138#0" />
-                <element signature="e#9184#16022#0" />
-                <element signature="e#9272#14381#0" />
-                <element signature="e#9368#14373#0" />
-                <element signature="e#11045#14362#0" />
-                <element signature="e#11046#11434#0" />
-                <element signature="e#11310#11420#0" />
-                <element signature="e#11436#11611#0" />
-                <element signature="e#11612#11798#0" />
-                <element signature="e#11801#11986#0" />
-                <element signature="e#11987#12170#0" />
-                <element signature="e#12171#12703#0" />
-                <element signature="e#12400#12689#0" />
-                <element signature="e#12472#12545#0" />
-                <element signature="e#12565#12638#0" />
-                <element signature="e#12704#13020#0" />
-                <element signature="e#12933#13006#0" />
-                <element signature="e#13021#13208#0" />
-                <element signature="e#13209#13394#0" />
-                <element signature="e#13395#13976#0" />
-                <element signature="e#13617#13962#0" />
-                <element signature="e#13689#13790#0" />
-                <element signature="e#13810#13911#0" />
-                <element signature="e#13995#14348#0" />
-                <element signature="e#14235#14330#0" />
-                <element signature="e#14446#14955#0" />
-                <element signature="e#14468#14898#0" />
-                <element signature="e#15152#15410#0" />
-                <element signature="e#15243#15383#0" />
-                <element signature="e#15264#15372#0" />
-                <element signature="e#15471#15994#0" />
-                <element signature="e#15537#15721#0" />
-                <element signature="e#15801#15986#0" />
-                <element signature="e#16215#16239#0" />
-                <element signature="e#16266#17312#0" />
-                <element signature="e#16401#16413#0" />
-                <element signature="e#16444#16456#0" />
-                <element signature="e#16499#17306#0" />
-                <element signature="e#16684#16819#0" />
-                <element signature="e#17047#17182#0" />
-                <element signature="e#17668#17736#0" />
-                <element signature="e#17760#17828#0" />
-                <element signature="n#!!doc;n#loadClassesInfo#0" />
-                <element signature="n#!!block;n#loadClassesInfo#0" />
-                <element signature="e#17936#18511#0" />
-                <element signature="e#18012#18054#0" />
-                <element signature="e#18118#18130#0" />
-                <element signature="e#18161#18173#0" />
-                <element signature="e#18216#18505#0" />
-                <element signature="e#18359#18494#0" />
-                <element signature="e#18623#18670#0" />
-                <element signature="e#18691#18738#0" />
+                <element signature="e#5946#6041#0" />
+                <element signature="e#6046#6141#0" />
+                <element signature="e#6813#6917#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="baby-show-add.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/page/contentplate/baby-show-add.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="239">
+              <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="118" selection-end-column="1" />
+              <folding>
+                <element signature="e#161#1129#0" />
+                <element signature="n#style#0;n#li#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#i#0;n#span#0;n#li#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GartenVideoController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/controller/web/contentplate/GartenVideoController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="21" column="62" selection-start-line="21" selection-start-column="62" selection-end-line="21" selection-end-column="62" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GartenVideoVo.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/vo/GartenVideoVo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" column="37" lean-forward="true" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
+              <folding>
+                <element signature="e#246#247#0" expanded="true" />
+                <element signature="e#279#280#0" expanded="true" />
+                <element signature="e#331#332#0" expanded="true" />
+                <element signature="e#375#376#0" expanded="true" />
+                <element signature="e#411#412#0" expanded="true" />
+                <element signature="e#443#444#0" expanded="true" />
+                <element signature="e#493#494#0" expanded="true" />
+                <element signature="e#535#536#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -234,10 +170,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="JavaScript File" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -257,6 +193,15 @@
       <find>recipes_add</find>
       <find>css</find>
       <find>confirm</find>
+      <find>mp4</find>
+      <find>addVideo</find>
+      <find>getfile</find>
+      <find>files</find>
+      <find>show</find>
+      <find>getObjectURL</find>
+      <find>uploadVideos</find>
+      <find>DaoUtil</find>
+      <find>addProductEditBtHtml</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -273,8 +218,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/customsql/contentplate/GartenTeacherDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/entity/TUserInfoEntity.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/entity/TUserStudentEntity.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/repository/GartenStudentRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/repository/UserInfoRepository.java" />
@@ -289,26 +232,43 @@
         <option value="$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/customsql/contentplate/GartenStudentDao.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/management/contentplate/teachers.html" />
         <option value="$PROJECT_DIR$/src/main/resources/static/js/page/contentplate/teachers.js" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/js/page/contentplate/student-add.js" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/management/contentplate/student-import.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/controller/web/contentplate/GartenStudentController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/static/js/page/contentplate/student-import.js" />
         <option value="$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/service/impl/GartenTeacherServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/service/impl/GartenStudentServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/utils/Constants.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/controller/web/common/WebCommonController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/fragments/head.html" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/fragments/basescript.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/entity/TGartenRecipeEntity.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/utils/DateUtil.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/management/contentplate/farm-recipes-add.html" />
         <option value="$PROJECT_DIR$/src/main/resources/static/js/page/contentplate/farm-recipes-add.js" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/management/contentplate/farm-recipes.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/repository/GartenRecipeRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/service/GartenRecipeService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/service/impl/GartenRecipeServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/resources/static/js/page/contentplate/farm-recipes.js" />
         <option value="$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/controller/web/contentplate/GartenRecipesController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/management/contentplate/babyShow.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/js/page/contentplate/babyShow.js" />
+        <option value="$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/controller/web/common/WebCommonController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/js/page/contentplate/student-add.js" />
+        <option value="$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/repository/GartenVideoRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/js/page/contentplate/garten-add.js" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/management/contentplate/baby-show-add.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/entity/TGartenVideoEntity.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/management/contentplate/farm-recipes.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/management/contentplate/baby-show.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/service/GartenVideoService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/service/impl/GartenVideoServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/controller/web/contentplate/GartenVideoController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/customsql/contentplate/OnLineBookClassesDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/vo/GartenVideoVo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/customsql/contentplate/GartenVideoDao.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/js/page/contentplate/baby-show-add.js" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/management/contentplate/class-photo.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/management/contentplate/class-photo-add.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/utils/Constants.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/js/page/contentplate/baby-show.js" />
       </list>
     </option>
   </component>
@@ -322,7 +282,7 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="119" />
+    <option name="x" value="48" />
     <option name="y" value="23" />
     <option name="width" value="1617" />
     <option name="height" value="1027" />
@@ -336,8 +296,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -527,6 +485,16 @@
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bbmanage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bbmanage" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
               <item name="page" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -539,6 +507,17 @@
               <item name="js" type="462c0819:PsiDirectoryNode" />
               <item name="page" type="462c0819:PsiDirectoryNode" />
               <item name="contentplate" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bbmanage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bbmanage" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="page" type="462c0819:PsiDirectoryNode" />
+              <item name="homepage" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="bbmanage" type="b2602c69:ProjectViewProjectNode" />
@@ -610,6 +589,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -704,15 +685,16 @@
       <updated>1538130550567</updated>
       <workItem from="1538130552905" duration="38397000" />
       <workItem from="1539050838779" duration="27065000" />
-      <workItem from="1539152364588" duration="61502000" />
+      <workItem from="1539152364588" duration="63642000" />
+      <workItem from="1539569828246" duration="22679000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="126964000" />
+    <option name="totallyTimeSpent" value="151783000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="119" y="23" width="1617" height="1027" extended-state="0" />
+    <frame x="48" y="23" width="1617" height="1027" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -726,7 +708,7 @@
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="4" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.3296582" />
+      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.35942668" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Messages" order="9" weight="0.3296582" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
@@ -737,16 +719,16 @@
       <window_info anchor="bottom" id="Version Control" order="12" />
       <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2552381" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2584127" />
       <window_info anchor="right" id="Bean Validation" order="8" />
       <window_info id="Web" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="right" id="Theme Preview" order="7" />
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -765,422 +747,14 @@
           <option name="timeStamp" value="26" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="28" />
+      <option name="time" value="32" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/customsql/contentplate/GartenTeacherDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="34" lean-forward="true" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/service/GartenTeacherService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="37" lean-forward="true" selection-start-line="29" selection-start-column="3" selection-end-line="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/service/GartenNoticeService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/vo/GartenStudentInfoVo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="49" selection-start-line="4" selection-start-column="49" selection-end-line="4" selection-end-column="49" />
-          <folding>
-            <element signature="e#218#219#0" expanded="true" />
-            <element signature="e#249#250#0" expanded="true" />
-            <element signature="e#297#298#0" expanded="true" />
-            <element signature="e#337#338#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/controller/web/contentplate/GartemTeacherController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="59" column="130" lean-forward="true" selection-start-line="59" selection-start-column="49" selection-end-line="59" selection-end-column="130" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/entity/TGartenStudentEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1605">
-          <caret line="148" column="31" lean-forward="true" selection-start-line="148" selection-start-column="31" selection-end-line="148" selection-end-column="31" />
-          <folding>
-            <element signature="e#3642#3643#0" expanded="true" />
-            <element signature="e#3673#3674#0" expanded="true" />
-            <element signature="e#3722#3723#0" expanded="true" />
-            <element signature="e#3762#3763#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/customsql/contentplate/GartenStudentDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="33" column="13" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/vo/GartenStudentFormVo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-206">
-          <caret line="90" lean-forward="true" selection-start-line="90" selection-end-line="90" />
-          <folding>
-            <element signature="e#3182#3183#0" expanded="true" />
-            <element signature="e#3215#3216#0" expanded="true" />
-            <element signature="e#3267#3268#0" expanded="true" />
-            <element signature="e#3311#3312#0" expanded="true" />
-            <element signature="e#3397#3398#0" expanded="true" />
-            <element signature="e#3428#3429#0" expanded="true" />
-            <element signature="e#3477#3478#0" expanded="true" />
-            <element signature="e#3517#3518#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/page/contentplate/teacher-add.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="67" column="38" selection-start-line="67" selection-start-column="7" selection-end-line="67" selection-end-column="38" />
-          <folding>
-            <element signature="e#241#1287#0" />
-            <element signature="e#3036#3665#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/utils/ExcelImportUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="29" column="79" selection-start-line="29" selection-start-column="71" selection-end-line="29" selection-end-column="79" />
-          <folding>
-            <element signature="e#1695#1703#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/service/GartenStudentService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="10" column="37" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/service/impl/GartenTeacherServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="403">
-          <caret line="76" column="17" lean-forward="true" selection-start-line="76" selection-start-column="17" selection-end-line="76" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/service/impl/GartenNoticeServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="26" column="18" lean-forward="true" selection-start-line="26" selection-start-column="3" selection-end-line="26" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/service/impl/GartenStudentServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="92" column="58" selection-start-line="92" selection-start-column="58" selection-end-line="92" selection-end-column="58" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/management/contentplate/teacher-add.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="567">
-          <caret line="63" column="14" lean-forward="true" selection-start-line="56" selection-start-column="7" selection-end-line="63" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/utils/Constants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" column="59" selection-start-line="31" selection-start-column="35" selection-end-line="31" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/controller/web/contentplate/GartenStudentController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-22">
-          <caret line="116" column="44" lean-forward="true" selection-start-line="116" selection-start-column="44" selection-end-line="116" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/controller/web/common/WebCommonController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="206" column="62" selection-start-line="206" selection-start-column="21" selection-end-line="206" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/management/contentplate/student-import.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="12" lean-forward="true" selection-end-line="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/page/contentplate/student-import.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/page/contentplate/campus-info.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-12">
-          <folding>
-            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/calendar/fullcalendar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="12337" column="26" lean-forward="true" selection-start-line="12337" selection-start-column="26" selection-end-line="12337" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/hui/lib/ueditor/1.4.3/third-party/highcharts/highcharts.src.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="1616" column="38" lean-forward="true" selection-start-line="1616" selection-start-column="38" selection-end-line="1616" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.es5.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="657" column="4" selection-start-line="657" selection-start-column="4" selection-end-line="657" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/management/contentplate/garten-add.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="44" lean-forward="true" selection-start-line="24" selection-start-column="44" selection-end-line="24" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/page/contentplate/online-bookClasses.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-71">
-          <caret line="1" column="24" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="24" />
-          <folding>
-            <element signature="e#39#5702#0" />
-            <element signature="e#125#4406#0" />
-            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/page/contentplate/garten-add.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/management/contentplate/student-add.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="199" lean-forward="true" selection-start-line="199" selection-end-line="199" />
-          <folding>
-            <element signature="n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#style#0;n#h3#0;n#div#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/fragments/basescript.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
-          <caret line="20" column="44" lean-forward="true" selection-start-line="20" selection-start-column="44" selection-end-line="20" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/fragments/head.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8">
-          <caret line="1" column="42" lean-forward="true" selection-start-line="1" selection-start-column="42" selection-end-line="1" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/page/contentplate/student-add.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="40" column="30" selection-start-line="40" selection-start-column="30" selection-end-line="40" selection-end-column="30" />
-          <folding>
-            <element signature="e#39#204#0" />
-            <element signature="e#248#415#0" />
-            <element signature="e#594#606#0" />
-            <element signature="e#877#1012#0" />
-            <element signature="e#1240#1375#0" />
-            <element signature="e#1578#1741#0" />
-            <element signature="e#1780#4406#0" />
-            <element signature="e#1862#1906#0" />
-            <element signature="e#2378#2710#0" />
-            <element signature="e#2421#2617#0" />
-            <element signature="e#2457#2520#0" />
-            <element signature="e#2525#2603#0" />
-            <element signature="e#2622#2700#0" />
-            <element signature="e#2737#2800#0" />
-            <element signature="e#2940#3279#0" />
-            <element signature="e#2984#3186#0" />
-            <element signature="e#3021#3086#0" />
-            <element signature="e#3091#3172#0" />
-            <element signature="e#3191#3269#0" />
-            <element signature="e#3306#3368#0" />
-            <element signature="e#3447#3508#0" />
-            <element signature="e#3520#3591#0" />
-            <element signature="e#3769#4398#0" />
-            <element signature="e#4055#4071#0" />
-            <element signature="e#4106#4122#0" />
-            <element signature="e#4173#4388#0" />
-            <element signature="e#4248#4374#0" />
-            <element signature="n#!!block;n#showExistInfo#0" />
-            <element signature="e#4484#4543#0" />
-            <element signature="e#4548#4608#0" />
-            <element signature="n#!!block;n#loadClassesInfo#0" />
-            <element signature="e#4661#5234#0" />
-            <element signature="e#4737#4779#0" />
-            <element signature="e#4843#4854#0" />
-            <element signature="e#4885#4896#0" />
-            <element signature="e#4939#5228#0" />
-            <element signature="e#5082#5217#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/management/contentplate/online-bookClasses.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="412">
-          <caret line="35" column="19" lean-forward="true" selection-start-line="35" selection-start-column="19" selection-end-line="35" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/entity/TGartenInfoEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="22" column="24" lean-forward="true" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/entity/TGartenRecipeEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="17" column="30" lean-forward="true" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/page/homepage/page-rotation.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="242" column="39" lean-forward="true" selection-start-line="242" selection-start-column="4" selection-end-line="242" selection-end-column="39" />
-          <folding>
-            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/page/homepage/page-panel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="118" column="32" lean-forward="true" selection-start-line="118" selection-end-line="119" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/management/contentplate/campus-info.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="31" column="4" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/management/contentplate/announcement-add.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/management/contentplate/announcement.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="10" lean-forward="true" selection-start-line="18" selection-start-column="4" selection-end-line="30" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/management/contentplate/teachers.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="29" column="21" lean-forward="true" selection-start-line="26" selection-start-column="11" selection-end-line="29" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/management/contentplate/farm-recipes.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="454">
-          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
-          <folding>
-            <element signature="n#style#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/management/contentplate/farm-recipes-add.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="39" column="29" lean-forward="true" selection-start-line="39" selection-start-column="29" selection-end-line="39" selection-end-column="29" />
-          <folding>
-            <element signature="n#style#0;n#input#0;n#div#0;n#div#1;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#1;n#div#0;n#div#4;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/page/contentplate/farm-recipes-add.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="2" lean-forward="true" selection-start-line="2" selection-start-column="2" selection-end-line="50" />
-          <folding>
-            <element signature="e#46#1682#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/page/contentplate/announcement.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-408">
-          <folding>
-            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/repository/GartenRecipeRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="22" lean-forward="true" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+        <state relative-caret-position="30">
+          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1189,141 +763,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/service/impl/GartenRecipeServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
+        <state relative-caret-position="90">
           <caret line="14" column="36" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#965#966#0" expanded="true" />
-            <element signature="e#1022#1023#0" expanded="true" />
-            <element signature="e#1106#1107#0" expanded="true" />
-            <element signature="e#1155#1156#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/page/contentplate/teachers.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="411">
-          <caret line="507" column="7" lean-forward="true" selection-start-line="499" selection-start-column="4" selection-end-line="507" selection-end-column="7" />
-          <folding>
-            <element signature="n#!!block;n#teacher_add#0" />
-            <element signature="e#61#128#0" />
-            <element signature="e#231#248#0" />
-            <element signature="e#264#301#0" />
-            <element signature="e#345#7678#0" />
-            <element signature="e#431#6041#0" />
-            <element signature="e#527#6033#0" />
-            <element signature="e#2201#6022#0" />
-            <element signature="e#2202#2590#0" />
-            <element signature="e#2466#2576#0" />
-            <element signature="e#2592#2767#0" />
-            <element signature="e#2768#2954#0" />
-            <element signature="e#2957#3146#0" />
-            <element signature="e#3147#3732#0" />
-            <element signature="e#3393#3714#0" />
-            <element signature="e#3473#3554#0" />
-            <element signature="e#3574#3655#0" />
-            <element signature="e#3733#4491#0" />
-            <element signature="e#3962#4477#0" />
-            <element signature="e#4038#4064#0" />
-            <element signature="e#4492#4674#0" />
-            <element signature="e#4675#4866#0" />
-            <element signature="e#4867#5054#0" />
-            <element signature="e#5055#5636#0" />
-            <element signature="e#5277#5622#0" />
-            <element signature="e#5349#5450#0" />
-            <element signature="e#5470#5571#0" />
-            <element signature="e#5655#6008#0" />
-            <element signature="e#5895#5990#0" />
-            <element signature="e#6105#6614#0" />
-            <element signature="e#6127#6557#0" />
-            <element signature="e#6810#7068#0" />
-            <element signature="e#6901#7041#0" />
-            <element signature="e#6922#7030#0" />
-            <element signature="e#7128#7651#0" />
-            <element signature="e#7194#7378#0" />
-            <element signature="e#7458#7643#0" />
-            <element signature="n#!!doc;n#addProductEditBtHtml#0" />
-            <element signature="n#!!block;n#addProductEditBtHtml#0" />
-            <element signature="e#7922#8017#0" />
-            <element signature="e#8022#8117#0" />
-            <element signature="n#!!doc;n#showteacherAvatarImg#0" />
-            <element signature="e#9100#9138#0" />
-            <element signature="e#9184#16022#0" />
-            <element signature="e#9272#14381#0" />
-            <element signature="e#9368#14373#0" />
-            <element signature="e#11045#14362#0" />
-            <element signature="e#11046#11434#0" />
-            <element signature="e#11310#11420#0" />
-            <element signature="e#11436#11611#0" />
-            <element signature="e#11612#11798#0" />
-            <element signature="e#11801#11986#0" />
-            <element signature="e#11987#12170#0" />
-            <element signature="e#12171#12703#0" />
-            <element signature="e#12400#12689#0" />
-            <element signature="e#12472#12545#0" />
-            <element signature="e#12565#12638#0" />
-            <element signature="e#12704#13020#0" />
-            <element signature="e#12933#13006#0" />
-            <element signature="e#13021#13208#0" />
-            <element signature="e#13209#13394#0" />
-            <element signature="e#13395#13976#0" />
-            <element signature="e#13617#13962#0" />
-            <element signature="e#13689#13790#0" />
-            <element signature="e#13810#13911#0" />
-            <element signature="e#13995#14348#0" />
-            <element signature="e#14235#14330#0" />
-            <element signature="e#14446#14955#0" />
-            <element signature="e#14468#14898#0" />
-            <element signature="e#15152#15410#0" />
-            <element signature="e#15243#15383#0" />
-            <element signature="e#15264#15372#0" />
-            <element signature="e#15471#15994#0" />
-            <element signature="e#15537#15721#0" />
-            <element signature="e#15801#15986#0" />
-            <element signature="e#16215#16239#0" />
-            <element signature="e#16266#17312#0" />
-            <element signature="e#16401#16413#0" />
-            <element signature="e#16444#16456#0" />
-            <element signature="e#16499#17306#0" />
-            <element signature="e#16684#16819#0" />
-            <element signature="e#17047#17182#0" />
-            <element signature="e#17668#17736#0" />
-            <element signature="e#17760#17828#0" />
-            <element signature="n#!!doc;n#loadClassesInfo#0" />
-            <element signature="n#!!block;n#loadClassesInfo#0" />
-            <element signature="e#17936#18511#0" />
-            <element signature="e#18012#18054#0" />
-            <element signature="e#18118#18130#0" />
-            <element signature="e#18161#18173#0" />
-            <element signature="e#18216#18505#0" />
-            <element signature="e#18359#18494#0" />
-            <element signature="e#18623#18670#0" />
-            <element signature="e#18691#18738#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/service/GartenRecipeService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
+        <state relative-caret-position="240">
           <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/page/contentplate/farm-recipes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="25" column="55" lean-forward="true" selection-start-line="25" selection-start-column="55" selection-end-line="25" selection-end-column="55" />
-          <folding>
-            <element signature="n#!!block;n#recipes_add#0" />
-            <element signature="e#681#700#0" />
-            <element signature="n#!!block;n#dateToString#0" />
-            <element signature="n#!!block;n#showEventDetail#0" />
-            <element signature="n#!!block;n#hide#0" />
           </folding>
         </state>
       </provider>
@@ -1481,10 +934,530 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/controller/web/contentplate/GartenRecipesController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="49" column="35" selection-start-line="49" selection-start-column="35" selection-end-line="49" selection-end-column="35" />
+        <state relative-caret-position="750">
+          <caret line="61" column="14" selection-start-line="61" selection-start-column="14" selection-end-line="61" selection-end-column="14" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/page/contentplate/farm-recipes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="32" lean-forward="true" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="32" />
+          <folding>
+            <element signature="e#681#700#0" />
+            <element signature="n#!!block;n#dateToString#0" />
+            <element signature="n#!!block;n#showEventDetail#0" />
+            <element signature="n#!!block;n#hide#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/management/contentplate/student-import.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="12" lean-forward="true" selection-end-line="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/management/contentplate/student-add.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="96" column="112" lean-forward="true" selection-start-line="96" selection-start-column="112" selection-end-line="96" selection-end-column="112" />
+          <folding>
+            <element signature="n#style#0;n#h3#0;n#div#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/management/contentplate/announcement-add.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="579">
+          <caret line="60" column="22" selection-start-line="60" selection-end-line="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/controller/web/common/WebCommonController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="534">
+          <caret line="250" column="13" lean-forward="true" selection-start-line="250" selection-start-column="13" selection-end-line="250" selection-end-column="13" />
+          <folding>
+            <element signature="e#6538#6539#0" expanded="true" />
+            <element signature="e#6604#6605#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/page/contentplate/student-add.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="579">
+          <caret line="169" selection-start-line="169" selection-end-line="195" />
+          <folding>
+            <element signature="n#!!block;n#showExistInfo#0" />
+            <element signature="n#!!block;n#loadClassesInfo#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/repository/GartenVideoRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="28" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/entity/TGartenTeacherEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="23" column="4" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/service/impl/GartenNoticeServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="25" column="13" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/utils/QiNiuUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="40" column="13" lean-forward="true" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/service/impl/GartenStudentServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="668">
+          <caret line="81" lean-forward="true" selection-start-line="57" selection-start-column="7" selection-end-line="81" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/page/contentplate/garten-add.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="827">
+          <caret line="131" column="7" lean-forward="true" selection-start-line="72" selection-start-column="3" selection-end-line="131" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/page/homepage/page-roration-add.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="332">
+          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/hui/lib/ueditor/1.4.3/third-party/webuploader/webuploader.custom.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="2322" column="26" selection-start-line="2322" selection-start-column="25" selection-end-line="2322" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/common/chooseFile-Murphy.Chang.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="554">
+          <caret line="171" column="38" selection-start-line="171" selection-start-column="33" selection-end-line="171" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/page/homepage/page-panel-add.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="47" column="31" selection-start-line="47" selection-start-column="27" selection-end-line="47" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/controller/web/contentplate/GartenStudentController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="41" column="17" lean-forward="true" selection-start-line="41" selection-start-column="17" selection-end-line="41" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/page/contentplate/student-import.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="29" lean-forward="true" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/page/contentplate/farm-recipes-add.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="56" column="36" lean-forward="true" selection-start-line="56" selection-start-column="3" selection-end-line="56" selection-end-column="36" />
+          <folding>
+            <element signature="e#46#1682#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/management/contentplate/baby-show-add.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="97" lean-forward="true" selection-start-line="97" selection-end-line="97" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#0;n#div#1;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ul#0;n#div#0;n#div#0;n#div#4;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ul#1;n#div#0;n#div#0;n#div#4;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#0;n#ul#1;n#div#0;n#div#0;n#div#4;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#li#0;n#ul#1;n#div#0;n#div#4;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/entity/TGartenVideoEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="121">
+          <caret line="162" column="12" selection-start-line="162" selection-start-column="12" selection-end-line="162" selection-end-column="12" />
+          <folding>
+            <element signature="e#3500#3501#0" expanded="true" />
+            <element signature="e#3530#3531#0" expanded="true" />
+            <element signature="e#3577#3578#0" expanded="true" />
+            <element signature="e#3615#3616#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/utils/IDUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="18" column="25" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/management/contentplate/farm-recipes.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="49" selection-start-line="49" selection-end-line="49" />
+          <folding>
+            <element signature="n#style#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/management/contentplate/campus-info.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="27" column="20" lean-forward="true" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/management/contentplate/online-bookClasses.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="24" column="10" lean-forward="true" selection-start-line="18" selection-start-column="4" selection-end-line="24" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/management/contentplate/teacher-add.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/management/contentplate/teachers.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="371">
+          <caret line="35" column="15" lean-forward="true" selection-start-line="25" selection-start-column="7" selection-end-line="35" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/page/contentplate/teachers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="174" column="111" lean-forward="true" selection-start-line="173" selection-start-column="12" selection-end-line="174" selection-end-column="111" />
+          <folding>
+            <element signature="n#!!block;n#teacher_add#0" />
+            <element signature="e#61#128#0" />
+            <element signature="e#231#248#0" />
+            <element signature="e#264#301#0" />
+            <element signature="e#431#6041#0" />
+            <element signature="e#527#6033#0" />
+            <element signature="e#2201#6022#0" />
+            <element signature="e#2202#2590#0" />
+            <element signature="e#2466#2576#0" />
+            <element signature="e#2592#2767#0" />
+            <element signature="e#2768#2954#0" />
+            <element signature="e#2957#3146#0" />
+            <element signature="e#3147#3732#0" />
+            <element signature="e#3393#3714#0" />
+            <element signature="e#3473#3554#0" />
+            <element signature="e#3574#3655#0" />
+            <element signature="e#3733#4491#0" />
+            <element signature="e#3962#4477#0" />
+            <element signature="e#4038#4064#0" />
+            <element signature="e#4492#4674#0" />
+            <element signature="e#4675#4866#0" />
+            <element signature="e#4867#5054#0" />
+            <element signature="e#5055#5636#0" />
+            <element signature="e#5277#5622#0" />
+            <element signature="e#5349#5450#0" />
+            <element signature="e#5470#5571#0" />
+            <element signature="e#5655#6008#0" />
+            <element signature="e#5895#5990#0" />
+            <element signature="e#6810#7068#0" />
+            <element signature="e#6901#7041#0" />
+            <element signature="e#6922#7030#0" />
+            <element signature="e#7128#7651#0" />
+            <element signature="e#7194#7378#0" />
+            <element signature="e#7458#7643#0" />
+            <element signature="n#!!doc;n#addProductEditBtHtml#0" />
+            <element signature="n#!!block;n#addProductEditBtHtml#0" />
+            <element signature="e#7922#8017#0" />
+            <element signature="e#8022#8117#0" />
+            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
+            <element signature="n#!!doc;n#showteacherAvatarImg#0" />
+            <element signature="e#9100#9138#0" />
+            <element signature="e#9184#16022#0" />
+            <element signature="e#9272#14381#0" />
+            <element signature="e#9368#14373#0" />
+            <element signature="e#11045#14362#0" />
+            <element signature="e#11046#11434#0" />
+            <element signature="e#11310#11420#0" />
+            <element signature="e#11436#11611#0" />
+            <element signature="e#11612#11798#0" />
+            <element signature="e#11801#11986#0" />
+            <element signature="e#11987#12170#0" />
+            <element signature="e#12171#12703#0" />
+            <element signature="e#12400#12689#0" />
+            <element signature="e#12472#12545#0" />
+            <element signature="e#12565#12638#0" />
+            <element signature="e#12704#13020#0" />
+            <element signature="e#12933#13006#0" />
+            <element signature="e#13021#13208#0" />
+            <element signature="e#13209#13394#0" />
+            <element signature="e#13395#13976#0" />
+            <element signature="e#13617#13962#0" />
+            <element signature="e#13689#13790#0" />
+            <element signature="e#13810#13911#0" />
+            <element signature="e#13995#14348#0" />
+            <element signature="e#14235#14330#0" />
+            <element signature="e#14446#14955#0" />
+            <element signature="e#14468#14898#0" />
+            <element signature="e#15152#15410#0" />
+            <element signature="e#15243#15383#0" />
+            <element signature="e#15264#15372#0" />
+            <element signature="e#15471#15994#0" />
+            <element signature="e#15537#15721#0" />
+            <element signature="e#15801#15986#0" />
+            <element signature="e#16215#16239#0" />
+            <element signature="e#16266#17312#0" />
+            <element signature="e#16401#16413#0" />
+            <element signature="e#16444#16456#0" />
+            <element signature="e#16499#17306#0" />
+            <element signature="e#16684#16819#0" />
+            <element signature="e#17047#17182#0" />
+            <element signature="e#17668#17736#0" />
+            <element signature="e#17760#17828#0" />
+            <element signature="n#!!doc;n#loadClassesInfo#0" />
+            <element signature="n#!!block;n#loadClassesInfo#0" />
+            <element signature="e#17936#18511#0" />
+            <element signature="e#18012#18054#0" />
+            <element signature="e#18118#18130#0" />
+            <element signature="e#18161#18173#0" />
+            <element signature="e#18216#18505#0" />
+            <element signature="e#18359#18494#0" />
+            <element signature="e#18623#18670#0" />
+            <element signature="e#18691#18738#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/customsql/contentplate/GartenTeacherDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="13" lean-forward="true" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/service/impl/GartenTeacherServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-433">
+          <caret line="55" column="18" lean-forward="true" selection-start-line="55" selection-start-column="18" selection-end-line="55" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/customsql/contentplate/OnLineBookClassesDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="21" lean-forward="true" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/service/GartenTeacherService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="36" column="132" lean-forward="true" selection-start-line="36" selection-start-column="56" selection-end-line="36" selection-end-column="132" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/controller/web/contentplate/OnLineBookClassesController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/service/impl/GartenVideoServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="838">
+          <caret line="74" column="26" lean-forward="true" selection-start-line="74" selection-start-column="26" selection-end-line="74" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/service/GartenVideoService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/page/contentplate/campus-info.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="341">
+          <caret line="234" column="18" lean-forward="true" selection-start-line="232" selection-start-column="4" selection-end-line="234" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/customsql/contentplate/GartenVideoDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="36" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/vo/GartenVideoVo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="37" lean-forward="true" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
+          <folding>
+            <element signature="e#246#247#0" expanded="true" />
+            <element signature="e#279#280#0" expanded="true" />
+            <element signature="e#331#332#0" expanded="true" />
+            <element signature="e#375#376#0" expanded="true" />
+            <element signature="e#411#412#0" expanded="true" />
+            <element signature="e#443#444#0" expanded="true" />
+            <element signature="e#493#494#0" expanded="true" />
+            <element signature="e#535#536#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/controller/web/contentplate/GartenVideoController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="62" selection-start-line="21" selection-start-column="62" selection-end-line="21" selection-end-column="62" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/page/contentplate/online-bookClasses.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="193" column="7" lean-forward="true" selection-start-line="189" selection-start-column="4" selection-end-line="193" selection-end-column="7" />
+          <folding>
+            <element signature="e#39#5702#0" />
+            <element signature="e#125#4406#0" />
+            <element signature="e#227#4398#0" />
+            <element signature="e#1905#4387#0" />
+            <element signature="e#1906#2294#0" />
+            <element signature="e#2170#2280#0" />
+            <element signature="e#2296#2664#0" />
+            <element signature="e#2474#2518#0" />
+            <element signature="e#2667#2851#0" />
+            <element signature="e#2852#3043#0" />
+            <element signature="e#3045#3235#0" />
+            <element signature="e#3237#3419#0" />
+            <element signature="e#3420#4001#0" />
+            <element signature="e#3642#3987#0" />
+            <element signature="e#3714#3815#0" />
+            <element signature="e#3835#3936#0" />
+            <element signature="e#4020#4373#0" />
+            <element signature="e#4260#4355#0" />
+            <element signature="e#4470#4730#0" />
+            <element signature="e#4492#4701#0" />
+            <element signature="e#4834#5092#0" />
+            <element signature="e#4925#5065#0" />
+            <element signature="e#4946#5054#0" />
+            <element signature="e#5152#5675#0" />
+            <element signature="e#5218#5402#0" />
+            <element signature="e#5482#5667#0" />
+            <element signature="n#!!doc;n#addProductEditBtHtml#0" />
+            <element signature="n#!!block;n#addProductEditBtHtml#0" />
+            <element signature="e#5946#6041#0" />
+            <element signature="e#6046#6141#0" />
+            <element signature="e#6813#6917#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/page/contentplate/baby-show-add.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="118" selection-end-column="1" />
+          <folding>
+            <element signature="e#161#1129#0" />
+            <element signature="n#style#0;n#li#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#i#0;n#span#0;n#li#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/management/contentplate/baby-show.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="282">
+          <caret line="37" column="38" selection-start-line="37" selection-start-column="28" selection-end-line="37" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/management/contentplate/class-photo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="16" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/management/contentplate/class-photo-add.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/utils/Constants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="30" column="26" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/page/contentplate/baby-show.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="332">
+          <caret line="85" column="39" selection-start-line="85" selection-start-column="39" selection-end-line="85" selection-end-column="39" />
+          <folding>
+            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

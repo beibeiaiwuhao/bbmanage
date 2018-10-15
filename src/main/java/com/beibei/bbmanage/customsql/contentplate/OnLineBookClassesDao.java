@@ -6,18 +6,6 @@ package com.beibei.bbmanage.customsql.contentplate.onlineBook;
 public class OnLineBookClassesDao {
 
     /**
-     *  private Integer id;
-     *     private Integer userId;
-     *     private String mobile;
-     *     private String apponitmentTime;
-     *     private String apponitmentClasses;
-     *     private Integer status;
-     *     private String creator;
-     *     private String createTime;
-     *     private String mender;
-     *     private String mendTime;
-     *     private String remark;
-     *     private String userName;
      * @param minDate
      * @param maxDate
      * @param userName

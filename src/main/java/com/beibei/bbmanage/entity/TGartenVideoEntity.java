@@ -20,9 +20,11 @@ public class TGartenVideoEntity {
     private String mender;
     private String mendTime;
     private String remark;
+    private Integer classId;
 
     @Id
     @Column(name = "id")
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
     public Integer getId() {
         return id;
     }
@@ -161,6 +163,16 @@ public class TGartenVideoEntity {
         this.remark = remark;
     }
 
+    @Basic
+    @Column(name = "class_id")
+    public Integer getClassId() {
+        return classId;
+    }
+
+    public void setClassId(Integer classId) {
+        this.classId = classId;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -179,12 +191,15 @@ public class TGartenVideoEntity {
                 Objects.equals(createTime, that.createTime) &&
                 Objects.equals(mender, that.mender) &&
                 Objects.equals(mendTime, that.mendTime) &&
+                Objects.equals(classId, that.classId) &&
                 Objects.equals(remark, that.remark);
     }
 
     @Override
     public int hashCode() {
 
-        return Objects.hash(id, gartenId, videoName, videoDesc, videoUrl, videoType, videoSize, videoClasses, status, creator, createTime, mender, mendTime, remark);
+        return Objects.hash(id, gartenId, videoName,classId, videoDesc, videoUrl, videoType, videoSize, videoClasses, status, creator, createTime, mender, mendTime, remark);
     }
+
+
 }
