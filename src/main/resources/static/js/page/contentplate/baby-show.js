@@ -83,7 +83,7 @@ TableInit = function () {
                     valign : 'middle',
                     sortable : true,
                     formatter:function (value,row,index) {
-                        return '<video style="height: 150px;width: 100px;" src="'+value+'"></video>';
+                        return '<video controls="controls" style="height: 150px;width: 100px;" src="'+value+'"></video>';
                     }
                 },{
                     field: 'videoDesc',

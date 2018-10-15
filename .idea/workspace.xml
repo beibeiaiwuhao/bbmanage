@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b17110ba-ec5a-498b-a9d1-b4767d248ce4" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/controller/web/common/WebCommonController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/controller/web/common/WebCommonController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/customsql/contentplate/OnLineBookClassesDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/customsql/contentplate/OnLineBookClassesDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/entity/TGartenVideoEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/entity/TGartenVideoEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/utils/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/utils/Constants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/page/contentplate/student-add.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/page/contentplate/student-add.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/management/contentplate/farm-recipes.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/management/contentplate/farm-recipes.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/page/contentplate/baby-show.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/page/contentplate/baby-show.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -41,9 +35,10 @@
       <file leaf-file-name="baby-show.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/page/contentplate/baby-show.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="332">
-              <caret line="85" column="39" selection-start-line="85" selection-start-column="39" selection-end-line="85" selection-end-column="39" />
+            <state relative-caret-position="275">
+              <caret line="85" column="57" selection-start-line="85" selection-start-column="57" selection-end-line="85" selection-end-column="57" />
               <folding>
+                <element signature="n#style#0;n#video#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
               </folding>
@@ -686,12 +681,12 @@
       <workItem from="1538130552905" duration="38397000" />
       <workItem from="1539050838779" duration="27065000" />
       <workItem from="1539152364588" duration="63642000" />
-      <workItem from="1539569828246" duration="22679000" />
+      <workItem from="1539569828246" duration="23872000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="151783000" />
+    <option name="totallyTimeSpent" value="152976000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="48" y="23" width="1617" height="1027" extended-state="0" />
@@ -1453,9 +1448,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/page/contentplate/baby-show.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="85" column="39" selection-start-line="85" selection-start-column="39" selection-end-line="85" selection-end-column="39" />
+        <state relative-caret-position="275">
+          <caret line="85" column="57" selection-start-line="85" selection-start-column="57" selection-end-line="85" selection-end-column="57" />
           <folding>
+            <element signature="n#style#0;n#video#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
           </folding>
