@@ -129,7 +129,12 @@ public class GartenTeacherServiceImpl implements GartenTeacherService {
         return resultList;
     }
 
-
+    @Override
+    public List<TGartenTeacherEntity> getTeacherListByClassId(Integer classId) {
+        String sql = GartenTeacherDao.getGartenTeacherListWithGartenIdAndClassIdAndCourseId(null, classId, null);
+        List<TGartenTeacherEntity> resultList = daoUtil.getResultList(sql, TGartenTeacherEntity.class);
+        return resultList;
+    }
 
 
 }

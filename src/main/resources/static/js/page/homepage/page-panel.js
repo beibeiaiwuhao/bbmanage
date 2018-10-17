@@ -34,6 +34,7 @@ function filter(treeId, parentNode, childNodes) {
     }
     return zNodes;
 }
+
 function beforeClick(treeId, treeNode) {
     if (!treeNode.isParent) {
         /*当点击子类的时候，请求*/

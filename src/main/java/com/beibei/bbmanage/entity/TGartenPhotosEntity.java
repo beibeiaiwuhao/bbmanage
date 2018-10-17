@@ -16,9 +16,13 @@ public class TGartenPhotosEntity {
     private String mender;
     private String mendTime;
     private String remark;
+    private Integer classId;
+    private Integer gartenId;
+
 
     @Id
     @Column(name = "id")
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
     public Integer getId() {
         return id;
     }
@@ -138,5 +142,24 @@ public class TGartenPhotosEntity {
     public int hashCode() {
 
         return Objects.hash(id, photoName, photoDes, photoUrl, photoSize, creator, createTime, mender, mendTime, remark);
+    }
+
+    @Basic
+    @Column(name = "class_id")
+    public Integer getClassId() {
+        return classId;
+    }
+    public void setClassId(Integer classId) {
+        this.classId = classId;
+    }
+
+    @Basic
+    @Column(name = "garten_id")
+    public Integer getGartenId() {
+        return gartenId;
+    }
+
+    public void setGartenId(Integer gartenId) {
+        this.gartenId = gartenId;
     }
 }

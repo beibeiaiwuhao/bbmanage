@@ -6,6 +6,13 @@ package com.beibei.bbmanage.customsql.contentplate;
 public class GartenTeacherDao {
 
 
+    /**
+     * 筛选sql语句
+     * @param gartenId
+     * @param classId
+     * @param courseId
+     * @return
+     */
     public static String getGartenTeacherListWithGartenIdAndClassIdAndCourseId(Integer gartenId, Integer classId,Integer courseId) {
         StringBuffer sql = new StringBuffer();
         sql.append("SELECT ");
@@ -37,6 +44,5 @@ public class GartenTeacherDao {
         }
         return sql.toString();
     }
-
 
 }

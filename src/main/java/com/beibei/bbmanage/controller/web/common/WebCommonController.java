@@ -231,6 +231,41 @@ public class WebCommonController {
 
 
     /**
+     * 班级相册展示
+     * @param model
+     * @param request
+     * @return
+     */
+    @RequestMapping("/management/contentplate/class/photo")
+    public String showClassPhotots(Model model,HttpServletRequest request) {
+        model.addAttribute("parentName",request.getParameter("parentName"));
+        model.addAttribute("childName",request.getParameter("childName"));
+        return Constants.webPageName.MANAGER_CLASS_PHOTO;
+    }
+
+    /**
+     * 添加班级相册
+     * @return
+     */
+    @RequestMapping("/management/contentplate/class/photo/add")
+    public String addClassPhotots() {
+        return Constants.webPageName.MANAGER_CLASS_PHOTO_ADD;
+    }
+
+
+    @RequestMapping("/management/contentplate/class/photo/show")
+    public String showClassPhotosList(){
+        return Constants.webPageName.MANAGER_CLASS_PHOTO_SHOW;
+    }
+
+
+
+
+
+
+
+
+    /**
      * 将菜单的一级和二级分别分开
      */
     private List<SysMenuVo> separateMenu(List<TSysMenuEntity> menus) {

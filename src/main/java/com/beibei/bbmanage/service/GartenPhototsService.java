@@ -1,0 +1,17 @@
+package com.beibei.bbmanage.service;
+
+import com.beibei.bbmanage.entity.TGartenPhotosEntity;
+import com.beibei.bbmanage.vo.GartenClassPhotosVo;
+import org.springframework.web.multipart.MultipartFile;
+
+import java.util.List;
+
+public interface GartenPhototsService {
+
+
+    public void saveGartenPhoto(TGartenPhotosEntity entity, MultipartFile[] imgFiles);
+
+
+    public List<GartenClassPhotosVo> getGartenClassPhotoInfo(Integer gartenId);
+
+}

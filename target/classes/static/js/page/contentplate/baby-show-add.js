@@ -10,7 +10,6 @@ $(function () {
 
 
     $("#submit").click(function () {
-        $("#submit").click(function () {
 
             $.DialogHelper.Loading(true);
 
@@ -41,9 +40,6 @@ $(function () {
                     }
                 }
             });
-
-        });
-
     })
 
 })

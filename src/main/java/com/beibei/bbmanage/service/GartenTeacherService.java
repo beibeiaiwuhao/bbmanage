@@ -5,6 +5,7 @@ import com.beibei.bbmanage.vo.GartenTeacherInfoVo;
 import org.springframework.data.domain.Page;
 import org.springframework.web.multipart.MultipartFile;
 
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -35,6 +36,13 @@ public interface GartenTeacherService {
      * @return
      */
     Page<GartenTeacherInfoVo> findTeacherWithconditions(Integer gartenId, Integer classId,Integer courseId,Integer page,Integer size);
+
+    /**
+     * 根据classId 获取老师列表
+     * @param classId
+     * @return
+     */
+    List<TGartenTeacherEntity> getTeacherListByClassId(Integer classId);
 
 
 }

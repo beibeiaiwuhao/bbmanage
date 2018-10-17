@@ -1,10 +1,14 @@
+function class_photo_add(title,url) {
+    layer_show(title,url,'','');
+}
+
 var setting = {
     view: {
         selectedMulti: false
     },
     async: {
         enable: true,
-        url:"/page/panel/list",
+        url:"/garden/allInfo",
         // autoParam:["id", "name=n", "level=lv"],
         // otherParam:{"otherParam":"zTreeAsyncTest"},
         dataFilter: filter
@@ -16,21 +20,18 @@ var setting = {
         onAsyncSuccess: onAsyncSuccess
     }
 };
-//第一次进入页面的时候展示第一个
-var firstId;
-//选中删除的id
-var deleteId;
+
 
 function filter(treeId, parentNode, childNodes) {
 
     if (!childNodes) return null;
     var zNodes = new Array();
     for (var i=0, l=childNodes.data.length; i<l; i++) {
-        if (i == 0) {
-            firstId = childNodes.data[i].id;
-            deleteId = firstId;
-        }
-        zNodes[i]={id:childNodes.data[i].id, pId:childNodes.data[i].parentId, name:childNodes.data[i].pageName,isParent:childNodes.data[i].isParent};
+        // if (i == 0) {
+        //     firstId = childNodes.data[i].id;
+        //     deleteId = firstId;
+        // }
+        zNodes[i]={id:childNodes.data[i].id, pId:0, name:childNodes.data[i].gardenName,isParent:0};
     }
     return zNodes;
 }
@@ -39,8 +40,8 @@ function beforeClick(treeId, treeNode) {
     if (!treeNode.isParent) {
         /*当点击子类的时候，请求*/
         console.log(treeNode.id);
-        $("#panel-single-detail").attr("src", "/management/page/panel/add?id="+treeNode.id);
-        deleteId = treeNode.id;
+        // $("#panel-single-detail").attr("src", "/management/page/panel/add?id="+treeNode.id);
+        // deleteId = treeNode.id;
         return false;
     } else {
         return true;
@@ -57,7 +58,7 @@ function onAsyncError(event, treeId, treeNode, XMLHttpRequest, textStatus, error
 }
 function onAsyncSuccess(event, treeId, treeNode, msg) {
     showLog("[ "+getTime()+" onAsyncSuccess ]&nbsp;&nbsp;&nbsp;&nbsp;" + ((!!treeNode && !!treeNode.name) ? treeNode.name : "root") );
-    $("#panel-single-detail").attr("src", "/management/page/panel/add?id="+firstId);
+    // $("#panel-single-detail").attr("src", "/management/page/panel/add?id="+firstId);
 }
 
 function showLog(str) {
@@ -93,39 +94,14 @@ function refreshNode(e) {
     }
 }
 
-function panel_add(title,url) {
-    layer_show(title,url,'',510);
-}
 
-
-$(function(){
+$(function () {
     $.fn.zTree.init($("#treeDemo"), setting);
     $("#refreshNode").bind("click", {type:"refresh", silent:false}, refreshNode);
     $("#refreshNodeSilent").bind("click", {type:"refresh", silent:true}, refreshNode);
     $("#addNode").bind("click", {type:"add", silent:false}, refreshNode);
     $("#addNodeSilent").bind("click", {type:"add", silent:true}, refreshNode);
-
-});
-
-function datadel() {
-    layer.confirm("确定删除吗？",function() {
-        $.ajax({
-            type: 'POST',
-            url: '/page/panel/deletePanel',
-            dataType: 'json',
-            data:{
-                id:deleteId,
-            },
-            success: function(data){
-                location.reload();
-                layer.msg("数据删除成功",{icon: 5,time:1000});
-            },
-            error:function(data) {
-                console.log(data.msg);
-            },
-        });
-    });
-}
+})
 
 
 

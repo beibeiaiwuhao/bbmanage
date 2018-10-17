@@ -1,0 +1,88 @@
+package com.beibei.bbmanage.service.impl;
+
+import com.beibei.bbmanage.customsql.DaoUtil;
+import com.beibei.bbmanage.customsql.contentplate.GartenPhotosDao;
+import com.beibei.bbmanage.entity.TGartenPhotosEntity;
+import com.beibei.bbmanage.repository.GartenPhototsRepository;
+import com.beibei.bbmanage.service.GartenPhototsService;
+import com.beibei.bbmanage.utils.DateUtil;
+import com.beibei.bbmanage.utils.IDUtils;
+import com.beibei.bbmanage.utils.QiNiuUtils;
+import com.beibei.bbmanage.vo.GartenClassPhotosVo;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.web.multipart.MultipartFile;
+
+import javax.transaction.Transactional;
+import java.io.File;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+
+@Service
+public class GartenPhototsServiceImpl implements GartenPhototsService {
+
+    @Autowired
+    private GartenPhototsRepository gartenPhototsRepository;
+
+    @Autowired
+    private DaoUtil daoUtil;
+
+    @Override
+    @Transactional
+    public void saveGartenPhoto(TGartenPhotosEntity entity, MultipartFile[] imgFiles) {
+        QiNiuUtils qiNiuUtils = new QiNiuUtils();
+        List<String> imgNames = new ArrayList<>();
+        List<String> imgTitle = new ArrayList<>();
+        List<String> imgSize = new ArrayList<>();
+
+        for (MultipartFile file : imgFiles) {
+            // 获取文件名
+            String fileName = file.getOriginalFilename();
+
+            // 获取文件后缀
+            String prefix=fileName.substring(fileName.lastIndexOf("."));
+            File excelFile = null;
+            try {
+                excelFile = File.createTempFile(IDUtils.genImageName(),prefix);
+                file.transferTo(excelFile);
+            }catch (Exception e) {
+                e.printStackTrace();
+            }
+            if (excelFile != null) {
+                String uploadUrl = qiNiuUtils.upload(excelFile, IDUtils.genImageName()+prefix);
+                imgNames.add(uploadUrl);
+                imgTitle.add(fileName);
+                imgSize.add(String.valueOf(excelFile.length()/1000));
+            }
+            //程序结束时，删除临时文件
+            qiNiuUtils.deleteFile(excelFile);
+        }
+        String currentTime = DateUtil.formatDateTime(new Date());
+        for  (String imgUrl: imgNames) {
+            TGartenPhotosEntity uploadEntity = new TGartenPhotosEntity();
+            uploadEntity.setGartenId(entity.getGartenId());
+            uploadEntity.setClassId(entity.getClassId());
+            uploadEntity.setCreator(entity.getCreator());
+            uploadEntity.setCreateTime(currentTime);
+            uploadEntity.setPhotoUrl(imgUrl);
+            uploadEntity.setPhotoName(imgTitle.get(imgNames.indexOf(imgUrl)));
+            uploadEntity.setPhotoSize(imgSize.get(imgNames.indexOf(imgUrl)));
+            gartenPhototsRepository.save(uploadEntity);
+        }
+    }
+
+    /**
+     *
+     * @param gartenId
+     * @return
+     */
+    @Override
+    public List<GartenClassPhotosVo> getGartenClassPhotoInfo(Integer gartenId) {
+        String sql = GartenPhotosDao.getGartenPhotosClass(gartenId);
+        List<GartenClassPhotosVo> resultList = daoUtil.getResultList(sql, GartenClassPhotosVo.class);
+        return resultList;
+    }
+
+
+}

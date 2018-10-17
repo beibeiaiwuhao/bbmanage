@@ -14,10 +14,11 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.multipart.MultipartFile;
 
+import java.util.List;
 import java.util.Map;
 
 @Controller
-public class GartemTeacherController extends BaseController {
+public class GartenTeacherController extends BaseController {
 
 
     @Autowired
@@ -47,6 +48,9 @@ public class GartemTeacherController extends BaseController {
     }
 
 
+
+
+
     /**
      * 获取筛选 的分页的教室列表信息
      * @param gartenId
@@ -63,6 +67,17 @@ public class GartemTeacherController extends BaseController {
 
         return Response.success(teacherInfoVos,"教室列表获取成功");
     }
+
+    /**
+     * 根据班级获取老师列表
+     */
+    @RequestMapping("/getTeacherListByClassId")
+    public ResponseEntity<Object> getTeacherListByClassId(Integer classId) {
+        List<TGartenTeacherEntity> teacherEntities = gartenTeacherService.getTeacherListByClassId(classId);
+        return Response.success(teacherEntities,"数据获取成功");
+    }
+
+
 
 
 }
