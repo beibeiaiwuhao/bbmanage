@@ -5,6 +5,7 @@ import com.beibei.bbmanage.vo.GartenClassPhotosVo;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.util.List;
+import java.util.Map;
 
 public interface GartenPhototsService {
 
@@ -13,5 +14,8 @@ public interface GartenPhototsService {
 
 
     public List<GartenClassPhotosVo> getGartenClassPhotoInfo(Integer gartenId);
+
+
+    public List<Map<String,Object>> getGartenClassPhotoInfoByClassId(Integer classId);
 
 }

@@ -21,16 +21,17 @@ var setting = {
     }
 };
 
+var firstId = "";
+
 
 function filter(treeId, parentNode, childNodes) {
 
     if (!childNodes) return null;
     var zNodes = new Array();
     for (var i=0, l=childNodes.data.length; i<l; i++) {
-        // if (i == 0) {
-        //     firstId = childNodes.data[i].id;
-        //     deleteId = firstId;
-        // }
+        if (i == 0) {
+            firstId = childNodes.data[i].id;
+        }
         zNodes[i]={id:childNodes.data[i].id, pId:0, name:childNodes.data[i].gardenName,isParent:0};
     }
     return zNodes;
@@ -40,8 +41,7 @@ function beforeClick(treeId, treeNode) {
     if (!treeNode.isParent) {
         /*当点击子类的时候，请求*/
         console.log(treeNode.id);
-        // $("#panel-single-detail").attr("src", "/management/page/panel/add?id="+treeNode.id);
-        // deleteId = treeNode.id;
+        $("#photosList").attr("src", "/management/contentplate/class/photo/show?id="+treeNode.id);
         return false;
     } else {
         return true;
@@ -58,7 +58,7 @@ function onAsyncError(event, treeId, treeNode, XMLHttpRequest, textStatus, error
 }
 function onAsyncSuccess(event, treeId, treeNode, msg) {
     showLog("[ "+getTime()+" onAsyncSuccess ]&nbsp;&nbsp;&nbsp;&nbsp;" + ((!!treeNode && !!treeNode.name) ? treeNode.name : "root") );
-    // $("#panel-single-detail").attr("src", "/management/page/panel/add?id="+firstId);
+    $("#photosList").attr("src", "/management/contentplate/class/photo/show?id="+firstId);
 }
 
 function showLog(str) {
@@ -68,8 +68,6 @@ function showLog(str) {
         log.get(0).removeChild(log.children("li")[0]);
     }
 }
-
-
 
 function getTime() {
     var now= new Date(),
@@ -101,6 +99,9 @@ $(function () {
     $("#refreshNodeSilent").bind("click", {type:"refresh", silent:true}, refreshNode);
     $("#addNode").bind("click", {type:"add", silent:false}, refreshNode);
     $("#addNodeSilent").bind("click", {type:"add", silent:true}, refreshNode);
+
+
+
 })
 
 

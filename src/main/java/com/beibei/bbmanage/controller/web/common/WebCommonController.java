@@ -253,9 +253,23 @@ public class WebCommonController {
     }
 
 
+    /**
+     * 班级相册分班显示
+     * @return
+     */
     @RequestMapping("/management/contentplate/class/photo/show")
     public String showClassPhotosList(){
         return Constants.webPageName.MANAGER_CLASS_PHOTO_SHOW;
+    }
+
+
+    /**
+     * 每个班级相册的具体情况
+     * @return
+     */
+    @RequestMapping("/management/contentplate/class/photoList/show")
+    public String showClassPhotosDetailList() {
+        return Constants.webPageName.MANAGER_CLASS_PHOTOLIST_SHOW;
     }
 
 

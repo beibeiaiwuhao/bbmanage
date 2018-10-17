@@ -15,9 +15,8 @@ import org.springframework.web.multipart.MultipartFile;
 
 import javax.transaction.Transactional;
 import java.io.File;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
+import java.text.SimpleDateFormat;
+import java.util.*;
 
 @Service
 public class GartenPhototsServiceImpl implements GartenPhototsService {
@@ -82,6 +81,70 @@ public class GartenPhototsServiceImpl implements GartenPhototsService {
         String sql = GartenPhotosDao.getGartenPhotosClass(gartenId);
         List<GartenClassPhotosVo> resultList = daoUtil.getResultList(sql, GartenClassPhotosVo.class);
         return resultList;
+    }
+
+    /**
+     *
+     * @param classId
+     * @return
+     */
+    @Override
+    public List<Map<String,Object>> getGartenClassPhotoInfoByClassId(Integer classId) {
+        List<TGartenPhotosEntity> entitiesByClassId = gartenPhototsRepository.findTGartenPhotosEntitiesByClassId(classId);
+        List<String> timeArr = new ArrayList<>();
+        List<Map<String,Object>> resultList = new ArrayList<>();
+        for ( TGartenPhotosEntity entity: entitiesByClassId) {
+            if (!timeArr.contains(switchCrteaTime(entity.getCreateTime()))) {
+                timeArr.add(switchCrteaTime(entity.getCreateTime()));
+            }
+        }
+
+
+        for (String time: timeArr) {
+            Map<String,Object> map = new HashMap<>();
+            map.put("time",time);
+            List<TGartenPhotosEntity> tmpList = new ArrayList<>();
+            for ( TGartenPhotosEntity entity: entitiesByClassId) {
+                if (switchCrteaTime(entity.getCreateTime()).equals(time)) {
+                    tmpList.add(entity);
+                }
+            }
+            map.put("photoList",tmpList);
+            resultList.add(map);
+        }
+        return resultList;
+    }
+
+
+    private String switchCrteaTime(String dateStr) {
+        String tmpDate = "";
+        try {
+            tmpDate =  dateToStamp(dateStr);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        tmpDate = stampToDate(tmpDate);
+        return tmpDate;
+    }
+
+
+
+    private String dateToStamp(String s) throws Exception{
+        String res;
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        Date date = simpleDateFormat.parse(s);
+        long ts = date.getTime();
+        res = String.valueOf(ts);
+        return res;
+    }
+
+    private String stampToDate(String s){
+        String res;
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd");
+        long lt = new Long(s);
+        Date date = new Date(lt);
+        res = simpleDateFormat.format(date);
+        return res;
     }
 
 

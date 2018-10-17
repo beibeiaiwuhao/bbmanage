@@ -1,6 +1,9 @@
 package com.beibei.bbmanage.vo;
 
+import com.beibei.bbmanage.entity.TGartenInfoEntity;
+
 import java.math.BigInteger;
+import java.util.List;
 
 public class GartenClassPhotosVo {
 
@@ -9,6 +12,10 @@ public class GartenClassPhotosVo {
     private String photoUrl;
     private String createTime;
     private BigInteger imgCount;
+
+    private String showTime;
+    private List<TGartenInfoEntity> phototList;
+
 
 
     public Integer getClassId() {
@@ -44,11 +51,27 @@ public class GartenClassPhotosVo {
     }
 
 
-    public BigInteger getImgCount() {
-        return imgCount;
+    public String getImgCount() {
+        return imgCount.toString();
     }
 
     public void setImgCount(BigInteger imgCount) {
         this.imgCount = imgCount;
+    }
+
+    public String getShowTime() {
+        return showTime;
+    }
+
+    public void setShowTime(String showTime) {
+        this.showTime = showTime;
+    }
+
+    public List<TGartenInfoEntity> getPhototList() {
+        return phototList;
+    }
+
+    public void setPhototList(List<TGartenInfoEntity> phototList) {
+        this.phototList = phototList;
     }
 }

@@ -42,50 +42,13 @@
 
 
 <div class="page-container" style="padding-top: 0px;">
+    <input type="text" hidden="hidden" name="id" id="id" th:if="${#httpServletRequest.getParameter('id') != null}" th:value="${#httpServletRequest.getParameter('id')}" />
 
 
     <div class="mt-20">
 
         <div class="box-container">
-            <div>
-                <div class="box">
-                    <img src="http://pcvfcha51.bkt.clouddn.com/1539673073265685.jpg" />
-
-                    <span>苹果班</span>
-                </div>
-                <div class="box">
-                    <img src="http://pcvfcha51.bkt.clouddn.com/1539673073265685.jpg" />
-                    <span>苹果班</span>
-                </div>
-                <div class="box">
-                    <img src="http://pcvfcha51.bkt.clouddn.com/1539673073265685.jpg" />
-                    <span>苹果班</span>
-                </div>
-                <div class="box">
-                    <img src="http://pcvfcha51.bkt.clouddn.com/1539673073265685.jpg" />
-                    <span>苹果班</span>
-                </div>
-                <div class="box">
-                    <img src="http://pcvfcha51.bkt.clouddn.com/1539673073265685.jpg" />
-                    <span>苹果班</span>
-                </div>
-                <div class="box">
-                    <img src="http://pcvfcha51.bkt.clouddn.com/1539673073265685.jpg" />
-                    <span>苹果班</span>
-                </div>
-                <div class="box">
-                    <img src="http://pcvfcha51.bkt.clouddn.com/1539673073265685.jpg" />
-                    <span>苹果班</span>
-                </div>
-                <div class="box">
-                    <img src="http://pcvfcha51.bkt.clouddn.com/1539673073265685.jpg" />
-                    <span>苹果班</span>
-                </div>
-                <div class="box">
-                    <img src="http://pcvfcha51.bkt.clouddn.com/1539673073265685.jpg" />
-                    <span>苹果班</span>
-                </div>
-
+            <div id="class-container">
             </div>
         </div>
 
@@ -97,6 +60,7 @@
 </div>
 
 <basescript th:replace="/fragments/basescript :: basescript"></basescript>
+<script type="text/javascript" th:src="@{/static/js/page/contentplate/class-photo-show.js}"></script>
 
 </body>
 

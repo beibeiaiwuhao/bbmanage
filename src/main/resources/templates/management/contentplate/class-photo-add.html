@@ -11,7 +11,7 @@
 
 
     <form action="" method="post" class="form form-horizontal" id="form-gartenPhoto-add">
-        <input type="text" hidden="hidden" name="noticeId" id="noticeId" th:if="${#httpServletRequest.getParameter('id') != null}" th:value="${#httpServletRequest.getParameter('id')}" />
+        <input type="text" hidden="hidden" name="id" id="id" th:if="${#httpServletRequest.getParameter('id') != null}" th:value="${#httpServletRequest.getParameter('id')}" />
 
         <div class="row cl">
             <label class="form-label col-xs-4 col-sm-3">

@@ -15,7 +15,7 @@ function student_import(title,url) {
 /**
  * 选项卡的下标
  */
-var tabIndex;
+var tabIndex = 0;
 
 /**
  * 老师列表数据展示
@@ -107,11 +107,6 @@ TableInit = function () {
                 sortable : true,
                 formatter:function (value, row, index) {
                     return showteacherAvatarImg(row);
-                    // '<li class="item">\n' +
-                    //     '      <div class="portfoliobox">\n' +
-                    //     '       <div class="picbox"><a href="'+row.avatarImgUrl+'" data-lightbox="gallery" data-title="'+row.teacherName+'"><img width="100" height="100" class="picture-thumb" src="'+row.avatarImgUrl+'"  /></a></div>\n' +
-                    //     '        </div>\n' +
-                    //     '    </li>';
                 }
             },{
                 field: 'wechat',
