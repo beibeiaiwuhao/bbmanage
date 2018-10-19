@@ -2,21 +2,13 @@ $(function () {
     //页面加载数据
     if ($("#classId").val()!= null && "" != $("#classId").val()) {
         var data = {"classId": $("#classId").val()};
-        $.ajax({
-            url:"/getClassPhotosByClassId",
-            type:"POST",
-            async: true, // 异步
-            data:data,
-            error:function(){
 
-            },
-            success:function(data) {
+        $.AjaxHelper.PostRequest("/getClassPhotosByClassId?rdm="+Math.random(),data,function (b,data) {
+            console.log("AjaxHelper");
+            if (b) {
                 console.log(data.data);
                 appendContentHtml(data);
                 $(".portfolio-area li").Huihover();
-            },
-            complete:function () {
-
             }
         })
     }

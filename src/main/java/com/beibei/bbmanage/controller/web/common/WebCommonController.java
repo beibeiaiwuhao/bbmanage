@@ -273,6 +273,39 @@ public class WebCommonController {
     }
 
 
+    /**
+     * 班级列表
+     * @param model
+     * @param request
+     * @return
+     */
+    @RequestMapping("/management/classes/classlist")
+    public String showClassList(Model model,HttpServletRequest request) {
+        model.addAttribute("parentName",request.getParameter("parentName"));
+        model.addAttribute("childName",request.getParameter("childName"));
+        return Constants.webPageName.MANAGER_CLASS_LIST;
+    }
+
+    /**
+     * 添加班级
+     * @return
+     */
+    @RequestMapping("/management/classes/classadd")
+    public String addClasses() {
+        return Constants.webPageName.MANAGER_CLASS_ADD;
+    }
+
+
+    /**
+     * 班级列表展示
+     * @return
+     */
+    @RequestMapping("/management/classes/classListShow")
+    public String classListShow(){
+        return Constants.webPageName.MANAGER_CLASS_LIST_SHOW;
+    }
+
+
 
 
 

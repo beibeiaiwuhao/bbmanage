@@ -35,7 +35,10 @@ public class Constants {
         public static final String MANAGER_CLASS_PHOTO = "management/contentplate/class-photo";//班级相册展示
         public static final String MANAGER_CLASS_PHOTO_ADD = "management/contentplate/class-photo-add";//添加班级相册
         public static final String MANAGER_CLASS_PHOTO_SHOW = "management/contentplate/class-photo-show";//班级相册列表
-        public static final String MANAGER_CLASS_PHOTOLIST_SHOW = "management/contentplate/class-photoList-show";
+        public static final String MANAGER_CLASS_PHOTOLIST_SHOW = "management/contentplate/class-photoList-show";//班级列表图片详情展示
+        public static final String MANAGER_CLASS_LIST = "management/classes/class-list";//班级列表
+        public static final String MANAGER_CLASS_ADD = "management/classes/class-add";//班级列表
+        public static final String MANAGER_CLASS_LIST_SHOW = "management/classes/class-list-show";
 
     }
 
@@ -47,7 +50,6 @@ public class Constants {
         public static final String WX_APP_GRANTTYPE = "authorization_code";
         public static final String WX_APP_LOGIN_DATA = "wx_login_data";
     }
-
 
     public final static String HTML_BR = "<br/>";
 

@@ -438,8 +438,6 @@ TableInit1 = function () {
     return oTableInit1;
 };
 
-
-
 $(function () {
     //1.初始化Table
     var oTable = new TableInit();

@@ -19,9 +19,13 @@
 
     <div class="cl pd-5 bg-1 bk-gray mt-20">
 			<span class="l">
+                <a href="javascript:;" onclick="batchDelete()" class="btn btn-danger radius">
+					<i class="Hui-iconfont">&#xe6e2;</i>
+					批量删除
+				</a>
 				<a class="btn btn-primary radius" onclick="class_photo_add('添加班级照片','/management/contentplate/class/photo/add.html')" href="javascript:;">
 					<i class="Hui-iconfont">&#xe600;</i>
-					添加班级照片
+					添加班级
 				</a>
             </span>
     </div>
@@ -30,7 +34,7 @@
         <tr>
             <td width="200" style="padding-left: 20px;" class="va-t"><ul id="treeDemo" class="ztree"></ul></td>
             <td class="va-t">
-                <iframe id="photosList" name="photosList" FRAMEBORDER='0' SCROLLING='AUTO' width='100%'  height='1000px' th:src="@{/management/contentplate/class/photo/show}">
+                <iframe id="classList" name="classList" FRAMEBORDER='0' SCROLLING='AUTO' width='100%'  height='1000px' th:src="@{/management/classes/classListShow}">
                 </iframe>
             </td>
         </tr>
@@ -39,7 +43,7 @@
 </div>
 
 <basescript th:replace="/fragments/basescript :: basescript"></basescript>
-<script type="text/javascript" th:src="@{/static/js/page/contentplate/class-photo.js}"></script>
+<script type="text/javascript" th:src="@{/static/js/page/classes/class-list.js}"></script>
 
 </body>
 
