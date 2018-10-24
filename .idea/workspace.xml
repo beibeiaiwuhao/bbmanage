@@ -2,18 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b17110ba-ec5a-498b-a9d1-b4767d248ce4" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/bbmanage_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/bbmanage_war_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bbmanage.iml" beforeDir="false" afterPath="$PROJECT_DIR$/bbmanage.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/controller/web/classes/WHRunnable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/controller/web/classes/WHRunnable.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/controller/web/common/WebCommonController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/controller/web/common/WebCommonController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/controller/web/contentplate/GartenClassesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/controller/web/contentplate/GartenClassesController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/entity/TGartenActivityEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/entity/TGartenActivityEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/entity/TGartenClassEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/entity/TGartenClassEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/entity/TGartenCourseEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/entity/TGartenCourseEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/repository/GartenClassesRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/repository/GartenClassesRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/repository/UserInfoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/repository/UserInfoRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/service/GartenClassesService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/service/GartenClassesService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/service/impl/GartenClassesServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/service/impl/GartenClassesServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/utils/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/utils/Constants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/page/contentplate/class-photoList-show.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/page/contentplate/class-photoList-show.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/page/contentplate/teachers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/page/contentplate/teachers.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/management/contentplate/class-photo.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/management/contentplate/class-photo.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/page/contentplate/class-photoList-show.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/js/page/contentplate/class-photoList-show.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/page/contentplate/teachers.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/js/page/contentplate/teachers.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/management/contentplate/class-photo.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/management/contentplate/class-photo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/page/classes/class-add.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/page/classes/class-add.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/page/classes/class-list-show.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/page/classes/class-list-show.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/page/classes/class-list.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/page/classes/class-list.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/management/classes/class-add.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/management/classes/class-add.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/management/classes/class-list-show.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/management/classes/class-list-show.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/management/classes/class-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/management/classes/class-list.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,54 +30,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="WHWebSocket.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/websocket/WHWebSocket.java">
+      <file leaf-file-name="user-list.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/management/rootuser/user-list.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6">
-              <caret line="40" column="32" lean-forward="true" selection-start-line="40" selection-start-column="32" selection-end-line="40" selection-end-column="32" />
+            <state relative-caret-position="525">
+              <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="class-list-show.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/page/classes/class-list-show.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="179">
-              <caret line="193" column="10" selection-start-line="193" selection-start-column="10" selection-end-line="193" selection-end-column="10" />
-              <folding>
-                <element signature="e#41#6603#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="109" column="20" lean-forward="true" selection-start-line="109" selection-start-column="20" selection-end-line="109" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.properties" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-starter-tomcat/1.5.15.RELEASE/spring-boot-starter-tomcat-1.5.15.RELEASE.jar!/META-INF/maven/org.springframework.boot/spring-boot-starter-tomcat/pom.properties">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="MANIFEST.MF" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-starter-tomcat/1.5.15.RELEASE/spring-boot-starter-tomcat-1.5.15.RELEASE.jar!/META-INF/MANIFEST.MF">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="spring.provides" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-starter-tomcat/1.5.15.RELEASE/spring-boot-starter-tomcat-1.5.15.RELEASE.jar!/META-INF/spring.provides">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="27" selection-start-column="27" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -80,7 +45,7 @@
       <file leaf-file-name="ClassesController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/controller/web/classes/ClassesController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="305">
+            <state relative-caret-position="360">
               <caret line="24" column="18" lean-forward="true" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -89,11 +54,59 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WHRunnable.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/controller/web/classes/WHRunnable.java">
+      <file leaf-file-name="WebCommonController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/controller/web/common/WebCommonController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" column="23" lean-forward="true" selection-start-line="23" selection-end-line="24" />
+            <state relative-caret-position="446">
+              <caret line="318" column="49" selection-start-line="318" selection-start-column="49" selection-end-line="318" selection-end-column="49" />
+              <folding>
+                <element signature="e#8682#8683#0" expanded="true" />
+                <element signature="e#8750#8751#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Constants.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/utils/Constants.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="439">
+              <caret line="43" column="5" lean-forward="true" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="class-list.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/management/classes/class-list.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="17" selection-start-line="17" selection-end-line="48" />
+              <folding>
+                <element signature="n#style#0;n#a#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#0;n#tr#0;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="user-list.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/page/user/user-list.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="177">
+              <caret line="90" column="21" lean-forward="true" selection-start-line="90" selection-start-column="21" selection-end-line="90" selection-end-column="21" />
+              <folding>
+                <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserInfoServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/service/impl/UserInfoServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="405">
+              <caret line="27" column="79" lean-forward="true" selection-start-line="27" selection-start-column="79" selection-end-line="27" selection-end-column="79" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -101,16 +114,32 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WebSocketConfig.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/handler/WebSocketConfig.java">
+      <file leaf-file-name="UserController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/controller/web/user/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" selection-start-line="11" selection-end-line="19" />
+            <state relative-caret-position="300">
+              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#400#401#0" expanded="true" />
-                <element signature="e#451#452#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GartenClassesServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/service/impl/GartenClassesServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="405">
+              <caret line="40" column="92" selection-start-line="40" selection-start-column="92" selection-end-line="40" selection-end-column="92" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserInfoRepository.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/repository/UserInfoRepository.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="14" column="33" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -122,14 +151,13 @@
       <list>
         <option value="Interface" />
         <option value="HTML File" />
-        <option value="JavaScript File" />
         <option value="Class" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>confirm</find>
       <find>mp4</find>
       <find>addVideo</find>
       <find>getfile</find>
@@ -159,6 +187,7 @@
       <find>logg</find>
       <find>sendMessage</find>
       <find>tomcat</find>
+      <find>Page&lt;</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -175,20 +204,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/resources/templates/management/contentplate/baby-show.html" />
-        <option value="$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/service/GartenVideoService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/service/impl/GartenVideoServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/controller/web/contentplate/GartenVideoController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/customsql/contentplate/OnLineBookClassesDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/vo/GartenVideoVo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/customsql/contentplate/GartenVideoDao.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/js/page/contentplate/baby-show.js" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/management/contentplate/baby-show-add.html" />
-        <option value="$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/controller/web/contentplate/GartemTeacherController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/service/GartenTeacherService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/customsql/contentplate/GartenTeacherDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/service/impl/GartenTeacherServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/controller/web/contentplate/GartenTeacherController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/entity/TGartenPhotosEntity.java" />
         <option value="$PROJECT_DIR$/src/main/resources/static/js/page/contentplate/baby-show-add.js" />
         <option value="$PROJECT_DIR$/src/main/resources/static/js/page/contentplate/class-photo-add.js" />
@@ -211,21 +226,35 @@
         <option value="$PROJECT_DIR$/src/main/resources/templates/fragments/basescript.html" />
         <option value="$PROJECT_DIR$/src/main/resources/static/js/page/contentplate/teachers.js" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/management/contentplate/class-photo.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/js/page/classes/class-add.js" />
-        <option value="$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/controller/web/common/WebCommonController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/management/classes/class-list.html" />
-        <option value="$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/utils/Constants.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/js/page/classes/class-list.js" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/management/classes/class-add.html" />
         <option value="$PROJECT_DIR$/src/main/resources/static/js/page/contentplate/class-photoList-show.js" />
         <option value="$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/controller/web/common/TestNameAndDateController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/management/classes/class-list-show.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/websocket/WHWebSocket.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/controller/web/classes/ClassesController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/controller/web/classes/WHRunnable.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/handler/WebSocketConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/controller/web/classes/WHRunnable.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/management/classes/class-list.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/entity/TGartenClassEntity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/entity/TGartenActivityEntity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/entity/TGartenCourseEntity.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/js/page/classes/class-add.js" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/management/classes/class-add.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/service/GartenClassesService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/repository/GartenClassesRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/controller/web/contentplate/GartenClassesController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/js/page/classes/class-list.js" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/management/classes/class-list-show.html" />
         <option value="$PROJECT_DIR$/src/main/resources/static/js/page/classes/class-list-show.js" />
+        <option value="$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/service/UserInfoService.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/js/page/user/user-list.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/management/rootuser/user-list.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/controller/web/common/WebCommonController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/utils/Constants.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/controller/web/user/UserController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/js/page/user/user-list.js" />
+        <option value="$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/repository/UserInfoRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/service/impl/GartenClassesServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/service/impl/UserInfoServiceImpl.java" />
       </list>
     </option>
   </component>
@@ -238,10 +267,10 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="1967" />
-    <option name="y" value="53" />
-    <option name="width" value="1633" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="48" />
+    <option name="y" value="23" />
+    <option name="width" value="1634" />
     <option name="height" value="1027" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -345,7 +374,64 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="bbmanage" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bbmanage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bbmanage" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="bbmanage" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bbmanage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bbmanage" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="bbmanage" type="462c0819:PsiDirectoryNode" />
               <item name="handler" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bbmanage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bbmanage" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="bbmanage" type="462c0819:PsiDirectoryNode" />
+              <item name="repository" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bbmanage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bbmanage" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="bbmanage" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bbmanage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bbmanage" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="bbmanage" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bbmanage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bbmanage" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="bbmanage" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="bbmanage" type="b2602c69:ProjectViewProjectNode" />
@@ -407,7 +493,86 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="page" type="462c0819:PsiDirectoryNode" />
+              <item name="contentplate" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bbmanage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bbmanage" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="page" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bbmanage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bbmanage" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bbmanage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bbmanage" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bbmanage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bbmanage" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="fragments" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bbmanage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bbmanage" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="management" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bbmanage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bbmanage" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="management" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bbmanage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bbmanage" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="management" type="462c0819:PsiDirectoryNode" />
+              <item name="homepage" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bbmanage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bbmanage" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="management" type="462c0819:PsiDirectoryNode" />
+              <item name="rootuser" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="bbmanage" type="b2602c69:ProjectViewProjectNode" />
@@ -446,6 +611,7 @@
       <recent name="com.beibei.bbmanage.handler" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/templates/management/rootuser" />
       <recent name="$PROJECT_DIR$/src/main/resources/templates/management/contentplate" />
     </key>
   </component>
@@ -526,15 +692,15 @@
       <workItem from="1539152364588" duration="63642000" />
       <workItem from="1539569828246" duration="39239000" />
       <workItem from="1539677104977" duration="33159000" />
-      <workItem from="1539827719676" duration="18320000" />
+      <workItem from="1539827719676" duration="34395000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="219822000" />
+    <option name="totallyTimeSpent" value="235897000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1967" y="53" width="1633" height="1027" extended-state="0" />
+    <frame x="48" y="23" width="1634" height="1027" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -543,11 +709,12 @@
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info id="Capture Tool" order="7" />
       <window_info id="Designer" order="2" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.24623115" />
       <window_info anchor="right" id="Database" order="5" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="4" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.32745314" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3076075" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Messages" order="9" weight="0.3296582" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
@@ -557,8 +724,8 @@
       <window_info anchor="bottom" id="Run" order="2" weight="0.3296582" />
       <window_info anchor="bottom" id="Version Control" order="12" />
       <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.37774983" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3296582" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.30339196" />
       <window_info anchor="right" id="Bean Validation" order="8" />
       <window_info id="Web" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -568,7 +735,6 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.24639498" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -587,342 +753,14 @@
           <option name="timeStamp" value="26" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="43" />
+      <option name="time" value="51" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/management/contentplate/teachers.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="89">
-          <caret line="30" column="15" lean-forward="true" selection-start-line="30" selection-start-column="15" selection-end-line="30" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/hui/lib/lightbox2/2.8.1/css/lightbox.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="90" lean-forward="true" selection-start-line="23" selection-start-column="90" selection-end-line="23" selection-end-column="90" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/service/GartenPhototsService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="1" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/controller/web/contentplate/GartenPhotosController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="36" column="67" lean-forward="true" selection-start-line="36" selection-start-column="67" selection-end-line="36" selection-end-column="67" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/vo/GartenClassPhotosVo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="28" lean-forward="true" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1241#1242#0" expanded="true" />
-            <element signature="e#1272#1273#0" expanded="true" />
-            <element signature="e#1320#1321#0" expanded="true" />
-            <element signature="e#1360#1361#0" expanded="true" />
-            <element signature="e#1414#1415#0" expanded="true" />
-            <element signature="e#1447#1448#0" expanded="true" />
-            <element signature="e#1516#1517#0" expanded="true" />
-            <element signature="e#1560#1561#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/util/Date.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1410">
-          <caret line="130" column="13" selection-start-line="130" selection-start-column="13" selection-end-line="130" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/repository/GartenPhototsRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="82" selection-start-line="10" selection-start-column="82" selection-end-line="10" selection-end-column="82" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/service/impl/GartenPhototsServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="412">
-          <caret line="110" column="13" lean-forward="true" selection-start-line="110" selection-start-column="13" selection-end-line="110" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/utils/DateUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="582" column="7" lean-forward="true" selection-start-line="582" selection-start-column="7" selection-end-line="582" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/hui/static/h-ui/js/H-ui.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="4367" column="4" selection-start-line="4367" selection-start-column="4" selection-end-line="4367" selection-end-column="4" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/common/welcome.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/fragments/head.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" column="63" selection-start-line="32" selection-start-column="62" selection-end-line="32" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/hui/lib/lightbox2/2.8.1/examples.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="61" selection-start-line="12" selection-start-column="61" selection-end-line="12" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/common/picture-show.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="45" column="13" selection-start-line="22" selection-start-column="7" selection-end-line="45" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/hui/lib/lightbox2/2.8.1/js/lightbox-plus-jquery.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="13" column="1011" selection-start-line="13" selection-start-column="1010" selection-end-line="13" selection-end-column="1011" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/fragments/basescript.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="48" column="7" selection-start-line="48" selection-start-column="7" selection-end-line="48" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/page/contentplate/teachers.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2970">
-          <caret line="209" selection-start-line="209" selection-end-line="209" />
-          <folding>
-            <element signature="n#!!block;n#teacher_add#0" />
-            <element signature="e#61#128#0" />
-            <element signature="n#!!block;n#student_import#0" />
-            <element signature="e#231#248#0" />
-            <element signature="n#!!doc;n#addProductEditBtHtml#0" />
-            <element signature="n#!!block;n#addProductEditBtHtml#0" />
-            <element signature="n#!!doc;n#showteacherAvatarImg#0" />
-            <element signature="n#!!block;n#showteacherAvatarImg#0" />
-            <element signature="n#!!doc;n#loadClassesInfo#0" />
-            <element signature="n#!!block;n#loadClassesInfo#0" />
-            <element signature="n#!!block;n#getIndex#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/management/contentplate/class-photo-show.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="31" column="21" lean-forward="true" selection-start-line="31" selection-start-column="21" selection-end-line="31" selection-end-column="21" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/management/contentplate/class-photoList-show.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="10" lean-forward="true" selection-start-line="26" selection-start-column="10" selection-end-line="26" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/management/contentplate/class-photo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="26" selection-end-line="46" selection-end-column="7" />
-          <folding>
-            <element signature="n#style#0;n#td#0;n#tr#0;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/management/contentplate/baby-show.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="33" column="67" lean-forward="true" selection-start-line="33" selection-start-column="67" selection-end-line="33" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/utils/Constants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="49" column="42" lean-forward="true" selection-start-line="49" selection-start-column="42" selection-end-line="49" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/page/contentplate/class-photo-show.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="10" lean-forward="true" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/page/contentplate/class-photo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="50" lean-forward="true" selection-end-line="108" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/management/contentplate/campus-info.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/management/contentplate/garten-add.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="83" column="28" lean-forward="true" selection-end-line="116" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/management/classes/class-add.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="366">
-          <caret line="25" column="19" lean-forward="true" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/page/contentplate/baby-show.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" selection-start-line="5" selection-end-line="175" />
-          <folding>
-            <element signature="e#112#6674#0" />
-            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/management/classes/class-list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="17" column="54" selection-start-line="17" selection-start-column="54" selection-end-line="17" selection-end-column="54" />
-          <folding>
-            <element signature="n#style#0;n#a#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#0;n#tr#0;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/page/classes/class-list.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="106">
-          <caret line="34" column="54" selection-start-line="34" selection-start-column="54" selection-end-line="34" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/page/classes/class-add.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/common/common.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="384" column="11" selection-start-line="384" selection-start-column="11" selection-end-line="384" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/controller/web/common/WebCommonController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="627">
-          <caret line="302" column="55" selection-start-line="302" selection-start-column="21" selection-end-line="302" selection-end-column="55" />
-          <folding>
-            <element signature="e#8682#8683#0" expanded="true" />
-            <element signature="e#8750#8751#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/controller/web/common/TestNameAndDateController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/page/contentplate/class-photoList-show.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="10" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/customsql/DaoUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="23" column="35" lean-forward="true" selection-start-line="23" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/handler/MvcConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/handler/Response.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
           <caret line="36" column="48" lean-forward="true" selection-start-line="36" selection-start-column="48" selection-end-line="36" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/management/classes/class-list-show.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-starter-tomcat/1.5.15.RELEASE/spring-boot-starter-tomcat-1.5.15.RELEASE.jar!/META-INF/maven/org.springframework.boot/spring-boot-starter-tomcat/pom.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-starter-tomcat/1.5.15.RELEASE/spring-boot-starter-tomcat-1.5.15.RELEASE.jar!/META-INF/MANIFEST.MF">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-starter-tomcat/1.5.15.RELEASE/spring-boot-starter-tomcat-1.5.15.RELEASE.jar!/META-INF/spring.provides">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="27" selection-start-column="27" selection-end-column="27" />
         </state>
       </provider>
     </entry>
@@ -936,13 +774,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="109" column="20" lean-forward="true" selection-start-line="109" selection-start-column="20" selection-end-line="109" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="267">
@@ -950,20 +781,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/websocket/WHWebSocket.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6">
-          <caret line="40" column="32" lean-forward="true" selection-start-line="40" selection-start-column="32" selection-end-line="40" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/handler/WebSocketConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" selection-start-line="11" selection-end-line="19" />
+        <state relative-caret-position="255">
+          <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#400#401#0" expanded="true" />
@@ -972,9 +793,296 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/websocket/WHWebSocket.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="64" column="6" lean-forward="true" selection-start-line="64" selection-start-column="6" selection-end-line="65" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-starter-tomcat/1.5.15.RELEASE/spring-boot-starter-tomcat-1.5.15.RELEASE.jar!/META-INF/spring.provides">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="27" selection-start-column="27" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-starter-tomcat/1.5.15.RELEASE/spring-boot-starter-tomcat-1.5.15.RELEASE.jar!/META-INF/MANIFEST.MF">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-starter-tomcat/1.5.15.RELEASE/spring-boot-starter-tomcat-1.5.15.RELEASE.jar!/META-INF/maven/org.springframework.boot/spring-boot-starter-tomcat/pom.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="109" column="20" lean-forward="true" selection-start-line="109" selection-start-column="20" selection-end-line="109" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/controller/web/classes/WHRunnable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="41" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/page/contentplate/announcement.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1212">
+          <caret line="216" column="13" lean-forward="true" selection-start-line="216" selection-start-column="13" selection-end-line="216" selection-end-column="13" />
+          <folding>
+            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/management/contentplate/baby-show-add.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="430">
+          <caret line="42" column="14" lean-forward="true" selection-start-line="30" selection-start-column="7" selection-end-line="42" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/management/contentplate/class-photo-show.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="31" column="21" lean-forward="true" selection-start-line="31" selection-start-column="21" selection-end-line="31" selection-end-column="21" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/management/contentplate/farm-recipes-add.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="358">
+          <caret line="53" lean-forward="true" selection-start-line="45" selection-start-column="7" selection-end-line="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/entity/TClassTeacherEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="14" column="53" lean-forward="true" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/entity/TGartenClassEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="21" column="53" selection-start-line="21" selection-start-column="53" selection-end-line="21" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/entity/TGartenActivityEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="21" column="53" selection-start-line="21" selection-start-column="53" selection-end-line="21" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/entity/TGartenCourseEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="14" column="24" lean-forward="true" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/page/contentplate/farm-recipes-add.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-663">
+          <caret line="15" column="9" lean-forward="true" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/page/contentplate/garten-add.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="843">
+          <caret line="132" lean-forward="true" selection-start-line="132" selection-end-line="132" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/page/classes/class-add.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="89">
+          <caret line="14" column="32" lean-forward="true" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/management/classes/class-add.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="55" lean-forward="true" selection-start-line="55" selection-end-line="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/page/contentplate/baby-show.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="321">
+          <caret line="268" column="4" selection-start-line="268" selection-start-column="4" selection-end-line="270" selection-end-column="18" />
+          <folding>
+            <element signature="e#112#6674#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/page/contentplate/announcement-add.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="10" lean-forward="true" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/service/GartenInfoService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="20" column="83" selection-start-line="20" selection-start-column="69" selection-end-line="20" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/repository/GartenInfoRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="16" column="28" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/service/impl/GartenInfoServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="36" column="69" lean-forward="true" selection-start-line="36" selection-start-column="69" selection-end-line="36" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/controller/web/contentplate/GartenNoticeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/page/contentplate/campus-info.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="87">
+          <caret line="184" selection-start-line="184" selection-end-line="208" />
+          <folding>
+            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/controller/web/contentplate/GartenInfoController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="317">
+          <caret line="34" column="59" lean-forward="true" selection-start-line="34" selection-start-column="59" selection-end-line="34" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/repository/GartenClassesRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="46" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/service/GartenClassesService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/page/classes/class-list.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="43" column="95" selection-start-line="43" selection-start-column="95" selection-end-line="43" selection-end-column="95" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/page/contentplate/class-photo-add.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="34" column="36" lean-forward="true" selection-start-line="34" selection-start-column="36" selection-end-line="34" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/management/contentplate/class-photo-add.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="174" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/controller/web/contentplate/GartenClassesController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/controller/BaseController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="27" column="37" selection-start-line="27" selection-start-column="37" selection-end-line="27" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/service/UserInfoService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="45" lean-forward="true" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="79" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/management/classes/class-list-show.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" lean-forward="true" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/page/classes/class-list-show.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="195" column="36" lean-forward="true" selection-end-line="228" selection-end-column="1" />
+          <folding>
+            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/management/rootuser/user-list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
+          <folding>
+            <element signature="n#style#0;n#a#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/controller/web/classes/ClassesController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
+        <state relative-caret-position="360">
           <caret line="24" column="18" lean-forward="true" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -982,22 +1090,76 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/controller/web/classes/WHRunnable.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/controller/web/common/WebCommonController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="23" lean-forward="true" selection-start-line="23" selection-end-line="24" />
+        <state relative-caret-position="446">
+          <caret line="318" column="49" selection-start-line="318" selection-start-column="49" selection-end-line="318" selection-end-column="49" />
+          <folding>
+            <element signature="e#8682#8683#0" expanded="true" />
+            <element signature="e#8750#8751#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/utils/Constants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="439">
+          <caret line="43" column="5" lean-forward="true" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/management/classes/class-list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" selection-start-line="17" selection-end-line="48" />
+          <folding>
+            <element signature="n#style#0;n#a#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#tr#0;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/page/user/user-list.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="90" column="21" lean-forward="true" selection-start-line="90" selection-start-column="21" selection-end-line="90" selection-end-column="21" />
+          <folding>
+            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/repository/UserInfoRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="14" column="33" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/service/impl/GartenClassesServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="40" column="92" selection-start-line="40" selection-start-column="92" selection-end-line="40" selection-end-column="92" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/service/impl/UserInfoServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="79" lean-forward="true" selection-start-line="27" selection-start-column="79" selection-end-line="27" selection-end-column="79" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/page/classes/class-list-show.js">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/controller/web/user/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="193" column="10" selection-start-line="193" selection-start-column="10" selection-end-line="193" selection-end-column="10" />
+        <state relative-caret-position="300">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
           <folding>
-            <element signature="e#41#6603#0" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -41,7 +41,7 @@ function beforeClick(treeId, treeNode) {
     if (!treeNode.isParent) {
         /*当点击子类的时候，请求*/
         console.log(treeNode.id);
-        // $("#photosList").attr("src", "/management/contentplate/class/photo/show?id="+treeNode.id);
+        $("#classList").attr("src", "/management/classes/classListShow?gartenId="+treeNode.id);
         return false;
     } else {
         return true;
@@ -58,7 +58,7 @@ function onAsyncError(event, treeId, treeNode, XMLHttpRequest, textStatus, error
 }
 function onAsyncSuccess(event, treeId, treeNode, msg) {
     showLog("[ "+getTime()+" onAsyncSuccess ]&nbsp;&nbsp;&nbsp;&nbsp;" + ((!!treeNode && !!treeNode.name) ? treeNode.name : "root") );
-    // $("#photosList").attr("src", "/management/contentplate/class/photo/show?id="+firstId);
+    $("#classList").attr("src", "/management/classes/classListShow?gartenId="+firstId);
 }
 
 function showLog(str) {

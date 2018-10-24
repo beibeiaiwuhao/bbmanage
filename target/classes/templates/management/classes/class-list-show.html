@@ -9,7 +9,11 @@
 <body class="pos-r">
 <div class="page-container">
 
+    <input type="text" id="testSocket" />
     <input type="button" value="测试webSocket" onclick="testWebsocket()" />
+
+    <input type="text" hidden="hidden" name="gartenId" id="gartenId" th:if="${#httpServletRequest.getParameter('gartenId') != null}" th:value="${#httpServletRequest.getParameter('gartenId')}" />
+
     <div class="mt-20">
         <table class="table table-border table-bordered table-bg table-hover table-sort" id="class-list">
         </table>

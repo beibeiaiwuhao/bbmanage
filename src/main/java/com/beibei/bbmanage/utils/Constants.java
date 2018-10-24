@@ -38,7 +38,8 @@ public class Constants {
         public static final String MANAGER_CLASS_PHOTOLIST_SHOW = "management/contentplate/class-photoList-show";//班级列表图片详情展示
         public static final String MANAGER_CLASS_LIST = "management/classes/class-list";//班级列表
         public static final String MANAGER_CLASS_ADD = "management/classes/class-add";//班级列表
-        public static final String MANAGER_CLASS_LIST_SHOW = "management/classes/class-list-show";
+        public static final String MANAGER_CLASS_LIST_SHOW = "management/classes/class-list-show";//班级列表table
+        public static final String MANAGER_USER_LIST = "management/rootuser/user-list";//用户列表
 
     }
 

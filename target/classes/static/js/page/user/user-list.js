@@ -4,9 +4,9 @@ TableInit = function () {
     var oTableInit = new Object();
     //初始化Table
     oTableInit.Init = function () {
-        $('#class-list').bootstrapTable('destroy');
-        $('#class-list').bootstrapTable({
-            url: "/classes/page/classList?&rdm=" + Math.random(), //请求后台的URL（*）
+        $('#user-list').bootstrapTable('destroy');
+        $('#user-list').bootstrapTable({
+            url: "/user/findAllUser?&rdm=" + Math.random(), //请求后台的URL（*）
             method: 'GET',                     //请求方式（*）
             dataType:'json',
             striped: true,                      //是否显示行间隔色
@@ -35,58 +35,37 @@ TableInit = function () {
             exportDataType: 'all',
             responseHandler: oTableInit.responseHandler,
             onLoadSuccess:oTableInit.loadSuccess,
-            columns: [{
-                field: '',
-                title: '<input id="allSelect"  type="checkbox" value="" />',
-                align : 'center',
-                valign : 'middle',
-                sortable : true,
-                formatter: function (value, row, index) {
-                    return '<input name="isSelect" type="checkbox" value="'+row.id+'" />';
-                }
-            }, {
-                field: 'id',
+            columns: [ {
+                field: 'userId',
                 title: 'ID',
                 align : 'center',
                 valign : 'middle',
                 sortable : true,
-                // formatter: function (value, row, index) {
-                //     return '<span class="label label-warning arrowed arrowed-right">' + row.id + '</span>';
-                // }
             }  ,{
-                field: 'className',
-                title: '班级名字',
+                field: 'userName',
+                title: '用户名',
                 align : 'center',
                 valign : 'middle',
                 sortable : true,
             },{
-                field: 'classDesc',
-                title: '班级描述',
+                field: 'mobile',
+                title: '联系电话',
                 align : 'center',
                 valign : 'middle',
                 sortable : true,
             }
-                ,{
-                    field: 'createTime',
-                    title: '创建日期',
+            ,{
+                    field: 'wechat',
+                    title: '微信',
                     align : 'center',
                     valign : 'middle',
                     sortable : true,
                 },{
-                    field: 'status',
-                    title: '状态',
+                    field: 'address',
+                    title: '联系地址',
                     align : 'center',
                     valign : 'middle',
                     sortable : true,
-                    formatter: function (value, row, index) {
-                        var html = "";
-                        if(value == 0) {
-                            html = '<span class="label label-warning">启用</span>';
-                        }else if(value == 1) {
-                            html = '<span class="label label-warning">禁用</span>';
-                        }
-                        return html;
-                    }
                 }
                 , {
                     field: '',
@@ -107,7 +86,7 @@ TableInit = function () {
         var param = {
             limit: params.limit,
             page: params.pageNumber - 1,
-            gartenId:$("#gartenId").val(),
+            userName:' ',
         };
         return param;
     };
@@ -127,20 +106,8 @@ TableInit = function () {
 
     //table加载完成之后
     oTableInit.loadSuccess = function(){
-        //全选/全不选
-        $("#allSelect").on('change', function(){
-            var checked = $(this).is(':checked');
-            $("input[name='isSelect']").prop("checked",checked);//全选
-            console.log($("input[name='isSelect']"));
-        });
 
-        //是否需要全选
-        $("input[name='isSelect']").on('change', function(){
-            var  isNeedChecked = $("input[name='isSelect']:checked").length == $("input[name='isSelect']").length;
-            $("#allSelect").prop("checked",isNeedChecked);
-        });
     }
-
 
     return oTableInit;
 };
@@ -182,48 +149,3 @@ function addProductEditBtHtml(id,status) {
     return btnHtml;
 }
 
-
-function testWebsocket() {
-    $.AjaxHelper.PostRequest("/test/easyWEbSocket",{"msg":"test"},function (b,data) {
-
-        if (b) {
-            var socket;
-            if(typeof(WebSocket) == "undefined") {
-                console.log("您的浏览器不支持WebSocket");
-            }else {
-                console.log("您的浏览器支持WebSocket");
-
-                //实现化WebSocket对象，指定要连接的服务器地址与端口  建立连接
-                //socket = new WebSocket("ws://localhost:9094/starManager/websocket/张三")
-                socket = new WebSocket("ws://localhost:8082/websocket");
-                //打开事件
-                socket.onopen = function () {
-                    console.log("Socket 已打开");
-                    //socket.send("这是来自客户端的消息" + location.href + new Date());
-                };
-                //获得消息事件
-                socket.onmessage = function (msg) {
-                    console.log(msg.data);
-                    //发现消息进入    调后台获取
-                    console.log("发现消息进入    调后台获取")
-                    $("#testSocket").val(msg.data);
-                };
-                //关闭事件
-                socket.onclose = function () {
-                    console.log("Socket已关闭");
-                };
-                //发生了错误事件
-                socket.onerror = function () {
-                    alert("Socket发生了错误");
-                }
-                $(window).unload(function () {
-                    socket.close();
-                });
-
-            }
-
-        }
-
-    })
-
-}

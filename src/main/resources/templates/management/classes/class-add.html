@@ -16,16 +16,30 @@
 
     </style>
 
-    <form action="" method="post" class="form form-horizontal" id="form-gardenInfo-add">
+    <form action="" method="post" class="form form-horizontal" id="form-gardenClass-add">
         <input type="text" hidden="hidden" name="id" id="id" th:if="${#httpServletRequest.getParameter('id') != null}" th:value="${#httpServletRequest.getParameter('id')}" />
         <input type="text" hidden="hidden" class="input-text" value="0" id="status" name="status" />
 
         <div class="row cl">
             <label class="form-label col-xs-4 col-sm-3">
                 <span class="c-red">*</span>
+                选择园所：</label>
+
+            <div class="formControls col-xs-6 col-sm-6">
+                <span class="select-box" style="width: 180px">
+				    <select name="gartenId" id="garden-info" class="select">
+
+				    </select>
+				</span>
+            </div>
+        </div>
+
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-3">
+                <span class="c-red">*</span>
                 班级名称：</label>
             <div class="formControls col-xs-6 col-sm-6">
-                <input type="text" class="input-text" value="" placeholder="" id="gardenName" name="gardenName" />
+                <input type="text" class="input-text" value="" placeholder="" id="className" name="className" />
             </div>
         </div>
 
@@ -39,6 +53,16 @@
                 </div>
             </div>
         </div>
+
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-3">
+                <span class="c-red">*</span>
+                班级描述：</label>
+            <div class="formControls col-xs-6 col-sm-6">
+                <textarea name="classDesc" id="classDesc" cols="" rows="" class="textarea" placeholder="说点什么...最多输入100个字符"></textarea>
+                <p class="textarea-numberbar"><em class="textarea-length">0</em>/100</p></div>
+        </div>
+
 
 
 
@@ -54,7 +78,7 @@
 
 
 <basescript th:replace="/fragments/basescript :: basescript"></basescript>
-<script type="text/javascript" th:src="@{/static/js/page/contentplate/garten-add.js}"></script>
+<script type="text/javascript" th:src="@{/static/js/page/classes/class-add.js}"></script>
 
 
 </body>

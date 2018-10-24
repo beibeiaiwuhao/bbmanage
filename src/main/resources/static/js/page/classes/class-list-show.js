@@ -1,13 +1,12 @@
 
-
 var TableInit;
 TableInit = function () {
     var oTableInit = new Object();
     //初始化Table
     oTableInit.Init = function () {
-        $('#videoList').bootstrapTable('destroy');
-        $('#videoList').bootstrapTable({
-            url: "/garten/video/list?&rdm=" + Math.random(), //请求后台的URL（*）
+        $('#class-list').bootstrapTable('destroy');
+        $('#class-list').bootstrapTable({
+            url: "/classes/page/classList?&rdm=" + Math.random(), //请求后台的URL（*）
             method: 'GET',                     //请求方式（*）
             dataType:'json',
             striped: true,                      //是否显示行间隔色
@@ -55,40 +54,18 @@ TableInit = function () {
                 //     return '<span class="label label-warning arrowed arrowed-right">' + row.id + '</span>';
                 // }
             }  ,{
-                field: 'gartenName',
-                title: '园所名字',
-                align : 'center',
-                valign : 'middle',
-                sortable : true,
-            },{
                 field: 'className',
                 title: '班级名字',
                 align : 'center',
                 valign : 'middle',
                 sortable : true,
             },{
-                field: 'videoName',
-                title: '视频名字',
+                field: 'classDesc',
+                title: '班级描述',
                 align : 'center',
                 valign : 'middle',
                 sortable : true,
             }
-                ,{
-                    field: 'videoUrl',
-                    title: '视频',
-                    align : 'center',
-                    valign : 'middle',
-                    sortable : true,
-                    formatter:function (value,row,index) {
-                        return '<video controls="controls" style="height: 150px;width: 100px;" src="'+value+'"></video>';
-                    }
-                },{
-                    field: 'videoDesc',
-                    title: '视频描述',
-                    align : 'center',
-                    valign : 'middle',
-                    sortable : true,
-                }
                 ,{
                     field: 'createTime',
                     title: '创建日期',
@@ -128,12 +105,9 @@ TableInit = function () {
     //得到查询的参数
     oTableInit.queryParams = function (params) {
         var param = {
-            size: params.limit,
+            limit: params.limit,
             page: params.pageNumber - 1,
-            minDate:$("#logmin").val(),
-            maxDate:$("#logmax").val(),
-            gartenId:$("#garden-info").val()!=null&&'undefined' !=$("#garden-info").val()?$("#garden-info").val():0,
-            classId:$("#class-info").val()!=null&&'undefined' !=$("#class-info").val()?$("#class-info").val():0
+            gartenId:$("#gartenId").val(),
         };
         return param;
     };
@@ -174,10 +148,40 @@ TableInit = function () {
 
 $(function () {
 
+    //1.初始化Table
+    var oTable = new TableInit();
+    oTable.Init();
 
 
 
 })
+
+
+/**
+ * 操作三个按钮
+ * @param id
+ * @param status
+ * @returns {string}
+ */
+function addProductEditBtHtml(id,status) {
+    var btnHtml = '';
+    btnHtml += '	<a style="text-decoration:none" href="javascript:void(0);"  title=';
+    if (status == 1) {
+        btnHtml += '"启用" onclick="rotation_status_change('+id+','+'0'+','+status+')">';
+    }else {
+        btnHtml += '"禁用" onclick="rotation_status_change('+id+','+'1'+','+status+')">';
+    }
+    btnHtml += '		 <i class="Hui-iconfont">&#xe6de;</i>';
+    btnHtml += '	</a>';
+    btnHtml += '	<a style="text-decoration:none" class="ml-5" href="javascript:void(0);" onclick="item_add('+id+')" title="编辑">';
+    btnHtml += '		 <i class="Hui-iconfont">&#xe6df;</i>';
+    btnHtml += '	</a>';
+    btnHtml += '	<a style="text-decoration:none" class="ml-5" href="javascript:void(0);" onclick="delete_rotation('+id+')" title="删除">';
+    btnHtml += '		<i class="Hui-iconfont">&#xe6e2;</i>';
+    btnHtml += '	</a>';
+    return btnHtml;
+}
+
 
 function testWebsocket() {
     $.AjaxHelper.PostRequest("/test/easyWEbSocket",{"msg":"test"},function (b,data) {
@@ -202,6 +206,7 @@ function testWebsocket() {
                     console.log(msg.data);
                     //发现消息进入    调后台获取
                     console.log("发现消息进入    调后台获取")
+                    $("#testSocket").val(msg.data);
                 };
                 //关闭事件
                 socket.onclose = function () {

@@ -306,6 +306,20 @@ public class WebCommonController {
     }
 
 
+    /**
+     * 用户列表
+     * @param request
+     * @param model
+     * @return
+     */
+    @RequestMapping("/management/userList")
+    public String userList(HttpServletRequest request,Model model) {
+        model.addAttribute("parentName",request.getParameter("parentName"));
+        model.addAttribute("childName",request.getParameter("childName"));
+        return Constants.webPageName.MANAGER_USER_LIST;
+    }
+
+
 
 
 
