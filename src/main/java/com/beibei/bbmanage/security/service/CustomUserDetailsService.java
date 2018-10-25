@@ -26,6 +26,9 @@ public class CustomUserDetailsService implements UserDetailsService {
         if (entity == null) {
             throw new UsernameNotFoundException("用户名不存在");
         }
+        if (!entity.getCreator().equals("admin")) {
+            throw new UsernameNotFoundException("不是管理人员");
+        }
         SecurityUser securityUser = new SecurityUser(entity);
         return securityUser;
     }
