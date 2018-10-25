@@ -13,6 +13,7 @@ import com.beibei.bbmanage.repository.UserStudentRepository;
 import com.beibei.bbmanage.service.GartenStudentService;
 import com.beibei.bbmanage.utils.IDUtils;
 import com.beibei.bbmanage.utils.QiNiuUtils;
+import com.beibei.bbmanage.utils.SHA1;
 import com.beibei.bbmanage.vo.GartenStudentFormVo;
 import com.beibei.bbmanage.vo.GartenStudentInfoVo;
 import com.beibei.bbmanage.vo.GartenTeacherInfoVo;
@@ -124,7 +125,12 @@ public class GartenStudentServiceImpl implements GartenStudentService {
             TUserInfoEntity userInfoEntity = new TUserInfoEntity();
             userInfoEntity.setAvatarImgUrl(StringUtils.join(parentImg,","));
             userInfoEntity.setMobile(studentVo.getParentConnect());
-            userInfoEntity.setPassword(studentVo.getParentConnect().substring(studentVo.getParentConnect().length()-6,studentVo.getParentConnect().length()));
+
+            String substring = "123456";
+            if (studentVo.getParentConnect().length() > 6) {
+                substring = studentVo.getParentConnect().substring(studentVo.getParentConnect().length() - 6, studentVo.getParentConnect().length());
+            }
+            userInfoEntity.setPassword(SHA1.getDigestOfString(substring));
             userInfoEntity.setWechat(studentVo.getParentWechat());
             userInfoEntity.setAddress(studentVo.getAddress());
             userInfoEntity.setUserName(studentVo.getParentName());

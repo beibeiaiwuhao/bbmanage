@@ -320,7 +320,14 @@ public class WebCommonController {
     }
 
 
-
+    /**
+     * 登录
+     * @return
+     */
+//    @RequestMapping("/login")
+//    public String login() {
+//        return Constants.webPageName.MANAGER_LOGIN;
+//    }
 
 
 

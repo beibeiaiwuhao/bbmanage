@@ -18,7 +18,7 @@ public class MvcConfig extends WebMvcConfigurationSupport {
     @Override
     protected void addViewControllers(ViewControllerRegistry registry) {
         registry.addRedirectViewController("/","/index");
-//        registry.addViewController("/login.html").setViewName("/user/login");
+        registry.addViewController("/login.html").setViewName("/management/login/login");
 //        registry.addViewController("/register.html").setViewName("/user/register");
 //        registry.addViewController("/welcome.html").setViewName("/common/welcome");
 //        registry.addViewController("/welcome.html").setViewName("/common/map");

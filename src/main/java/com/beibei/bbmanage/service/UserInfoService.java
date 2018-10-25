@@ -14,4 +14,6 @@ public interface UserInfoService {
 
     public Page<TUserInfoEntity> findAllUser(Map<String, Object> queryContidion);
 
+    public TUserInfoEntity findTUserInfoEntityByUserName(String userName);
+
 }

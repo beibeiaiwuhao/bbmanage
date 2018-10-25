@@ -32,4 +32,11 @@ public class UserInfoServiceImpl implements UserInfoService {
         Page<TUserInfoEntity> userNameLike = userInfoRepository.findAll( pageable);
         return userNameLike;
     }
+
+    @Override
+    public TUserInfoEntity findTUserInfoEntityByUserName(String userName) {
+
+
+        return userInfoRepository.findTUserInfoEntityByUserName(userName);
+    }
 }

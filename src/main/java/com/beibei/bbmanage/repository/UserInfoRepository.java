@@ -14,4 +14,6 @@ public interface UserInfoRepository extends CrudRepository<TUserInfoEntity,Integ
 
     Page<TUserInfoEntity> findAll(Pageable pageable);
 
+    TUserInfoEntity findTUserInfoEntityByUserName(String userName);
+
 }
