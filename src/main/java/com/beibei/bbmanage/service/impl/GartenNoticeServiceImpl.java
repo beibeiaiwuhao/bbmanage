@@ -6,6 +6,7 @@ import com.beibei.bbmanage.entity.TGartenNoticeEntity;
 import com.beibei.bbmanage.repository.GartenNoticeRepository;
 import com.beibei.bbmanage.service.GartenNoticeService;
 import com.beibei.bbmanage.utils.DateUtil;
+import com.beibei.bbmanage.utils.IteratorUtils;
 import com.beibei.bbmanage.vo.GartenNoticeInfoVo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -13,6 +14,7 @@ import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;
 import java.util.Date;
+import java.util.List;
 
 @Service
 public class GartenNoticeServiceImpl implements GartenNoticeService {
@@ -42,5 +44,11 @@ public class GartenNoticeServiceImpl implements GartenNoticeService {
         String sql = GartenNoticeDao.getGartenNoticeWithDate(minDate,maxDate,gardenId);
         Page<GartenNoticeInfoVo> resultList = daoUtil.getPagerResultList(sql, page, size, GartenNoticeInfoVo.class);
         return resultList;
+    }
+
+    @Override
+    public List<TGartenNoticeEntity> findGartenNoticeByGartenId(Integer gartenId) {
+
+        return gartenNoticeRepository.findTGartenNoticeEntitiesByGartenId(gartenId);
     }
 }

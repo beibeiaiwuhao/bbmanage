@@ -4,6 +4,8 @@ import com.beibei.bbmanage.entity.TGartenNoticeEntity;
 import com.beibei.bbmanage.vo.GartenNoticeInfoVo;
 import org.springframework.data.domain.Page;
 
+import java.util.List;
+
 /**
  * 园所通知公告
  */
@@ -26,4 +28,10 @@ public interface GartenNoticeService {
      */
     public Page<GartenNoticeInfoVo> findAllGardenNotice(String minDate, String maxDate, Integer gardenId, Integer page, Integer size);
 
+    /**
+     * 根据gartenId 获取
+     * @param gartenId
+     * @return
+     */
+    public List<TGartenNoticeEntity> findGartenNoticeByGartenId(Integer gartenId);
 }

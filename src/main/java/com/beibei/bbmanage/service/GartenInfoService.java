@@ -36,6 +36,13 @@ public interface GartenInfoService {
      */
     public List<TGartenInfoEntity> findAllByStatus(Integer status);
 
+    /**
+     * 根据幼儿园id查询幼儿园具体信息
+     * @param gartenId
+     * @return
+     */
+    public TGartenInfoEntity findGartenInfoByGartenId(Integer gartenId);
+
 
 
 }

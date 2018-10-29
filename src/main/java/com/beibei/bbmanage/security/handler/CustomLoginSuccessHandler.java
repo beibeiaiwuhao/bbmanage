@@ -24,12 +24,9 @@ public class CustomLoginSuccessHandler extends SimpleUrlAuthenticationSuccessHan
                                         Authentication authentication) throws IOException, ServletException {
         SecurityUser userDetail = (SecurityUser) authentication.getPrincipal();
 
+        //将用户信息存储到session中
         HttpSession session = request.getSession();
         session.setAttribute("userDetail", userDetail);
-//		SecurityUser userDetail1 = (SecurityUser) session.getAttribute("userDetail");
-//		System.out.println("++++++++++++++++++++++++"+userDetail1.getUsername());
-//		System.out.println("-------------------------"+userDetail.getUsername());
-//		System.out.println(request.getSession().getId());
 
         super.setDefaultTargetUrl("/index");
 

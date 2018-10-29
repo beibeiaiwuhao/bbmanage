@@ -84,4 +84,9 @@ public class GartenInfoServiceImpl implements GartenInfoService {
     public List<TGartenInfoEntity> findAllByStatus(Integer status) {
         return gartenInfoRepository.findAllByStatus(status);
     }
+
+    @Override
+    public TGartenInfoEntity findGartenInfoByGartenId(Integer gartenId) {
+        return gartenInfoRepository.findOne(gartenId);
+    }
 }
