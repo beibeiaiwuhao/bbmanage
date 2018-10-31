@@ -47,9 +47,9 @@ public class Constants {
     //微信小程序配置所需要的
     public static class  wxPages{
         public static final String WX_API_URl = "https://api.weixin.qq.com/sns/jscode2session";//获取微信登陆的openId
-        public static final String WX_APP_ID = "wxe04e81304960b5ef";
-        public static final String WX_APP_SECRET = "7faa0bb9cb0c560f5b797dd884b8d5f7";
-        public static final String WX_APP_GRANTTYPE = "authorization_code";
+        public static final String WX_APP_ID = "wxe04e81304960b5ef"; //小程序唯一标识符
+        public static final String WX_APP_SECRET = "7faa0bb9cb0c560f5b797dd884b8d5f7"; //小程序的app srcret
+        public static final String WX_APP_GRANTTYPE = "authorization_code"; //授权
         public static final String WX_APP_LOGIN_DATA = "wx_login_data";
     }
 

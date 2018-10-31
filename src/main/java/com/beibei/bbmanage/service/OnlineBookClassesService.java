@@ -11,4 +11,7 @@ import java.util.List;
 public interface OnlineBookClassesService {
 
     public Page<TAppointmentInfoEntity> getOnlineBookClassesListWithDateAndUserName(String minDate, String maxDate, String userName, Integer page, Integer size);
+
+
+
 }
