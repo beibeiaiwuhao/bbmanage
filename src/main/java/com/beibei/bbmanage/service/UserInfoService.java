@@ -16,4 +16,6 @@ public interface UserInfoService {
 
     public TUserInfoEntity findTUserInfoEntityByUserName(String userName);
 
+    public TUserInfoEntity findTuserInfoEntityByOpenId(String openId);
+
 }

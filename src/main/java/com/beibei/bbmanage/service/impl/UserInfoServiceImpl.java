@@ -27,7 +27,6 @@ public class UserInfoServiceImpl implements UserInfoService {
     public Page<TUserInfoEntity> findAllUser(Map<String, Object> queryCondition) {
         Integer limit = Integer.parseInt((String) queryCondition.get("limit"));
         Integer page = Integer.parseInt((String) queryCondition.get("page"));
-//        String userName = (String) queryCondition.get("userName");
         Pageable pageable = new PageRequest(page,limit);
         Page<TUserInfoEntity> userNameLike = userInfoRepository.findAll( pageable);
         return userNameLike;
@@ -36,7 +35,11 @@ public class UserInfoServiceImpl implements UserInfoService {
     @Override
     public TUserInfoEntity findTUserInfoEntityByUserName(String userName) {
 
-
         return userInfoRepository.findTUserInfoEntityByUserName(userName);
+    }
+
+    @Override
+    public TUserInfoEntity findTuserInfoEntityByOpenId(String openId) {
+        return userInfoRepository.findTUserInfoEntityByOpenId(openId);
     }
 }

@@ -10,6 +10,6 @@ import java.util.List;
 
 public interface OnLineBookClassesRepository extends CrudRepository<TAppointmentInfoEntity,Integer> {
 
-
+    TAppointmentInfoEntity findByUserId(Integer userId);
 
 }

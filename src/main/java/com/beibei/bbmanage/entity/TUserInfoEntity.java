@@ -23,6 +23,7 @@ public class TUserInfoEntity {
     private String mender;
     private String mendTime;
     private String remark;
+    private String openId;
 
     @Id
     @Column(name = "user_id")
@@ -223,5 +224,15 @@ public class TUserInfoEntity {
     public int hashCode() {
 
         return Objects.hash(userId, userName, mobile, password, oldPassword, sex, email, qq, wechat, address, avatarImgUrl, status, creator, createTime, mender, mendTime, remark);
+    }
+
+    @Basic
+    @Column(name = "open_id")
+    public String getOpenId() {
+        return openId;
+    }
+
+    public void setOpenId(String openId) {
+        this.openId = openId;
     }
 }
