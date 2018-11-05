@@ -40,7 +40,8 @@ public class Constants {
         public static final String MANAGER_CLASS_ADD = "management/classes/class-add";//班级列表
         public static final String MANAGER_CLASS_LIST_SHOW = "management/classes/class-list-show";//班级列表table
         public static final String MANAGER_USER_LIST = "management/rootuser/user-list";//用户列表
-        public static final String MANAGER_LOGIN = "management/login/login";//用户列表
+        public static final String MANAGER_ACTIVITY_LIST = "management/contentplate/activity-list";//活动列表
+        public static final String MANAGER_ACTIVITY_ADD = "management/contentplate/activity-add";//添加活动
 
     }
 

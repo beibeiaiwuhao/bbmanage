@@ -26,7 +26,7 @@ public class MobileMessageSend {
     private static final String SERVER_URL="https://api.netease.im/sms/sendcode.action";//请求的URL
     private static final String APP_KEY="ecb939a3018d4eaaac307a513eb1c927";//账号
     private static final String APP_SECRET="137a3649c42a";//密码
-    private static final String MOULD_ID="9484282";//模板ID
+    private static final String MOULD_ID="9394379";//模板ID
     private static final String NONCE="123456";
 
     public static int sendMsg(String phone) throws IOException {
@@ -54,7 +54,6 @@ public class MobileMessageSend {
 
         //执行请求
         HttpResponse response=httpclient.execute(post);
-
         String responseEntity= EntityUtils.toString(response.getEntity(),"utf-8");
 
         //判断是否发送成功，发送成功返回true

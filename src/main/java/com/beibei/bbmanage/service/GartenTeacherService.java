@@ -44,5 +44,12 @@ public interface GartenTeacherService {
      */
     List<TGartenTeacherEntity> getTeacherListByClassId(Integer classId);
 
+    /**
+     * 根据gartenId 获取老师列表
+     * @param gartenId
+     * @return
+     */
+    List<TGartenTeacherEntity> getTeacherListByGartenId(Integer gartenId);
+
 
 }

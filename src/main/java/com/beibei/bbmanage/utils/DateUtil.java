@@ -43,6 +43,45 @@ public class DateUtil {
 	public static final String ymd_HM = "yyyy/MM/dd HH:mm";
 	public static final String ymd_HMS = "yyyy/MM/dd HH:mm:ss";
 
+
+	/**
+	 * 改变日期的格式
+	 * @param dateStr
+	 * @param fromFormat
+	 * @param toFormat
+	 * @return
+	 */
+	public static  String switchCrteaTime(String dateStr,String fromFormat,String toFormat) {
+		String tmpDate = "";
+		try {
+			tmpDate =  dateToStamp(dateStr,fromFormat);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		tmpDate = stampToDate(tmpDate,toFormat);
+		return tmpDate;
+	}
+
+
+
+	public static  String dateToStamp(String s,String formFormat) throws Exception{
+		String res;
+		SimpleDateFormat simpleDateFormat = new SimpleDateFormat(formFormat);
+		Date date = simpleDateFormat.parse(s);
+		long ts = date.getTime();
+		res = String.valueOf(ts);
+		return res;
+	}
+
+	public static  String stampToDate(String s,String toFormat){
+		String res;
+		SimpleDateFormat simpleDateFormat = new SimpleDateFormat(toFormat);
+		long lt = new Long(s);
+		Date date = new Date(lt);
+		res = simpleDateFormat.format(date);
+		return res;
+	}
+
 	/**
 	 * 两时间相减返回
 	 *

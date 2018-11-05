@@ -22,6 +22,7 @@ public interface GartenRecipeService {
      */
     public List<TGartenRecipeEntity> findAllRecipes(Integer gartenId);
 
+
     /**
      * 根据id 查询食谱
      * @param id
@@ -34,6 +35,10 @@ public interface GartenRecipeService {
      * @param id
      */
     public void deleteSlectedRecipe(Integer id);
+
+
+
+    public List<TGartenRecipeEntity> findAllRecipeByGartenIdAndDate(Integer garten, Integer weekType);
 
 
 }

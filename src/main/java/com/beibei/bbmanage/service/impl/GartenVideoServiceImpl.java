@@ -74,4 +74,9 @@ public class GartenVideoServiceImpl implements GartenVideoService {
         Page<GartenVideoVo> resultList = daoUtil.getPagerResultList(sql, page, size, GartenVideoVo.class);
         return resultList;
     }
+    @Override
+    public List<TGartenVideoEntity> findGartenVideoWithGartenId(Integer gartenId) {
+        return gartenVideoRepository.findTGartenVideoEntitiesByGartenIdOrderByCreateTimeDesc(gartenId);
+    }
+
 }

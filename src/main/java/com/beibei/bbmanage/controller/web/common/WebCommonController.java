@@ -319,16 +319,27 @@ public class WebCommonController {
         return Constants.webPageName.MANAGER_USER_LIST;
     }
 
-
     /**
-     * 登录
+     *活动列表
+     * @param request
+     * @param model
      * @return
      */
-//    @RequestMapping("/login")
-//    public String login() {
-//        return Constants.webPageName.MANAGER_LOGIN;
-//    }
+    @RequestMapping("/management/contentplate/activity/list")
+    public String activityList(HttpServletRequest request,Model model) {
+        model.addAttribute("parentName",request.getParameter("parentName"));
+        model.addAttribute("childName",request.getParameter("childName"));
+        return Constants.webPageName.MANAGER_ACTIVITY_LIST;
+    }
 
+    /**
+     * 新增活动
+     * @return
+     */
+    @RequestMapping("/management/contentplate/activity/add")
+    public String activityAdd() {
+        return Constants.webPageName.MANAGER_ACTIVITY_ADD;
+    }
 
 
 

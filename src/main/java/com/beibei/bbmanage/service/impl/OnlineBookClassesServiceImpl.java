@@ -37,7 +37,6 @@ public class OnlineBookClassesServiceImpl implements OnlineBookClassesService {
     @Override
     public Page<TAppointmentInfoEntity> getOnlineBookClassesListWithDateAndUserName(String minDate, String maxDate, String userName, Integer page, Integer size) {
         String sql = OnLineBookClassesDao.getOnlineBookClassesListWithDateAndUserName(minDate,maxDate,userName,page,size);
-//        List<TAppointmentInfoEntity> appointmentInfoEntities = daoUtil.getResultList(sql, TAppointmentInfoEntity.class);
         Page<TAppointmentInfoEntity> resultList = daoUtil.getPagerResultList(sql, page, size, TAppointmentInfoEntity.class);
         return resultList;
     }

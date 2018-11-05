@@ -1,0 +1,111 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" lang="en">
+<head th:replace="/fragments/head :: head">
+</head>
+<body>
+<div class="page-container">
+    <style type="text/css">
+        select {
+            width: 80px;
+            padding: 5px;
+        }
+
+
+    </style>
+
+    <form action="" method="post" class="form form-horizontal" id="form-activity-add">
+        <input type="text" hidden="hidden" name="id" id="id" th:if="${#httpServletRequest.getParameter('id') != null}" th:value="${#httpServletRequest.getParameter('id')}" />
+        <input type="text" hidden="hidden" class="input-text" value="0" id="status" name="status" />
+
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-3">
+                <span class="c-red">*</span>
+                选择园所：</label>
+
+            <div class="formControls col-xs-6 col-sm-6">
+                <span class="select-box" style="width: 180px">
+				    <select name="gartenId" id="garden-info" class="select">
+
+				    </select>
+				</span>
+            </div>
+        </div>
+
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-3">
+                <span class="c-red">*</span>
+                活动名字：</label>
+            <div class="formControls col-xs-6 col-sm-4">
+                <input type="text" class="input-text" value="" placeholder="请输入活动名字" id="activityName" name="activityName" />
+            </div>
+        </div>
+
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-3">
+                <span class="c-red">*</span>
+                活动举办时间：</label>
+            <div class="formControls col-xs-6 col-sm-6">
+                <input type="text" autocomplete="off" onfocus="WdatePicker({ dateFmt:'yyyy-MM-dd HH:mm:ss' })" name="createTime" id="createTime" class="input-text Wdate" style="width:180px;"   />
+            </div>
+        </div>
+
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-3">
+                <span class="c-red">*</span>
+                报名截止时间：</label>
+            <div class="formControls col-xs-6 col-sm-6">
+                <input type="text" autocomplete="off" onfocus="WdatePicker({ dateFmt:'yyyy-MM-dd HH:mm:ss' })" name="mendTime" id="mendTime" class="input-text Wdate" style="width:180px;"   />
+            </div>
+        </div>
+
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-3">
+                <span class="c-red">*</span>
+                负责人名字：</label>
+
+            <div class="formControls col-xs-6 col-sm-6">
+                <span class="select-box" style="width: 180px">
+				    <select name="activityCharge" id="user-info" class="select">
+				    </select>
+				</span>
+            </div>
+        </div>
+
+
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>是否启用：</label>
+            <div class="formControls col-xs-6 col-sm-6">
+                <div id="mySwitch" class="switch has-switch" data-on-label="启用" data-on="info" data-off-label="禁用">
+                    <input type="checkbox" checked="checked" />
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-3">活动描述及其所需材料：</label>
+            <div class="formControls col-xs-6 col-sm-6">
+                <textarea name="activityDesc" id="activityDesc" cols="" rows="" class="textarea" placeholder="说点什么...最多输入100个字符"></textarea>
+                <p class="textarea-numberbar"><em class="textarea-length">0</em>/100</p></div>
+        </div>
+
+        <div class="row cl">
+            <div class="col-9 col-offset-3">
+                <button id="submit" class="btn btn-secondary radius" type="button"><i class="Hui-iconfont"></i> 保存提交</button>
+            </div>
+        </div>
+
+    </form>
+</div>
+
+
+<basescript th:replace="/fragments/basescript :: basescript"></basescript>
+<script type="text/javascript" th:src="@{/static/js/page/contentplate/activity-add.js}"></script>
+
+
+</body>
+</html>

@@ -5,6 +5,8 @@ import com.beibei.bbmanage.vo.GartenVideoVo;
 import org.springframework.data.domain.Page;
 import org.springframework.web.multipart.MultipartFile;
 
+import java.util.List;
+
 
 public interface GartenVideoService {
 
@@ -26,5 +28,13 @@ public interface GartenVideoService {
      * @return
      */
     public Page<GartenVideoVo> findGartenVideo(Integer page, Integer size, String minDate, String maxDate, Integer gartenId, Integer classId);
+
+
+    /**
+     *
+     * @param gartenId
+     * @return
+     */
+    public List<TGartenVideoEntity> findGartenVideoWithGartenId(Integer gartenId);
 
 }

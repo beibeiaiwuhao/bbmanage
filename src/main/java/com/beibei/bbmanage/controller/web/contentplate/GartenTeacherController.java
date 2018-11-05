@@ -48,9 +48,6 @@ public class GartenTeacherController extends BaseController {
     }
 
 
-
-
-
     /**
      * 获取筛选 的分页的教室列表信息
      * @param gartenId
@@ -75,6 +72,17 @@ public class GartenTeacherController extends BaseController {
     public ResponseEntity<Object> getTeacherListByClassId(Integer classId) {
         List<TGartenTeacherEntity> teacherEntities = gartenTeacherService.getTeacherListByClassId(classId);
         return Response.success(teacherEntities,"数据获取成功");
+    }
+
+    /**
+     * 根据园所id获取教师列表
+     * @param gartenId
+     * @return
+     */
+    @RequestMapping("/getTeacherListByGartenId")
+    public ResponseEntity<Object> getTeacherListByGartenId(Integer gartenId) {
+        List<TGartenTeacherEntity> gartenTeacherEntities = gartenTeacherService.getTeacherListByGartenId(gartenId);
+        return Response.success(gartenTeacherEntities,"获取数据成功");
     }
 
 

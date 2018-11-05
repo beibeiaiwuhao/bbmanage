@@ -16,6 +16,7 @@ public class TGartenActivityEntity {
     private String mender;
     private String mendTime;
     private String remark;
+    private String activityCharge;
 
     @Id
     @Column(name = "id")
@@ -139,5 +140,15 @@ public class TGartenActivityEntity {
     public int hashCode() {
 
         return Objects.hash(id, gartenId, activityName, activityDesc, status, creator, createTime, mender, mendTime, remark);
+    }
+
+    @Basic
+    @Column(name = "activity_charge")
+    public String getActivityCharge() {
+        return activityCharge;
+    }
+
+    public void setActivityCharge(String activityCharge) {
+        this.activityCharge = activityCharge;
     }
 }
