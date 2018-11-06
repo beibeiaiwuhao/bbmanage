@@ -1,6 +1,7 @@
 package com.beibei.bbmanage.service.impl;
 
 import com.beibei.bbmanage.customsql.DaoUtil;
+import com.beibei.bbmanage.customsql.contentplate.ActivityPhotosDao;
 import com.beibei.bbmanage.customsql.contentplate.GartenPhotosDao;
 import com.beibei.bbmanage.entity.TGartenPhotosEntity;
 import com.beibei.bbmanage.repository.GartenPhototsRepository;
@@ -8,6 +9,7 @@ import com.beibei.bbmanage.service.GartenPhototsService;
 import com.beibei.bbmanage.utils.DateUtil;
 import com.beibei.bbmanage.utils.IDUtils;
 import com.beibei.bbmanage.utils.QiNiuUtils;
+import com.beibei.bbmanage.vo.ActivityPhotosFileVo;
 import com.beibei.bbmanage.vo.GartenClassPhotosVo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -94,18 +96,19 @@ public class GartenPhototsServiceImpl implements GartenPhototsService {
         List<String> timeArr = new ArrayList<>();
         List<Map<String,Object>> resultList = new ArrayList<>();
         for ( TGartenPhotosEntity entity: entitiesByClassId) {
-            if (!timeArr.contains(switchCrteaTime(entity.getCreateTime()))) {
-                timeArr.add(switchCrteaTime(entity.getCreateTime()));
+            String tmpTime = DateUtil.switchCrteaTime(entity.getCreateTime(), "yyyy-MM-dd HH:mm:ss", "yyyy-MM-dd");
+            if (!timeArr.contains(tmpTime)) {
+                timeArr.add(tmpTime);
             }
         }
-
 
         for (String time: timeArr) {
             Map<String,Object> map = new HashMap<>();
             map.put("time",time);
             List<TGartenPhotosEntity> tmpList = new ArrayList<>();
             for ( TGartenPhotosEntity entity: entitiesByClassId) {
-                if (switchCrteaTime(entity.getCreateTime()).equals(time)) {
+                String tmpTime = DateUtil.switchCrteaTime(entity.getCreateTime(), "yyyy-MM-dd HH:mm:ss", "yyyy-MM-dd");
+                if (tmpTime.equals(time)) {
                     tmpList.add(entity);
                 }
             }
@@ -115,37 +118,28 @@ public class GartenPhototsServiceImpl implements GartenPhototsService {
         return resultList;
     }
 
+    @Override
+    public Map<String, Object> findPhototsWithGartenId(Integer gartenId) {
 
-    private String switchCrteaTime(String dateStr) {
-        String tmpDate = "";
-        try {
-            tmpDate =  dateToStamp(dateStr);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        tmpDate = stampToDate(tmpDate);
-        return tmpDate;
+        Map<String,Object> map = new HashMap<>();
+
+        //查询园所下所有的照片
+        int i = gartenPhototsRepository.countAllByGartenId(gartenId);
+
+        map.put("gartenImgCount",i);
+
+        //先查询最新照片（）
+        List<TGartenPhotosEntity> entitiesByCreateTime = gartenPhototsRepository.findTGartenPhotosEntitiesByCreateTimeLike(DateUtil.format(new Date(), "yyyy-MM-dd")+"%");
+        map.put("lastUpdateImg",entitiesByCreateTime);
+
+        //查询有该园所下有多少活动，每个活动下有多少照片
+        String sql = ActivityPhotosDao.getWXActivityIndex(gartenId);
+        List<ActivityPhotosFileVo> activityList = daoUtil.getResultList(sql, ActivityPhotosFileVo.class);
+        map.put("activityList",activityList);
+        return map;
     }
 
 
-
-    private String dateToStamp(String s) throws Exception{
-        String res;
-        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-        Date date = simpleDateFormat.parse(s);
-        long ts = date.getTime();
-        res = String.valueOf(ts);
-        return res;
-    }
-
-    private String stampToDate(String s){
-        String res;
-        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd");
-        long lt = new Long(s);
-        Date date = new Date(lt);
-        res = simpleDateFormat.format(date);
-        return res;
-    }
 
 
 }

@@ -18,4 +18,6 @@ public interface GartenPhototsService {
 
     public List<Map<String,Object>> getGartenClassPhotoInfoByClassId(Integer classId);
 
+    public Map<String,Object> findPhototsWithGartenId(Integer gartenId);
+
 }

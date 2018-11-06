@@ -9,6 +9,10 @@ import org.springframework.data.domain.Page;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.multipart.MultipartFile;
+
+import java.util.List;
+import java.util.Map;
 
 /**
  * @author haohao
@@ -39,5 +43,19 @@ public class GartenActivityController extends BaseController {
         gartenActivityService.saveGartenActivity(entity);
         return Response.success(null,"活动保存成功");
     }
+
+    @RequestMapping("/activity/photo/save")
+    public ResponseEntity<Object> saveActivityPhotos(MultipartFile[] imgFile,Integer activityId) {
+        gartenActivityService.saveActivityPhotos(imgFile,activityId);
+        return Response.success(null,"活动照片保存成功");
+    }
+
+    @RequestMapping("/getActivityPhotoByActivityId")
+    public ResponseEntity<Object> getActivityPhotoByActivityId(Integer activityId) {
+        List<Map<String, Object>> photos = gartenActivityService.findActivityPhotosByActivityId(activityId);
+        return Response.success(photos,"活动照片获取成功");
+    }
+
+
 
 }

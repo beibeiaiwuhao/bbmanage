@@ -341,6 +341,26 @@ public class WebCommonController {
         return Constants.webPageName.MANAGER_ACTIVITY_ADD;
     }
 
+    /**
+     * 活动相册列表
+     * @return
+     */
+    @RequestMapping("/management/contentplate/activity/photots")
+    public String activityPhotoList() {
+        return Constants.webPageName.MANAGER_ACTIVITY_PHOTOTS;
+    }
+
+    /**
+     * 添加活动照片
+     * @return
+     */
+    @RequestMapping("/management/contentplate/activity/photos/add")
+    public String addActivityPhoto() {
+        return Constants.webPageName.MANAGER_ACTIVITY_PHOTOTS_ADD;
+    }
+
+
+
 
 
 

@@ -10,4 +10,12 @@ public interface GartenPhototsRepository extends CrudRepository<TGartenPhotosEnt
 
     List<TGartenPhotosEntity> findTGartenPhotosEntitiesByClassId(Integer classId);
 
+    /**
+     * 查询当前日期下的照片
+     * @param createtime
+     * @return
+     */
+    List<TGartenPhotosEntity> findTGartenPhotosEntitiesByCreateTimeLike(String createtime);
+
+    int countAllByGartenId(Integer gartenId);
 }

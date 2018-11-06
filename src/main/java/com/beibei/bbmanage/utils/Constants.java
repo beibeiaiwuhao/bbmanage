@@ -42,6 +42,8 @@ public class Constants {
         public static final String MANAGER_USER_LIST = "management/rootuser/user-list";//用户列表
         public static final String MANAGER_ACTIVITY_LIST = "management/contentplate/activity-list";//活动列表
         public static final String MANAGER_ACTIVITY_ADD = "management/contentplate/activity-add";//添加活动
+        public static final String MANAGER_ACTIVITY_PHOTOTS = "management/contentplate/activity-photo-list";//活动相册列表
+        public static final String MANAGER_ACTIVITY_PHOTOTS_ADD = "management/contentplate/activity-photo-add";//添加活动相册照片
 
     }
 

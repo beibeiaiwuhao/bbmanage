@@ -34,7 +34,7 @@ function appendContentHtml(data) {
 
 
 function classPhotoDetail(className,classId) {
-    picture_edit('相册','/management/contentplate/class/photoList/show?classId='+classId,'');
+    picture_edit(className+'相册','/management/contentplate/class/photoList/show?classId='+classId,'');
 }
 
 

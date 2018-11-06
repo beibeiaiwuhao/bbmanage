@@ -91,8 +91,8 @@ TableInit = function () {
                 valign : 'middle',
                 sortable : true,
                 formatter: function (value, row, index) {
-
-                    return '<i class="Hui-iconfont Hui-iconfont-tuwenxiangqing"></i>';
+                    var tmpName = "'" +row.activityName+"'";
+                    return '<i class="Hui-iconfont Hui-iconfont-tuwenxiangqing" onclick="showActivityPhotoList('+tmpName+','+row.id+')"></a></i>';
                 }
             }
                 ,{
@@ -193,6 +193,15 @@ function addProductEditBtHtml(id,status) {
     return btnHtml;
 }
 
+
+function showActivityPhotoList(activityName,activityId) {
+    var index = layer.open({
+        type: 2,
+        title: activityName+'相册',
+        content: '/management/contentplate/activity/photots?activityId='+activityId
+    });
+    layer.full(index);
+}
 
 
 $(function () {
