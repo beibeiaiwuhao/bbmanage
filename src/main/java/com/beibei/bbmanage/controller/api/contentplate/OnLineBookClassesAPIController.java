@@ -86,21 +86,7 @@ public class OnLineBookClassesAPIController {
     }
 
 
-    @RequestMapping("/sendMobileCode")
-    public ResponseEntity<Object> sendMobileCode() {
-        try {
-            int sendMsg = MobileMessageSend.sendMsg("18537840436");
-            if(sendMsg == 0 ){
-               return Response.success(null,"验证码发送成功");
-            }else {
-                return Response.success(null,"验证码发送失败");
-            }
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
 
-        return Response.success(null,"验证码发送成功");
-    }
 
 
 

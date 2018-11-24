@@ -18,4 +18,6 @@ public interface UserInfoRepository extends CrudRepository<TUserInfoEntity,Integ
 
     TUserInfoEntity findTUserInfoEntityByOpenId(String openId);
 
+    TUserInfoEntity findTUserInfoEntityByMobile(String mobile);
+
 }

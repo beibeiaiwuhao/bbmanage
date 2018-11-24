@@ -17,4 +17,6 @@ public interface GartenClassesService {
 
     public Page<TGartenClassEntity> getPageGartenClassWitQueryCondition(Map<String,Object> querContidion);
 
+    public List<TGartenClassEntity> getGartenClassesWithUserId(Integer userId);
+
 }

@@ -1,6 +1,7 @@
 package com.beibei.bbmanage.utils;
 
 import com.alibaba.fastjson.JSON;
+import com.beibei.bbmanage.redis.RedisBaseOperation;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.entity.UrlEncodedFormEntity;
 import org.apache.http.client.methods.HttpPost;
@@ -9,8 +10,12 @@ import org.apache.http.impl.client.HttpClients;
 import org.apache.http.message.BasicNameValuePair;
 import org.apache.http.util.EntityUtils;
 import org.apache.http.NameValuePair;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
 
 
+import javax.annotation.PostConstruct;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Date;
@@ -21,7 +26,26 @@ import java.util.List;
  * <p>
  * date: 2018年11月01日
  */
+@Component
 public class MobileMessageSend {
+
+
+
+    @Autowired
+    private  RedisBaseOperation<String> redisBaseOperation;
+
+    private static MobileMessageSend mobileMessageSend;
+
+
+    public void setRedisBaseOperation(RedisBaseOperation<String> redisBaseOperation) {
+        this.redisBaseOperation = redisBaseOperation;
+    }
+
+    @PostConstruct
+    public void init(){
+        mobileMessageSend = this;
+        mobileMessageSend.redisBaseOperation = this.redisBaseOperation;
+    }
 
     private static final String SERVER_URL="https://api.netease.im/sms/sendcode.action";//请求的URL
     private static final String APP_KEY="ecb939a3018d4eaaac307a513eb1c927";//账号
@@ -58,9 +82,11 @@ public class MobileMessageSend {
 
         //判断是否发送成功，发送成功返回true
         String code= JSON.parseObject(responseEntity).getString("code");
-        if (code.equals("200"))
-        {return 0;}
-
+        if (code.equals("200")) {//存到redis中
+            String phoneCode = JSON.parseObject(responseEntity).getString("obj");
+            mobileMessageSend.redisBaseOperation.putCode(phone,phoneCode);
+            return 0;
+        }
         return 500;
     }
 

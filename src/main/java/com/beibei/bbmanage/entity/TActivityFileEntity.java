@@ -1,6 +1,7 @@
 package com.beibei.bbmanage.entity;
 
 import javax.persistence.*;
+import java.util.List;
 import java.util.Objects;
 
 /**
@@ -22,6 +23,7 @@ public class TActivityFileEntity {
     private String mender;
     private String mendTime;
     private String remark;
+
 
     @Id
     @Column(name = "id")
@@ -157,4 +159,6 @@ public class TActivityFileEntity {
 
         return Objects.hash(id, fileUrl, fileName, fileType, fileSize, status, creator, createTime, mender, mendTime, remark);
     }
+
+
 }

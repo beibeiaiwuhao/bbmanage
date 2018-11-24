@@ -9,8 +9,5 @@
         <module name="bbmanage" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="bbmanage" target="1.8" />
-    </bytecodeTargetLevel>
   </component>
 </project>

@@ -101,7 +101,6 @@ public class GartenPhototsServiceImpl implements GartenPhototsService {
                 timeArr.add(tmpTime);
             }
         }
-
         for (String time: timeArr) {
             Map<String,Object> map = new HashMap<>();
             map.put("time",time);
@@ -127,6 +126,7 @@ public class GartenPhototsServiceImpl implements GartenPhototsService {
         int i = gartenPhototsRepository.countAllByGartenId(gartenId);
 
         map.put("gartenImgCount",i);
+        map.put("currentDate",DateUtil.format(new Date(),"yyyy年MM月dd日"));
 
         //先查询最新照片（）
         List<TGartenPhotosEntity> entitiesByCreateTime = gartenPhototsRepository.findTGartenPhotosEntitiesByCreateTimeLike(DateUtil.format(new Date(), "yyyy-MM-dd")+"%");

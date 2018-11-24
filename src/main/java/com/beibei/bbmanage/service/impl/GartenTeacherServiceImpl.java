@@ -6,6 +6,7 @@ import com.beibei.bbmanage.entity.TClassTeacherEntity;
 import com.beibei.bbmanage.entity.TGartenCourseEntity;
 import com.beibei.bbmanage.entity.TGartenInfoEntity;
 import com.beibei.bbmanage.entity.TGartenTeacherEntity;
+import com.beibei.bbmanage.handler.Response;
 import com.beibei.bbmanage.repository.ClassTeacherRepository;
 import com.beibei.bbmanage.repository.GartenCourseRepository;
 import com.beibei.bbmanage.repository.GartenInfoRepository;
@@ -19,12 +20,17 @@ import com.beibei.bbmanage.vo.GartenTeacherInfoVo;
 import com.qiniu.util.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
 import javax.transaction.Transactional;
 import java.io.File;
 import java.util.*;
+import java.util.stream.*;
+
+import static java.util.Collections.swap;
+
 
 @Service
 public class GartenTeacherServiceImpl implements GartenTeacherService {
@@ -63,6 +69,12 @@ public class GartenTeacherServiceImpl implements GartenTeacherService {
         return map;
     }
 
+    /**
+     * 保存老师信息
+     * @param teacherVo
+     * @param images
+     * @param imgUrl
+     */
     @Override
     @Transactional
     public void saveNewGarden(GartenTeacherInfoVo teacherVo, MultipartFile[] images, String imgUrl) {
@@ -107,7 +119,7 @@ public class GartenTeacherServiceImpl implements GartenTeacherService {
         teacherEntity.setTeacherDesc(teacherVo.getTeacherDesc());
         teacherEntity.setTeacherClasses(teacherVo.getTeacherClasses());
         teacherEntity.setWechat(teacherVo.getWechat());
-
+        teacherEntity.setPositionName(teacherVo.getPositionName());
         //0:在职 1:离职
         teacherEntity.setStatus(0);
         teacherEntity.setCourseId(teacherVo.getCourseId());
@@ -122,6 +134,15 @@ public class GartenTeacherServiceImpl implements GartenTeacherService {
 
     }
 
+    /**
+     * 老师的分页、筛选查询
+     * @param gartenId
+     * @param classId
+     * @param courseId
+     * @param page
+     * @param size
+     * @return
+     */
     @Override
     public Page<GartenTeacherInfoVo> findTeacherWithconditions(Integer gartenId, Integer classId, Integer courseId,Integer page,Integer size) {
         String sql = GartenTeacherDao.getGartenTeacherListWithGartenIdAndClassIdAndCourseId(gartenId, classId, courseId);
@@ -129,6 +150,11 @@ public class GartenTeacherServiceImpl implements GartenTeacherService {
         return resultList;
     }
 
+    /**
+     * 根据班级id查出该班级的老师
+     * @param classId
+     * @return
+     */
     @Override
     public List<TGartenTeacherEntity> getTeacherListByClassId(Integer classId) {
         String sql = GartenTeacherDao.getGartenTeacherListWithGartenIdAndClassIdAndCourseId(null, classId, null);
@@ -136,11 +162,44 @@ public class GartenTeacherServiceImpl implements GartenTeacherService {
         return resultList;
     }
 
+    /**
+     * 根据园所id查询该学校的老师
+     * @param gartenId
+     * @return
+     */
     @Override
     public List<TGartenTeacherEntity> getTeacherListByGartenId(Integer gartenId) {
         String sql = GartenTeacherDao.getGartenTeacherListWithGartenIdAndClassIdAndCourseId(gartenId, null, null);
         List<TGartenTeacherEntity> resultList = daoUtil.getResultList(sql, TGartenTeacherEntity.class);
         return resultList;
+    }
+
+    /**
+     * 根据userId查询
+     * @param userId
+     * @return
+     */
+    @Override
+    public ResponseEntity<Object> getTeacherListByUserId(Integer userId) {
+        String sql = GartenTeacherDao.getTeacherListWithUserId(userId);
+        List<GartenTeacherInfoVo> resultList = daoUtil.getResultList(sql, GartenTeacherInfoVo.class);
+
+        Map<String,Object> map = new HashMap<>();
+        for ( GartenTeacherInfoVo vo : resultList) {
+            if(!map.containsKey(vo.getClassName())) {
+                Map<String,Object> contentMap = new HashMap<>();
+                List<GartenTeacherInfoVo> tmpArr =  resultList.stream().filter((p) -> (vo.getClassName().equals(p.getClassName()))).collect(Collectors.toList());
+                contentMap.put("className",vo.getClassName());
+                contentMap.put("classId",vo.getClassId());
+                contentMap.put("teacherList",tmpArr);
+                map.put(vo.getClassName(),contentMap);
+            }
+         }
+        List<Object> list = new ArrayList<>();
+        for (String key: map.keySet()) {
+            list.add(map.get(key));
+        }
+        return Response.success(list,"数据获取成功");
     }
 
 

@@ -32,5 +32,11 @@ public class GartenTeacherAPIController {
         return Response.success(map,"老师列表获取成功");
     }
 
+    @RequestMapping("/getTeacherListByUserId")
+    public ResponseEntity<Object> getTeacherListByUserId(Integer userId) {
+        return gartenTeacherService.getTeacherListByUserId(userId);
+    }
+
+
 
 }

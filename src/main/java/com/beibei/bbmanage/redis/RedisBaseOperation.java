@@ -37,7 +37,7 @@ public class RedisBaseOperation<T> {
      * @param key
      * @param value
      */
-    public void putCode(String key, String value) {
+    public  void putCode(String key, String value) {
         redisTemplateCode.opsForValue().set(key, value,10,TimeUnit.MINUTES);
     }
 

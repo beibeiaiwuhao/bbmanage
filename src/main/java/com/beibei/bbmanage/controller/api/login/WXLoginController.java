@@ -2,11 +2,15 @@ package com.beibei.bbmanage.controller.api.login;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
+import com.beibei.bbmanage.entity.TUserInfoEntity;
 import com.beibei.bbmanage.handler.Response;
 import com.beibei.bbmanage.redis.RedisBaseOperation;
+import com.beibei.bbmanage.repository.UserInfoRepository;
+import com.beibei.bbmanage.service.UserInfoService;
 import com.beibei.bbmanage.utils.AesCbcUtil;
 import com.beibei.bbmanage.utils.Constants;
 import com.beibei.bbmanage.utils.HttpClientUtils;
+import com.beibei.bbmanage.utils.MobileMessageSend;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpRequest;
 import org.springframework.http.ResponseEntity;
@@ -14,6 +18,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
+import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -29,6 +34,11 @@ public class WXLoginController {
 
     @Autowired
     private RedisBaseOperation<Object> redisBaseOperation;
+
+
+    @Autowired
+    private UserInfoService userInfoService;
+
 
     @RequestMapping("/wx/login")
     public ResponseEntity<Object> getWXOpenId(String code) {
@@ -91,6 +101,42 @@ public class WXLoginController {
         }
         return Response.success(map,"返回数据成功");
     }
+
+
+    /**
+     *  发功验证码
+     * @param mobile
+     * @return
+     */
+    @RequestMapping("/sendMsgCode")
+    public ResponseEntity<Object> sendMobileCode(String mobile) {
+        try {
+            int sendMsg = MobileMessageSend.sendMsg(mobile);
+            if(sendMsg == 0 ){
+                return Response.success(null,"验证码发送成功");
+            }else {
+                return Response.success(null,"验证码发送失败");
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return Response.success(null,"验证码发送成功");
+    }
+
+    /**
+     * 登录验证
+     * @param code
+     * @param mobile
+     * @return
+     */
+    @RequestMapping("/wxUserLogin")
+    public ResponseEntity<Object> checkPhoneCode(String code,String mobile) {
+        return userInfoService.checkPhoneCode(code,mobile);
+    }
+
+
+
+
 
 
 }

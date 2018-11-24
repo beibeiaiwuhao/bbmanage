@@ -46,4 +46,12 @@ public class GartenClassesServiceImpl implements GartenClassesService {
         Page<TGartenClassEntity> repositoryAll = gartenClassesRepository.findAllByGartenId(gartenId,pageable);
         return repositoryAll;
     }
+
+    @Override
+    public List<TGartenClassEntity> getGartenClassesWithUserId(Integer userId) {
+
+
+
+        return null;
+    }
 }

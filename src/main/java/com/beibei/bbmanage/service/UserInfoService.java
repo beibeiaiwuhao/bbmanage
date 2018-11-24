@@ -2,6 +2,7 @@ package com.beibei.bbmanage.service;
 
 import com.beibei.bbmanage.entity.TUserInfoEntity;
 import org.springframework.data.domain.Page;
+import org.springframework.http.ResponseEntity;
 
 import java.util.Map;
 
@@ -17,5 +18,8 @@ public interface UserInfoService {
     public TUserInfoEntity findTUserInfoEntityByUserName(String userName);
 
     public TUserInfoEntity findTuserInfoEntityByOpenId(String openId);
+
+    public ResponseEntity<Object> checkPhoneCode(String code,String mobile);
+
 
 }

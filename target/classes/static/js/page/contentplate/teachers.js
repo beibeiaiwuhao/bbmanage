@@ -85,6 +85,12 @@ TableInit = function () {
                 valign : 'middle',
                 sortable : true,
             },{
+                field: 'positionName',
+                title: '上岗职位',
+                align : 'center',
+                valign : 'middle',
+                sortable : true,
+            },{
                     field: 'gender',
                     title: '性别',
                     align : 'center',

@@ -3,6 +3,7 @@ package com.beibei.bbmanage.service;
 import com.beibei.bbmanage.entity.TGartenTeacherEntity;
 import com.beibei.bbmanage.vo.GartenTeacherInfoVo;
 import org.springframework.data.domain.Page;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.util.List;
@@ -50,6 +51,14 @@ public interface GartenTeacherService {
      * @return
      */
     List<TGartenTeacherEntity> getTeacherListByGartenId(Integer gartenId);
+
+
+    /**
+     * 根据userId查询
+     * @param userId
+     * @return
+     */
+    ResponseEntity<Object> getTeacherListByUserId(Integer userId);
 
 
 }

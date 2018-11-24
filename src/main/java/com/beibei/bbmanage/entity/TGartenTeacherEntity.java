@@ -18,6 +18,7 @@ public class TGartenTeacherEntity {
     private Integer status;
     private Integer courseId;
     private Integer gender;
+    private String positionName;
 
     @Id
     @Column(name = "id")
@@ -120,29 +121,7 @@ public class TGartenTeacherEntity {
         this.status = status;
     }
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        TGartenTeacherEntity that = (TGartenTeacherEntity) o;
-        return Objects.equals(id, that.id) &&
-                Objects.equals(gartenId, that.gartenId) &&
-                Objects.equals(teacherName, that.teacherName) &&
-                Objects.equals(teacherMobile, that.teacherMobile) &&
-                Objects.equals(teacherClasses, that.teacherClasses) &&
-                Objects.equals(teacherDesc, that.teacherDesc) &&
-                Objects.equals(wechat, that.wechat) &&
-                Objects.equals(address, that.address) &&
-                Objects.equals(avatarImgUrl, that.avatarImgUrl) &&
-                Objects.equals(status, that.status) &&
-                Objects.equals(courseId, that.courseId) &&
-                Objects.equals(gender, that.gender);
-    }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(id, gartenId, teacherName, teacherMobile, teacherClasses, teacherDesc, wechat, address, avatarImgUrl, status,courseId,gender);
-    }
 
     @Basic
     @Column(name = "course_id")
@@ -162,5 +141,15 @@ public class TGartenTeacherEntity {
 
     public void setGender(Integer gender) {
         this.gender = gender;
+    }
+
+    @Basic
+    @Column(name = "position_name")
+    public String getPositionName() {
+        return positionName;
+    }
+
+    public void setPositionName(String positionName) {
+        this.positionName = positionName;
     }
 }

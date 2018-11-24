@@ -76,7 +76,7 @@ public class ActivityPhotosFileVo  {
         this.createTime = createTime;
     }
     public String getImgCount() {
-        return imgCount.toString();
+            return imgCount != null?imgCount.toString():"0";
     }
 
     public void setImgCount(BigInteger imgCount) {
