@@ -13,6 +13,8 @@ import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.builders.WebSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
+import org.springframework.security.core.session.SessionRegistry;
+import org.springframework.security.core.session.SessionRegistryImpl;
 import org.springframework.security.web.authentication.AuthenticationFailureHandler;
 import org.springframework.security.web.authentication.AuthenticationSuccessHandler;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
@@ -53,10 +55,29 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .and()
                 .logout()
                 .permitAll();
+
+        http.sessionManagement()
+                .sessionFixation()
+                .changeSessionId()
+                .invalidSessionUrl("/login.html?invalid")//Session失效
+                .maximumSessions(1)//只能同时一个人在线
+                .sessionRegistry(sessionRegistry())
+                .expiredUrl("/login.html?expired");
+
         //禁用csrf - 使用自定义登录页面
         http.csrf().disable();
 
     }
+
+    /**
+     * session管理器
+     * @return
+     */
+    @Bean
+    public SessionRegistry sessionRegistry() {
+        return new SessionRegistryImpl();
+    }
+
 
     /**
      * 自定义UserDetailsService，从数据库中读取用户信息
