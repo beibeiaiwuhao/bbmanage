@@ -14,4 +14,7 @@ public class GartenStudentInfoVo extends TGartenStudentEntity {
     public void setUserName(String userName) {
         this.userName = userName;
     }
+
+
+
 }

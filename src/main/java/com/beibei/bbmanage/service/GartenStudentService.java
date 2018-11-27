@@ -5,6 +5,8 @@ import com.beibei.bbmanage.vo.GartenStudentInfoVo;
 import org.springframework.data.domain.Page;
 import org.springframework.web.multipart.MultipartFile;
 
+import java.util.List;
+
 /**
  * 园所学生
  */
@@ -30,6 +32,13 @@ public interface GartenStudentService {
      * @return
      */
     Page<GartenStudentInfoVo> findTeacherWithconditions(Integer gartenId, Integer classId, Integer courseId, Integer page, Integer size);
+
+    /**
+     * 根据班级id 查询该班的学生列表
+     * @param classId
+     * @return
+     */
+    List<GartenStudentInfoVo> findStudentWithClassId(Integer classId);
 
 
 }

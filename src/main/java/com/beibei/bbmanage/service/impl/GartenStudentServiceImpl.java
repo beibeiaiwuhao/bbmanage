@@ -157,8 +157,16 @@ public class GartenStudentServiceImpl implements GartenStudentService {
 
     @Override
     public Page<GartenStudentInfoVo> findTeacherWithconditions(Integer gartenId, Integer classId, Integer courseId, Integer page, Integer size) {
-        String sql = GartenStudentDao.getGartenTeacherListWithGartenIdAndClassIdAndCourseId(gartenId, classId, courseId);
+        String sql = GartenStudentDao.getGartenStudentistWithGartenIdAndClassIdAndCourseId(gartenId, classId, courseId);
         Page<GartenStudentInfoVo> resultList = daoUtil.getPagerResultList(sql, page, size, GartenStudentInfoVo.class);
+        return resultList;
+    }
+
+    @Override
+    public List<GartenStudentInfoVo> findStudentWithClassId(Integer classId) {
+
+        String sql = GartenStudentDao.getClassStudentWithClassId(classId);
+        List<GartenStudentInfoVo> resultList = daoUtil.getResultList(sql, GartenStudentInfoVo.class);
         return resultList;
     }
 

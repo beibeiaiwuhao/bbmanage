@@ -6,8 +6,8 @@ public class Constants {
     public static class qiNiuTypeKey {
         public static final String ACCESS_KEY = "m2Zn29OXcy8nN_5yOXhsvDxE69StCWGaEBQk_oZV";
         public static final String SECRET_KEY = "68zxW_4cfbcyWAbuN9S9j09l_uJ0PH0DGMZwbciv";
-        public static final String BUCKET_NAME = "hhcloud";
-        public static final String PICTURE_URL = "http://pcvfcha51.bkt.clouddn.com/";
+        public static final String BUCKET_NAME = "bbcloud";
+        public static final String PICTURE_URL = "http://pispn94t7.bkt.clouddn.com/";
     }
 
     //Web路径地址

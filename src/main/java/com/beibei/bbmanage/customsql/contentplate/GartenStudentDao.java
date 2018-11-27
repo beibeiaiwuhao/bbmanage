@@ -2,7 +2,14 @@ package com.beibei.bbmanage.customsql.contentplate;
 
 public class GartenStudentDao {
 
-    public static String getGartenTeacherListWithGartenIdAndClassIdAndCourseId(Integer gartenId, Integer classId,Integer courseId) {
+    /**
+     * 筛选学生条件 的sql语句
+     * @param gartenId
+     * @param classId
+     * @param courseId
+     * @return
+     */
+    public static String getGartenStudentistWithGartenIdAndClassIdAndCourseId(Integer gartenId, Integer classId,Integer courseId) {
         StringBuffer sql = new StringBuffer();
 
         sql.append("SELECT ");
@@ -40,5 +47,31 @@ public class GartenStudentDao {
         }
         return sql.toString();
     }
+
+    /**
+     * 根据班级id查询班级学生
+     * @param classId
+     * @return
+     */
+    public static String getClassStudentWithClassId(Integer classId) {
+        StringBuffer sql = new StringBuffer();
+        sql.append(" SELECT ");
+        sql.append(" tgs.student_name AS studentName, ");
+        sql.append(" tgs.student_gender AS studentGender, ");
+        sql.append(" tgs.student_age AS studentAge, ");
+        sql.append(" tgs.student_desc AS studentDesc, ");
+        sql.append(" tgs.avatar_img_url AS avatarImgUrl, ");
+        sql.append(" tgc.course_name AS courseName ");
+        sql.append(" FROM ");
+        sql.append(" t_class_student tcs ");
+        sql.append(" INNER JOIN t_garten_student tgs ON tgs.id = tcs.student_id ");
+        sql.append(" INNER JOIN t_garten_course tgc ON tgc.id = tgs.course_id ");
+        sql.append(" WHERE ");
+        sql.append(" 1 = 1 ");
+        sql.append(String.format("AND tcs.class_id = %d",classId));
+        return sql.toString();
+    }
+
+
 
 }

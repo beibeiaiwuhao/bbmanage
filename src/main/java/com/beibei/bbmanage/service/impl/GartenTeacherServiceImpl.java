@@ -130,8 +130,6 @@ public class GartenTeacherServiceImpl implements GartenTeacherService {
         classTeacher.setTeacherId(teacherEntity.getId());
         classTeacherrepository.save(classTeacher);
 
-
-
     }
 
     /**
@@ -195,11 +193,8 @@ public class GartenTeacherServiceImpl implements GartenTeacherService {
                 map.put(vo.getClassName(),contentMap);
             }
          }
-        List<Object> list = new ArrayList<>();
-        for (String key: map.keySet()) {
-            list.add(map.get(key));
-        }
-        return Response.success(list,"数据获取成功");
+
+        return Response.success(map.values(),"数据获取成功");
     }
 
 
