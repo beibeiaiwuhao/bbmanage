@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" lang="en">
+<head th:replace="/fragments/head :: head">
+</head>
+
+<body class="pos-r">
+<div class="page-container">
+
+    <input type="text" id="testSocket" />
+    <input type="button" value="测试webSocket" onclick="testWebsocket()" />
+
+    <input type="text" hidden="hidden" name="gartenId" id="gartenId" th:if="${#httpServletRequest.getParameter('gartenId') != null}" th:value="${#httpServletRequest.getParameter('gartenId')}" />
+
+    <div class="mt-20">
+        <table class="table table-border table-bordered table-bg table-hover table-sort" id="class-list">
+        </table>
+    </div>
+
+
+
+</div>
+
+<basescript th:replace="/fragments/basescript :: basescript"></basescript>
+<script type="text/javascript" th:src="@{/static/js/page/classes/class-list-show.js}"></script>
+
+
+
+</body>
+</html>

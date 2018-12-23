@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" lang="en">
+<head th:replace="/fragments/head :: head">
+</head>
+<body>
+
+<div class="page-container">
+
+
+    <form action="" method="post" class="form form-horizontal" id="form-gartenPhoto-add">
+        <input type="text" hidden="hidden" name="id" id="id" th:if="${#httpServletRequest.getParameter('id') != null}" th:value="${#httpServletRequest.getParameter('id')}" />
+
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-3">
+                <span class="c-red">*</span>
+                选择园所：</label>
+
+            <div class="formControls col-xs-6 col-sm-6">
+                <span class="select-box" style="width: 180px">
+				    <select name="gartenId" id="garden-info" class="select">
+
+				    </select>
+				</span>
+            </div>
+        </div>
+
+        <div class="row cl">
+            <label class="form-label col-xs-5 col-sm-3">
+                <span class="c-red">*</span>
+                选择班级：</label>
+            <div class="formControls col-xs-6 col-sm-6">
+                <span class="select-box" style="width: 180px">
+                    <select  name="classId" id="class-info" class="select">
+                    </select>
+                </span>
+            </div>
+        </div>
+
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-3">
+                <span class="c-red">*</span>
+                上传人：</label>
+            <div class="formControls col-xs-6 col-sm-6">
+                <span class="select-box" style="width: 180px">
+                    <select  name="creator" id="user-info" class="select">
+                    </select>
+                </span>
+            </div>
+        </div>
+
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-3">
+                <span class="c-red">*</span>
+                上传图片：</label>
+
+            <div class="formControls col-xs-8 col-sm-9">
+                <div class="widget-body" id="target">
+                </div>
+                <button id="chooseFile" class="btn " type="button" style="height:80px;width:90px;" value="上传图片">
+                    <img src="/static/images/add_picture.png" style="height:100%;width:100%;"/>
+                </button>
+            </div>
+        </div>
+
+
+        <div class="row cl">
+            <div class="col-9 col-offset-3">
+                <button id="submit" class="btn btn-secondary radius" type="button"><i class="Hui-iconfont"></i> 保存提交</button>
+            </div>
+        </div>
+
+    </form>
+</div>
+
+
+<basescript th:replace="/fragments/basescript :: basescript"></basescript>
+<script type="text/javascript" th:src="@{/static/js/page/contentplate/class-photo-add.js}"></script>
+
+
+
+</body>
+</html>

@@ -70,8 +70,6 @@ $(function () {
         }
     });
 
-
-
     $("#submit").click(function () {
 
         if ( chooseFile.getFiles().length == 0) {

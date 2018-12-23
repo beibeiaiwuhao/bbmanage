@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" lang="en">
+
+<head th:replace="/fragments/head :: head"></head>
+
+<body>
+
+<div class="page-container">
+    <div class="cl pd-5 bg-1 bk-gray mt-5">
+        <span class="l">
+            <a href="javascript:;" onclick="datadel()" class="btn btn-danger radius">
+                <i class="Hui-iconfont">&#xe6e2;</i> 批量删除</a>
+            <a class="btn btn-primary radius" onclick="activity_photo_add('添加活动照片','/management/contentplate/activity/photos/add.html')" href="javascript:;">
+                <i class="Hui-iconfont">&#xe600;</i>
+                添加照片
+                </a>
+        </span>
+
+        <span class="r">共有数据：<strong>54</strong> 条
+        </span>
+
+    </div>
+    <div class="portfolio-content" id="photo-container">
+        <input type="text" hidden="hidden" name="activityId" id="activityId" th:if="${#httpServletRequest.getParameter('activityId') != null}" th:value="${#httpServletRequest.getParameter('activityId')}" />
+
+
+    </div>
+</div>
+
+<basescript th:replace="/fragments/basescript :: basescript"></basescript>
+
+<!--展示照片需要导入的js-->
+<script type="text/javascript" th:src="@{/static/js/page/contentplate/activity-photos-list.js}"></script>
+
+
+</body>
+</html>

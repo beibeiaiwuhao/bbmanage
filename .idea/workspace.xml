@@ -2,7 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5190d398-0942-4686-82ca-cb9bdb7b8620" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/security/config/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/security/config/WebSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/BbmanageApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/BbmanageApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/controller/web/classes/WHRunnable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/controller/web/classes/WHRunnable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/handler/WebSocketConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/handler/WebSocketConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bbmanage-0.0.1-SNAPSHOT/WEB-INF/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/bbmanage-0.0.1-SNAPSHOT/WEB-INF/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bbmanage-0.0.1-SNAPSHOT/WEB-INF/classes/static/hui/static/h-ui.admin/css/H-ui.login.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/bbmanage-0.0.1-SNAPSHOT/WEB-INF/classes/static/hui/static/h-ui.admin/css/H-ui.login.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bbmanage-0.0.1-SNAPSHOT/WEB-INF/classes/static/js/page/contentplate/campus-info.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/bbmanage-0.0.1-SNAPSHOT/WEB-INF/classes/static/js/page/contentplate/campus-info.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bbmanage-0.0.1-SNAPSHOT/WEB-INF/classes/static/js/page/contentplate/garten-add.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/bbmanage-0.0.1-SNAPSHOT/WEB-INF/classes/static/js/page/contentplate/garten-add.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bbmanage-0.0.1-SNAPSHOT/WEB-INF/classes/static/js/page/homepage/page-panel.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/bbmanage-0.0.1-SNAPSHOT/WEB-INF/classes/static/js/page/homepage/page-panel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bbmanage-0.0.1-SNAPSHOT/WEB-INF/classes/templates/common/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/bbmanage-0.0.1-SNAPSHOT/WEB-INF/classes/templates/common/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bbmanage-0.0.1-SNAPSHOT/WEB-INF/classes/templates/fragments/basescript.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/bbmanage-0.0.1-SNAPSHOT/WEB-INF/classes/templates/fragments/basescript.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bbmanage-0.0.1-SNAPSHOT/WEB-INF/classes/templates/fragments/head.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/bbmanage-0.0.1-SNAPSHOT/WEB-INF/classes/templates/fragments/head.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bbmanage-0.0.1-SNAPSHOT/WEB-INF/classes/templates/management/contentplate/garten-add.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/bbmanage-0.0.1-SNAPSHOT/WEB-INF/classes/templates/management/contentplate/garten-add.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bbmanage-0.0.1-SNAPSHOT/WEB-INF/classes/templates/management/homepage/page-panel.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/bbmanage-0.0.1-SNAPSHOT/WEB-INF/classes/templates/management/homepage/page-panel.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.beibei.bbmanage.BbmanageApplicationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.beibei.bbmanage.BbmanageApplicationTests.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.beibei.bbmanage.BbmanageApplicationTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.beibei.bbmanage.BbmanageApplicationTests.txt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -14,102 +34,95 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="GartenStudentServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/service/impl/GartenStudentServiceImpl.java">
+      <file leaf-file-name="WHRunnable.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/controller/web/classes/WHRunnable.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
-              <caret line="168" column="38" lean-forward="true" selection-start-line="168" selection-start-column="38" selection-end-line="168" selection-end-column="38" />
+            <state relative-caret-position="345">
+              <caret line="27" column="9" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GartenStudentInfoVo.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/vo/GartenStudentInfoVo.java">
+      <file leaf-file-name="WebSocketConfig.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/handler/WebSocketConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+            <state relative-caret-position="210">
+              <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GartenStudentDao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/customsql/contentplate/GartenStudentDao.java">
+      <file leaf-file-name="application.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="64" column="29" lean-forward="true" selection-start-line="64" selection-start-column="29" selection-end-line="64" selection-end-column="29" />
+            <state relative-caret-position="204">
+              <caret line="37" column="10" selection-start-line="37" selection-start-column="10" selection-end-line="37" selection-end-column="10" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GartenStudentAPIController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/controller/api/contentplate/GartenStudentAPIController.java">
+      <file leaf-file-name="WXLoginController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/controller/api/login/WXLoginController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="31" column="29" lean-forward="true" selection-start-line="31" selection-start-column="29" selection-end-line="31" selection-end-column="29" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="285">
+              <caret line="131" column="34" selection-start-line="131" selection-start-column="34" selection-end-line="131" selection-end-column="35" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WebSecurityConfig.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="880">
+              <caret line="120" column="24" selection-start-line="120" selection-start-column="24" selection-end-line="120" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GartenClassesAPIController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/controller/api/contentplate/GartenClassesAPIController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="188">
+              <caret line="22" column="7" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WebCommonController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/controller/web/common/WebCommonController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" column="43" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WebSecurityConfig.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/security/config/WebSecurityConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="87">
-              <caret line="72" column="17" lean-forward="true" selection-start-line="72" selection-start-column="17" selection-end-line="74" selection-end-column="7" />
-              <folding>
-                <element signature="e#3070#3071#0" expanded="true" />
-                <element signature="e#3118#3119#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="135">
+              <caret line="9" column="59" selection-start-line="9" selection-start-column="59" selection-end-line="9" selection-end-column="59" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GartenTeacherServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/service/impl/GartenTeacherServiceImpl.java">
+      <file leaf-file-name="WHWebSocket.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/websocket/WHWebSocket.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="612">
-              <caret line="47" column="16" selection-start-line="47" selection-start-column="16" selection-end-line="47" selection-end-column="16" />
+            <state relative-caret-position="413">
+              <caret line="42" column="43" selection-start-line="42" selection-start-column="43" selection-end-line="42" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BbmanageApplication.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/BbmanageApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="203">
+              <caret line="48" column="22" selection-start-line="48" selection-start-column="22" selection-end-line="48" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GartenStudentService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/service/GartenStudentService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="35" column="7" lean-forward="true" selection-start-line="35" selection-start-column="7" selection-end-line="35" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GartenTeacherDao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/customsql/contentplate/GartenTeacherDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="705">
-              <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Constants.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/utils/Constants.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="293">
-              <caret line="20" column="76" lean-forward="true" selection-start-line="20" selection-start-column="76" selection-end-line="20" selection-end-column="76" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ClassStudentRepository.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/repository/ClassStudentRepository.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
             </state>
           </provider>
         </entry>
@@ -133,6 +146,15 @@
       <find>getGartenTeacherListWithGartenIdAndClassIdAndCourseId</find>
       <find>imgCount</find>
       <find>getGartenClassesWithUserId</find>
+      <find>DruidDataSource</find>
+      <find>dbType</find>
+      <find>getDbType</find>
+      <find>websocket</find>
+      <find>Socket</find>
+      <find>springSecurityFilterChain</find>
+      <find>changeSessionId</find>
+      <find>WHWebSocket</find>
+      <find>tomcat</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -177,7 +199,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/controller/api/contentplate/GartenTeacherAPIController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/customsql/contentplate/GartenTeacherDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/vo/ActivityPhotosFileVo.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/service/impl/GartenTeacherServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/utils/Constants.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/service/GartenStudentService.java" />
@@ -186,6 +207,12 @@
         <option value="$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/service/impl/GartenStudentServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/controller/api/contentplate/GartenStudentAPIController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/security/config/WebSecurityConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/BbmanageApplication.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/websocket/WHWebSocket.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/controller/web/classes/WHRunnable.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/handler/WebSocketConfig.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -195,13 +222,34 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="bbmanage" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="bbmanage" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="bbmanage" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Run Configurations" type="21c1f71a:MavenProjectsStructure$RunConfigurationsNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="42" />
-    <option name="y" value="23" />
-    <option name="width" value="1633" />
+    <option name="x" value="52" />
+    <option name="y" value="321" />
+    <option name="width" value="1627" />
     <option name="height" value="1027" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -212,8 +260,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -264,60 +311,6 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="bbmanage" type="462c0819:PsiDirectoryNode" />
               <item name="controller" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bbmanage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bbmanage" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="bbmanage" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="contentplate" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bbmanage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bbmanage" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="bbmanage" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="index" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bbmanage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bbmanage" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="bbmanage" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="login" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bbmanage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bbmanage" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="bbmanage" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="qiniuVideo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bbmanage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bbmanage" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="bbmanage" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -329,7 +322,7 @@
               <item name="bbmanage" type="462c0819:PsiDirectoryNode" />
               <item name="controller" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="bbmanage" type="b2602c69:ProjectViewProjectNode" />
@@ -338,113 +331,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="bbmanage" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="contentplate" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bbmanage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bbmanage" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="bbmanage" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bbmanage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bbmanage" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="bbmanage" type="462c0819:PsiDirectoryNode" />
-              <item name="customsql" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bbmanage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bbmanage" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="bbmanage" type="462c0819:PsiDirectoryNode" />
-              <item name="customsql" type="462c0819:PsiDirectoryNode" />
-              <item name="contentplate" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bbmanage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bbmanage" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="bbmanage" type="462c0819:PsiDirectoryNode" />
-              <item name="handler" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bbmanage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bbmanage" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="bbmanage" type="462c0819:PsiDirectoryNode" />
-              <item name="redis" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bbmanage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bbmanage" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="bbmanage" type="462c0819:PsiDirectoryNode" />
-              <item name="repository" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bbmanage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bbmanage" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="bbmanage" type="462c0819:PsiDirectoryNode" />
-              <item name="security" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bbmanage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bbmanage" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="bbmanage" type="462c0819:PsiDirectoryNode" />
-              <item name="security" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bbmanage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bbmanage" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="bbmanage" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bbmanage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bbmanage" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="bbmanage" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bbmanage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bbmanage" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="bbmanage" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
+              <item name="websocket" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="bbmanage" type="b2602c69:ProjectViewProjectNode" />
@@ -460,25 +347,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bbmanage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bbmanage" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="hui" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bbmanage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bbmanage" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="hui" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="bbmanage" type="b2602c69:ProjectViewProjectNode" />
@@ -493,53 +361,22 @@
               <item name="bbmanage" type="b2602c69:ProjectViewProjectNode" />
               <item name="bbmanage" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bbmanage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bbmanage" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="fragments" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bbmanage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bbmanage" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="management" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bbmanage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bbmanage" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="management" type="462c0819:PsiDirectoryNode" />
-              <item name="contentplate" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bbmanage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bbmanage" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="management" type="462c0819:PsiDirectoryNode" />
-              <item name="rootuser" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="bbmanage" type="b2602c69:ProjectViewProjectNode" />
               <item name="bbmanage" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bbmanage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bbmanage" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="bbmanage" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="bbmanage" type="b2602c69:ProjectViewProjectNode" />
@@ -549,7 +386,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -586,7 +424,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Spring Boot.BbmanageApplication">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -605,6 +443,31 @@
         <value defaultName="singleModule" />
       </option>
       <patterns />
+    </configuration>
+    <configuration name="package " type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="package" />
+                <option value="-DskipTests" />
+              </list>
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
     </configuration>
     <configuration name="BbmanageApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="bbmanage" />
@@ -635,6 +498,10 @@
       <properties />
       <listeners />
     </configuration>
+    <list>
+      <item itemvalue="Maven.package " />
+      <item itemvalue="Spring Boot.BbmanageApplication" />
+    </list>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -647,12 +514,15 @@
       <option name="presentableId" value="Default" />
       <updated>1542531874669</updated>
       <workItem from="1542531876284" duration="45630000" />
-      <workItem from="1542969591256" duration="20773000" />
+      <workItem from="1542969591256" duration="23940000" />
+      <workItem from="1544064457628" duration="154000" />
+      <workItem from="1544413912122" duration="14158000" />
+      <workItem from="1545386147990" duration="4899000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66403000" />
+    <option name="totallyTimeSpent" value="88781000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -664,12 +534,11 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="42" y="23" width="1633" height="1027" extended-state="6" />
-    <editor active="true" />
+    <frame x="52" y="23" width="1633" height="1027" extended-state="6" />
     <layout>
       <window_info anchor="right" id="Palette" order="6" />
-      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
-      <window_info anchor="right" id="Maven Projects" order="0" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5003143" side_tool="true" weight="0.446527" />
+      <window_info anchor="right" id="Maven Projects" order="0" weight="0.32998115" />
       <window_info anchor="bottom" id="Database Changes" order="4" show_stripe_button="false" />
       <window_info id="Capture Tool" order="7" />
       <window_info id="Designer" order="0" />
@@ -677,18 +546,18 @@
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="8" weight="0.25" />
       <window_info id="UI Designer" order="2" />
-      <window_info active="true" anchor="bottom" id="Debug" order="13" visible="true" weight="0.26019844" />
+      <window_info anchor="bottom" id="Debug" order="13" sideWeight="0.49968573" weight="0.4553473" />
       <window_info anchor="bottom" id="TODO" order="12" />
-      <window_info anchor="bottom" id="Messages" order="2" weight="0.32855567" />
+      <window_info anchor="bottom" id="Messages" order="2" weight="0.32745314" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="1" />
-      <window_info anchor="bottom" id="Java Enterprise" order="3" />
+      <window_info anchor="bottom" id="Java Enterprise" order="3" weight="0.3296582" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
+      <window_info anchor="bottom" id="Run" order="9" weight="0.46857774" />
       <window_info anchor="bottom" id="Version Control" order="5" />
-      <window_info anchor="bottom" id="Run" order="9" />
-      <window_info anchor="bottom" id="Spring" order="0" />
-      <window_info anchor="bottom" id="Terminal" order="1" weight="0.3296582" />
-      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.2514142" />
+      <window_info anchor="bottom" id="Spring" order="0" weight="0.3296582" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="1" visible="true" weight="0.32855567" />
+      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.39472032" />
       <window_info anchor="right" id="Bean Validation" order="5" />
       <window_info id="Web" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Find" order="7" />
@@ -711,49 +580,43 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url />
-          <line>133</line>
-          <properties />
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url />
+          <url>file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/utils/MobileMessageSend.java</url>
           <line>57</line>
           <properties />
           <option name="timeStamp" value="13" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url />
+          <url>file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/service/impl/UserInfoServiceImpl.java</url>
           <line>60</line>
           <properties />
           <option name="timeStamp" value="14" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url />
+          <url>file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/controller/web/contentplate/GartenActivityController.java</url>
           <line>55</line>
           <properties />
           <option name="timeStamp" value="22" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url />
+          <url>file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/controller/web/contentplate/GartenActivityController.java</url>
           <line>54</line>
           <properties />
           <option name="timeStamp" value="23" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url />
+          <url>file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/service/impl/GartenActivityServiceImpl.java</url>
           <line>112</line>
           <properties />
           <option name="timeStamp" value="24" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url />
+          <url>file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/service/impl/GartenActivityServiceImpl.java</url>
           <line>120</line>
           <properties />
           <option name="timeStamp" value="25" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url />
+          <url>file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/service/impl/GartenActivityServiceImpl.java</url>
           <line>134</line>
           <properties />
           <option name="timeStamp" value="26" />
@@ -812,135 +675,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/redis/RedisObjectSerializer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="26" column="31" lean-forward="true" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/redis/RedisBaseOperation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="467">
-          <caret line="40" column="29" lean-forward="true" selection-start-line="40" selection-start-column="29" selection-end-line="40" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/controller/api/qiniuVideo/RoomController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="74" column="31" lean-forward="true" selection-start-line="74" selection-start-column="31" selection-end-line="74" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/utils/DateUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="49" column="24" selection-start-line="49" selection-start-column="24" selection-end-line="49" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/utils/GeetestLib.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/utils/ExcelImportUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-611">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/utils/HttpClientUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="43" column="13" lean-forward="true" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/utils/IDUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/repository/UserInfoRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="14" column="53" lean-forward="true" selection-start-line="14" selection-start-column="53" selection-end-line="14" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/controller/web/user/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/utils/MobileMessageSend.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="86" selection-start-line="86" selection-end-line="86" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/controller/api/login/WXLoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="133" column="39" lean-forward="true" selection-start-line="133" selection-start-column="39" selection-end-line="133" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/service/UserInfoService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="21" column="40" lean-forward="true" selection-start-line="21" selection-start-column="40" selection-end-line="21" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.3.18.RELEASE/spring-web-4.3.18.RELEASE.jar!/org/springframework/http/HttpStatus.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="77" column="4" selection-start-line="77" selection-start-column="4" selection-end-line="77" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/service/impl/UserInfoServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="56" column="14" lean-forward="true" selection-start-line="56" selection-start-column="14" selection-end-line="56" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/controller/web/contentplate/GartenClassesController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/management/classes/class-add.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-405">
-          <caret line="20" column="80" selection-start-line="20" selection-start-column="80" selection-end-line="20" selection-end-column="80" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/management/contentplate/teacher-add.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="104" column="47" selection-start-line="104" selection-start-column="35" selection-end-line="104" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/page/contentplate/teachers.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1275">
@@ -1002,13 +736,6 @@
         <state relative-caret-position="-71" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="444">
-          <caret line="98" column="14" selection-start-line="98" selection-start-column="14" selection-end-line="98" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/controller/web/contentplate/GartenActivityController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="363">
@@ -1020,10 +747,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="338">
           <caret line="78" column="60" lean-forward="true" selection-start-line="78" selection-start-column="60" selection-end-line="78" selection-end-column="60" />
-          <folding>
-            <element signature="e#1544#1545#0" expanded="true" />
-            <element signature="e#1607#1608#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1055,27 +778,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/controller/api/contentplate/GartenClassesAPIController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="22" column="7" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/controller/api/contentplate/GartenTeacherAPIController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
           <caret line="36" column="47" selection-start-line="36" selection-start-column="47" selection-end-line="36" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="398">
-          <caret line="34" selection-start-line="34" selection-end-line="34" />
         </state>
       </provider>
     </entry>
@@ -1090,20 +796,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="282">
           <caret line="78" column="58" lean-forward="true" selection-start-line="78" selection-start-column="58" selection-end-line="78" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/handler/WebSocketConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/utils/Constants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="20" column="76" lean-forward="true" selection-start-line="20" selection-start-column="76" selection-end-line="20" selection-end-column="76" />
         </state>
       </provider>
     </entry>
@@ -1130,8 +822,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/customsql/contentplate/GartenStudentDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="64" column="29" lean-forward="true" selection-start-line="64" selection-start-column="29" selection-end-line="64" selection-end-column="29" />
+        <state relative-caret-position="960">
+          <caret line="64" column="29" selection-start-line="64" selection-start-column="29" selection-end-line="64" selection-end-column="29" />
         </state>
       </provider>
     </entry>
@@ -1145,45 +837,199 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/vo/GartenStudentInfoVo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/service/impl/GartenTeacherServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
+        <state relative-caret-position="270">
           <caret line="47" column="16" selection-start-line="47" selection-start-column="16" selection-end-line="47" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/service/impl/GartenStudentServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="168" column="38" lean-forward="true" selection-start-line="168" selection-start-column="38" selection-end-line="168" selection-end-column="38" />
+        <state relative-caret-position="2130">
+          <caret line="168" column="38" selection-start-line="168" selection-start-column="38" selection-end-line="168" selection-end-column="38" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/controller/api/contentplate/GartenStudentAPIController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" column="29" lean-forward="true" selection-start-line="31" selection-start-column="29" selection-end-line="31" selection-end-column="29" />
+        <state relative-caret-position="315">
+          <caret line="31" column="29" selection-start-line="31" selection-start-column="29" selection-end-line="31" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/controller/api/index/WCPanelContentController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/controller/api/qiniuVideo/RoomController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="900">
+          <caret line="76" column="31" selection-start-line="76" selection-start-column="31" selection-end-line="76" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/druid/1.1.10/druid-1.1.10.jar!/com/alibaba/druid/pool/DruidDataSource.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="10482">
+          <caret line="818" column="57" selection-start-line="818" selection-start-column="48" selection-end-line="818" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/beibei/bbmanage/BbmanageApplicationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/utils/MobileMessageSend.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="86" selection-start-line="86" selection-end-line="86" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/utils/QiNiuUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/utils/IDUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/utils/HttpClientUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1477">
+          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/utils/ExcelImportUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/utils/DateUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/utils/Constants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="20" column="76" lean-forward="true" selection-start-line="20" selection-start-column="76" selection-end-line="20" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/utils/CheckSumBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/utils/AesCbcUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-85">
+          <caret line="28" column="7" lean-forward="true" selection-start-line="28" selection-start-column="7" selection-end-line="28" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/utils/StringUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="398">
+          <caret line="235" column="25" selection-start-line="235" selection-start-column="25" selection-end-line="235" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/controller/api/login/WXLoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="131" column="34" selection-start-line="131" selection-start-column="34" selection-end-line="131" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="37" column="10" selection-start-line="37" selection-start-column="10" selection-end-line="37" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/websocket/WHWebSocket.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="413">
+          <caret line="42" column="43" selection-start-line="42" selection-start-column="43" selection-end-line="42" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/security/config/WebSecurityConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="59" selection-start-line="9" selection-start-column="59" selection-end-line="9" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/handler/WebSocketConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/controller/api/contentplate/GartenClassesAPIController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="22" column="7" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/controller/web/common/WebCommonController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="43" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/BbmanageApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="48" column="22" selection-start-line="48" selection-start-column="22" selection-end-line="48" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/security/config/WebSecurityConfig.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
-          <caret line="72" column="17" lean-forward="true" selection-start-line="72" selection-start-column="17" selection-end-line="74" selection-end-column="7" />
-          <folding>
-            <element signature="e#3070#3071#0" expanded="true" />
-            <element signature="e#3118#3119#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="880">
+          <caret line="120" column="24" selection-start-line="120" selection-start-column="24" selection-end-line="120" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/beibei/bbmanage/controller/web/classes/WHRunnable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="27" column="9" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
         </state>
       </provider>
     </entry>

@@ -21,7 +21,7 @@ public class WHRunnable implements Runnable {
         try {
             System.out.println(DateUtil.formatDateTime(new Date()));
             Thread.sleep(10000);
-            WHWebSocket.sendInfo("吴昊发送的消息"+DateUtil.formatDateTime(new Date()));
+//            WHWebSocket.sendInfo("吴昊发送的消息"+DateUtil.formatDateTime(new Date()));
             System.out.println(DateUtil.formatDateTime(new Date()));
         } catch (Exception e) {
             e.printStackTrace();

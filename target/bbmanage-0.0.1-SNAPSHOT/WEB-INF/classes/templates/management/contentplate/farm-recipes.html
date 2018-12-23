@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" lang="en">
+<head th:replace="/fragments/head :: head">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+</head>
+<body>
+
+
+<nav class="breadcrumb" style="padding-top: 0px;">
+    <i class="Hui-iconfont">&#xe67f;</i>
+    <span th:text="${parentName}"></span>
+    <span class="c-gray en">&gt;</span>
+    <span th:text="${childName}"></span>
+    <a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新" >
+        <i class="Hui-iconfont">&#xe68f;</i></a>
+</nav>
+<div class="page-container" style="padding-top: 0px;">
+    <div class="text-c">
+        <label>所属幼儿园：</label>
+        <span class="select-box" style="width: 200px">
+            <select  name="gartenId" id="garden-info" class="select">
+            </select>
+        </span>
+        <button name="" id="serchInput" class="btn btn-success" type="submit"><i class="Hui-iconfont">&#xe665;</i> 查询</button>
+    </div>
+    <!--测试悬浮div-->
+    <div id="mydiv1" style="position:absolute;display:none;border:1px solid silver;background:silver;z-index: 1000000">
+
+        <p id="showDate"></p>
+        <p id="showContent"></p>
+
+    </div>
+
+
+    <div class="cl pd-5 bg-1 bk-gray mt-20">
+			<span class="l">
+				<a href="javascript:;" onclick="batchDelete()" class="btn btn-danger radius">
+					<i class="Hui-iconfont">&#xe6e2;</i>
+					批量删除
+				</a>
+				<a class="btn btn-primary radius" onclick="recipes_add('添加食谱','/management/contentplate/farm/recipes/add.html')" href="javascript:;">
+					<i class="Hui-iconfont">&#xe600;</i>
+					添加食谱
+				</a>
+            </span>
+    </div>
+
+    <div class="mt-20">
+    <div id='calendar'></div>
+    </div>
+    </div>
+
+<basescript th:replace="/fragments/basescript :: basescript"></basescript>
+
+<script th:src='@{/static/calendar/lib/moment.min.js}'></script>
+<!--<script th:src='@{/static/calendar/lib/jquery.min.js}'></script>-->
+<script th:src='@{/static/calendar/fullcalendar.min.js}'></script>
+<script th:src='@{/static/calendar/locale-all.js}'></script>
+
+<script type="text/javascript" th:src="@{/static/js/page/contentplate/farm-recipes.js}"></script>
+
+
+
+</body>
+
+
+</html>

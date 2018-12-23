@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" lang="en">
+
+<head th:replace="/fragments/head :: head">
+</head>
+<body>
+<input type="hidden" id="TenantId" name="TenantId" value="" />
+<div class="header"></div>
+<div class="loginWraper">
+    <div id="loginform" class="loginBox">
+        <form class="form form-horizontal" th:action="@{/login}" method="POST" name="form">
+
+            <div class="row cl">
+                <label class="form-label col-xs-3"><i class="Hui-iconfont">&#xe60d;</i></label>
+                <div class="formControls col-xs-8">
+                    <input id="userName" name="userName" type="text" placeholder="用户名" class="input-text size-L" />
+                </div>
+            </div>
+
+            <div class="row cl">
+                <label class="form-label col-xs-3"><i class="Hui-iconfont">&#xe60e;</i></label>
+                <div class="formControls col-xs-8">
+                    <input id="password" name="passWord" type="password" placeholder="密码" class="input-text size-L" />
+                </div>
+            </div>
+
+            <div class="row cl">
+                <div class="formControls col-xs-8 col-xs-offset-3">
+                    <label>完成验证：</label>
+                    <div id="captcha1">
+                        <p id="wait1" style="display:block">正在加载验证码......</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row cl">
+                <div class="formControls col-xs-8 col-xs-offset-3">
+                    <button type="submit" class="btn btn-success radius size-L">&nbsp;登&nbsp;&nbsp;&nbsp;&nbsp;录&nbsp;</button>
+                </div>
+            </div>
+
+        </form>
+    </div>
+</div>
+<div class="footer">Copyright WH by bbmanage</div>
+
+<basescript th:replace="/fragments/basescript :: basescript"></basescript>
+<script type="text/javascript" th:src="@{'/static/js/common/gt.js'}"></script>
+<script type="text/javascript" th:src="@{/static/js/page/user/login.js}"></script>
+
+
+</body>
+</html>

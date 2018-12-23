@@ -212,6 +212,7 @@ function rotation_add(title,url) {
     layer_show(title,url,'',600);
 }
 
+
 function showPanelPicture(image) {
     console.log(image);
     var images = image.split(",");

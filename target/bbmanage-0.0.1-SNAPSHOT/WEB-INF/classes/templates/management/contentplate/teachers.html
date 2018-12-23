@@ -1,0 +1,105 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" lang="en">
+<head th:replace="/fragments/head :: head">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+</head>
+<body>
+<nav class="breadcrumb" style="padding-top: 0px;">
+    <i class="Hui-iconfont">&#xe67f;</i>
+    <span th:text="${parentName}"></span>
+    <span class="c-gray en">&gt;</span>
+    <span th:text="${childName}"></span>
+    <a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新" >
+        <i class="Hui-iconfont">&#xe68f;</i></a>
+</nav>
+<div class="page-container" style="padding-top: 0px;">
+
+    <div id="tab-system" class="HuiTab">
+        <div class="tabBar cl">
+            <span onclick="getIndex(this);" id="teacher" value="0">老师列表</span>
+            <span onclick="getIndex(this)" id="student" value="1">学生列表</span>
+        </div>
+
+        <div class="text-c" style="padding-top: 20px">
+            <label>所属幼儿园：</label>
+            <span class="select-box" style="width: 160px">
+            <select  name="gartenId" id="garden-info" class="select">
+            </select>
+        </span>
+            <label>所属班级：</label>
+            <span class="select-box" style="width: 160px">
+            <select  name="classId" id="class-info" class="select">
+            </select>
+        </span>
+            <label id="screenLabel">所教课程：</label>
+            <span class="select-box" style="width: 160px">
+            <select  name="courseId" id="course-info" class="select">
+            </select>
+        </span>
+
+            <button name="" id="serchInput" class="btn btn-success" type="submit"><i class="Hui-iconfont">&#xe665;</i> 查询</button>
+        </div>
+
+        <div class="tabCon" >
+
+
+
+            <div class="cl pd-5 bg-1 bk-gray mt-20">
+			<span class="l">
+				<a href="javascript:;" onclick="batchDelete()" class="btn btn-danger radius">
+					<i class="Hui-iconfont">&#xe6e2;</i>
+					批量删除
+				</a>
+                <a class="btn btn-primary radius" onclick="teacher_add('添加老师','/management/contentplate/announcement/teacher/add.html')" href="javascript:;">
+                <i class="Hui-iconfont">&#xe600;</i>
+                新增老师
+                </a>
+            </span>
+            </div>
+            <div class="mt-20">
+                <table class="table table-border table-bordered table-bg table-hover table-sort" id="teacherList">
+                </table>
+            </div>
+        </div>
+        <div class="tabCon" >
+
+
+
+            <div class="cl pd-5 bg-1 bk-gray mt-20">
+        <span class="l">
+	            <a href="javascript:;" onclick="batchDelete()" class="btn btn-danger radius">
+		        <i class="Hui-iconfont">&#xe6e2;</i>
+		        批量删除
+	            </a>
+
+            <a class="btn btn-primary radius" onclick="teacher_add('添加学生','/management/contentplate/announcement/student/add.html')" href="javascript:;">
+             <i class="Hui-iconfont">&#xe600;</i>
+             新增学生
+             </a>
+
+            <a class="btn btn-primary radius" onclick="student_import('导入学生','/management/contentplate/announcement/student/import.html')" href="javascript:;">
+             <i class="Hui-iconfont">&#xe600;</i>
+             导入学生(excel表格导入)
+             </a>
+         </span>
+            </div>
+            <div class="mt-20">
+                <table class="table table-border table-bordered table-bg table-hover table-sort" id="studentList">
+                </table>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+<basescript th:replace="/fragments/basescript :: basescript"></basescript>
+<script type="text/javascript" th:src="@{/static/js/page/contentplate/teachers.js}"></script>
+
+</body>
+
+
+</html>
